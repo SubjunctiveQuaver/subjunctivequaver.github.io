@@ -17,10 +17,10 @@ timezone: Australia/Melbourne
 # --------------------------
 title: Epic Maths Time                          # the main title
 
-tagline: Blog on epic mathematical tidbits!   # it will display as the sub-title
+tagline: Lawrence's blog on epic mathematical tidbits!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Lawrence's blog on cool maths
+  Lawrence's blog on epic mathematical tidbits!
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://subjunctivequaver.github.io/'
