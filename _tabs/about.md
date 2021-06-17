@@ -5,4 +5,4 @@ order: 4
 ---
 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Nothing to see here yet! But feel free to join us on the unofficial [Maths @ Monash Discord server](https://discord.gg/hx63ZwSXBg)!
