@@ -1,6 +1,10 @@
-# Why probability and statistics need measure theory
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+---
+title: Why probability and statistics need measure theory
+date: 2021-06-18 01:30:00 +1000
+categories: [Epic Maths Time, New Perspectives]
+tags: [probability, measure-theory, statistics, topology]     # TAG names should always be lowercase
+math: true
+---
 
 ## Introduction to the problem
 
