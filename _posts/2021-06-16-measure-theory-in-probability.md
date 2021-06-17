@@ -144,7 +144,7 @@ We've now had quite a bit of experience with probability spaces, and maybe you c
 
 Let $$(\Omega,\mathcal F,\mathbb P)$$ be a probability space.
 
-**Definition 10.** A **random variable** is a *measurable* function $$X : \Omega \to E$$, where $$(E,\mathcal E)$$ is the **state space**. We usually take 
+**Definition 10.** A **random variable** is a *measurable* function $$X : \Omega \to E$$, where $$(E,\mathcal E)$$ is the **state space**. We usually take $$E$$ to be a topological space $$(E,\tau)$$ (e.g. $$\mathbb R,\mathbb R^n,\mathbb C$$ with the usual topologies), so that $$(E,\mathcal B)$$ is endowed with the *Borel sigma algebra*.
 
 To be continued...
 
