@@ -120,9 +120,18 @@ Then for natural $$n \geq 0$$, define $$\mathcal F_n := \{\varnothing,\Omega\} \
 
 Now suppose that for each toss, a head appears with probability $$p \in (0,1)$$. For integer $$n \geq 1$$, let $$B_n$$ be the event that the first head is tossed on the $$n$$th toss: then
 
-$$B_n = \{(\underbrace{0,0,...,0,1}_{n\ \text{tosses}},x_{n+1},x_{n+2},...) : x_{n+1},x_{n+2},... \in \{0,1\}\}.$$
+$$B_n = \{(\underbrace{0,0,...,0,1}_{n\ \text{tosses}},x_{n+1},x_{n+2},...) : x_{n+1},x_{n+2},... \in \{0,1\}\};$$
 
-**Challenge question 3 (related to example 8).** If a random variable $$X$$ is defined on $$\mathbb{Z}^+$$ such that the event $$\{X = n\} = B_n$$ (i.e. $$\mathbb P(X = n) = \mathbb P(B_n)$$), what is the well-known distribution of $$X$$? Thus, what should $$\mathbb P$$ assign to this event $$B_n$$? What is the probability of any individual sequence $$\omega = (x_1,x_2,...)$$ of tosses in $$B_n$$? Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$? Is this a contradiction? (*Hint:* for the last part, consider *countable* additivity of $$\mathbb P$$. In particular, what is $$\lvert B_n \rvert$$? Can you show that it is *uncountable*? Consider Cantor's diagonalisation argument.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+this is precisely the event $$A_{00\dotsb 1}$$ defined above, so we know that $$B_n$$ is a valid event (i.e. $$B_n \in \mathcal F$$), by construction.
+
+**Challenge question 3 (related to example 8).** If a random variable $$X$$ is defined on $$\mathbb{Z}^+$$ such that the event $$\{X = n\} = B_n$$ (i.e. $$\mathbb P(X = n) = \mathbb P(B_n)$$):
+
+1. What is the well-known distribution of $$X$$?
+2. Thus, what should $$\mathbb P$$ assign to this event $$B_n$$?
+3. Show that each singleton set (containing a single sequence of tosses) is in the event space, so that it makes sense to talk about its probability. What is this probability of any individual sequence $$\omega = (x_1,x_2,...)$$ of tosses in $$B_n$$?
+4. Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$, and is this a contradiction? (*Hint:* consider *countable* additivity of $$\mathbb P$$. In particular, what is $$\lvert B_n \rvert$$? Can you show that it is *uncountable*? Consider Cantor's diagonalisation argument.)
+
+Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 In this previous example, we saw an example of an event with probability 0, but is certainly possible: of course, the event of any particular sequence of heads/tails is a possible outcome.
 
