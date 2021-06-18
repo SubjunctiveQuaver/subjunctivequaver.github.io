@@ -12,15 +12,22 @@ You may have encountered continuous probability distributions such as the normal
 
 $$f_\theta : \mathbb{R} \to \mathbb{R}, \quad x \mapsto \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
 
-given a value of $$\theta = (\mu,\sigma^2) \in \Theta$$. In our case, $$\Theta = \mathbb{R} \times (0,\infty)$$; this is known as the *parameter space*.
+given a value of $$\theta = (\mu,\sigma^2) \in \Theta$$. In our case, $$\Theta = \mathbb{R} \times (0,\infty)$$; this is known as the *parameter space*, and this is central to the study of statistics.
 
 ![The probability density function of a normally distributed random variable.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/2880px-Standard_deviation_diagram.svg.png)
 
-How does this relate to probability? Well, everything. We begin informally: suppose that $$X$$ is a continuous random variable with density $$f_\theta$$. The meaning of this is unimportant initially; think of $$X$$ as a "variable" that takes on values randomly (we will see that this is very much not a random variable *should* be). For a "reasonable" subset $$A \subseteq \mathbb{R}$$, let $$\mathbb{P}(X \in A)$$ denote the probability that $$X \in A$$, i.e. the probability of the event $$\{X \in A\}$$ (whatever that means). It turns out that, and as is often taught in a class in probability (even at high school level),
+How does this relate to probability? Well, everything. We begin informally: suppose that $$X$$ is a continuous random variable with density $$f_\theta$$. The meaning of this is unimportant initially; think of $$X$$ as a "variable" that takes on values randomly (we will see that this is very much *not* a random variable *should* be). For a "reasonable" subset $$A \subseteq \mathbb{R}$$, let $$\mathbb{P}(X \in A)$$ denote the probability that $$X \in A$$, i.e. the probability of the event $$\{X \in A\}$$ (whatever that means). It turns out that, and as is often taught in a class in probability (even at high school level),
 
 $$\mathbb P(X \in A) = \int_A f_\theta(x)\,dx = \int_A \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)\,dx.$$
 
-In fact, we are kind of working backwards. The probability density function is essentially defined to be a function such that integrating it over the desired subset yields the probability of $$X$$ taking on a value in that set. Now, what should $$A$$ be allowed to be? Should we allow *every* subset of the reals? In particular, if $$A = \{x_0\}$$ for some $$x_0 \in \mathbb{R}$$, the previous formula implies that $$\mathbb P(X = x_0) = 0$$, as an integral over a point. Should we allow this? Does that mean the event $$\{X = x_0\}$$ is impossible? It turns out it *is* possible, and that *measure theory* has the answer to all of these questions.
+In fact, we are kind of working backwards. The probability density function is essentially defined to be a function such that integrating it over the desired subset yields the probability of $$X$$ taking on a value in that set. We get a couple of questions:
+
+1. How does the probability-assignment process work?
+2. What should $$A$$ be allowed to be? Should we allow *every* subset of the reals?
+3. In particular, if $$A = \{x_0\}$$ for some $$x_0 \in \mathbb{R}$$, the previous formula implies that $$\mathbb P(X = x_0) = 0$$, as an integral over a point. Does that make sense? Does that mean the event $$\{X = x_0\}$$ is impossible? (It turns out it *is* possible!)
+4. Also, what about the seemingly irreconcilable differences between continuous and discrete probability distributions (density vs mass, expectation formulas, the general vibe, etc.)?
+
+It turns out that *measure theory* has the answer to all of these questions.
 
 ## Some measure theory, with a probabilistic flavour
 
@@ -78,7 +85,7 @@ We define a way to assign "sizes" to measurable sets. This is the essence of mea
 
 Then $$(\Omega,\mathcal F,\mu)$$ is a **measure space**. If we add the additional property that $$\mu(\Omega) = 1$$, then $$\mu$$ is a **probability measure**, and $$(\Omega,\mathcal F,\mu)$$ is a **probability space**. (In this case, we usually write $$\mathbb P$$ instead of $$\mu$$, so that $$(\Omega,\mathcal F,\mathbb P)$$ is a probability space; here, $$\mathcal F$$ is the **event space**, and its elements are **events**.)
 
-For example, the *Lebesgue measure* $$\lambda$$ on $$\mathbb{R}$$ is a way to assign lengths to subsets of the reals in a sensible way: $$\lambda((0,1)) = \lambda([0,1]) = 1$$, $$\lambda((0,1) \cup (3,5]) = 3$$, $$\lambda(\{1,2,3,4,5\}) = \lambda(\mathbb{N}) = \lambda(\mathbb{Q}) = 0$$, $$\lambda(\mathbb{R}) = \lambda(\mathbb{R} \setminus \mathbb{Q}) = \infty$$, etc.
+For example, the *Lebesgue measure* $$\lambda$$ on $$\mathbb{R}$$ is a way to assign lengths to subsets of the reals in a sensible way: $$\lambda((0,1)) = \lambda([0,1]) = 1$$, $$\lambda((0,1) \cup (3,5]) = 3$$, $$\lambda(\{1,2,3,4,5\}) = \lambda(\mathbb{N}) = \lambda(\mathbb{Q}) = 0$$, $$\lambda(\mathbb{R}) = \lambda(\mathbb{R} \setminus \mathbb{Q}) = \infty$$, etc. However, not *every* subset of $$\mathbb R$$ can be sensibly assigned a Lebesgue measure. And this is the entire point of measure theory and sigma algebras: if we did try to assign a measure to *every* subset, we get [contradictions](https://en.wikipedia.org/wiki/Vitali_set). And it turns out that in probability, we run into the exact same issues.
 
 But now we turn our attention back to probability spaces. Let's unpack this definition, at least for probability measures. Firstly, a probability is a function from the *event space* to $$[0,\infty]$$ (in fact, we can see that its codomain is $$[0,1]$$, by the other properties). The probability of the empty set must be 0; this makes sense, as we always expect some outcome to occur in an experiment. The probability of the sample space is 1; again this makes sense, as the sample space is the set of all outcomes. Finally, the key property of probability is that for a (countable) sequence of pairwise *disjoint* events, often called **mutually exclusive** events, the probability of their union is the sum of their probabilities. Again, this is intuitive from elementary probability: if two events can't happen simultaneously, we should be able to add their probabilities to get the probability of their union.
 
