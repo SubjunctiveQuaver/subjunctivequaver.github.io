@@ -115,7 +115,7 @@ That is, the cdf of $$X$$ gives us the probability measure of the event $$(-\inf
 
 This change of perspective is useful, as it allows us to define when two random variables have the *same probability distribution*, even when they aren't defined on the *same probability space*! We say that two random variables $$X : (\Omega_1,\mathcal F_1,\mathbb P_1) \to (\mathbb R,\mathcal B)$$ and $$Y : (\Omega_2,\mathcal F_2,\mathbb P_2) \to (\mathbb R,\mathcal B)$$ are **equal in distribution** if their cdfs are equal as functions: $$F_X = F_Y$$; this means that $$\mathbb P_1(X \leq x) = \mathbb P_2(Y \leq x)$$ for all $$x \in \mathbb R$$ (note the different probability measures), or equivalently,
 
-$$\mathbb P_X((-\infty],x) = \mathbb P_Y((-\infty,x]),$$
+$$\mathbb P_X((-\infty,x]) = \mathbb P_Y((-\infty,x]),$$
 
 which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if they induce identical probability spaces on the event space, even if they are defined on totally different sample spaces.
 
