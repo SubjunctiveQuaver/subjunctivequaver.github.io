@@ -160,7 +160,17 @@ At this point, we are finally ready to *define* discrete and continuous random v
 **Definition 16.**
 
 1. A **continuous random variable** $$X : \Omega \to \mathbb R$$ is such that $$\mathbb P(X = x) = \mathbb P_X(\{x\}) = 0$$ for all $$x \in \mathbb R$$.
-2. An **absolutely continuous random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a function $$f : \mathbb R \to [0,\infty]$$ such that $$\mathbb P(X \in A) = \int_A f(x)\,dx$$ for *any* Borel set $$A \subseteq \mathbb R$$. This function $$f$$ is the **probability density function (pdf)** of $$X$$. (Absolutely continuous random variables are continuous.)
+2. An **absolutely continuous random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a function $$f : \mathbb R \to [0,\infty]$$ such that $$\mathbb P(X \in A) = \int_A f(x)\,dx$$ for *any* Borel set $$A \subseteq \mathbb R$$. This function $$f$$ is the **probability density function (density/pdf)** of $$X$$. (Absolutely continuous random variables are continuous.)
 3. A **discrete random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a *countable* Borel set $$A$$ with $$\mathbb P(X \in A) = \mathbb P_X(A) = 1$$. (If $$\Omega$$ is discrete, any random variable will be discrete.)
 
-Next up, to tackle the problem of unifying the concepts of densities (such as the normal pdf given at the start of part 1) and expectations of different types of distributions, we will consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
+Note how densities are defined. We start with a probability space, with a probability measure $$\mathbb P$$ defined on it, and a random variable $$X$$ mapping the sample space into the reals. A density is then a function that satisfies the particular property that
+
+$$\mathbb P(X \in A) = \mathbb P_X(A) = \int_A f(x)\,dx$$
+
+for *any* Borel set $$A \subseteq \mathbb R$$, which may feel backwards. Don't we usually start with the density function? We can, and again this approach uses the idea that we can forget about the original sample space, and study the probability space via the pushforward measure. So when we gave the normal density
+
+$$f_\theta : \mathbb{R} \to \mathbb{R}, \quad x \mapsto \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
+
+at the start of part 1, we can either think of a probability space and a random variable which happens to have this as a density, or we can think of this density as characterising the pushforward measure of *some* random variable whose sample space is unimportant. And it is this second perspective that we tend to prefer, as the analysis then directly applies to *any* scenario in which the pushforward measure has the same density, even if the underlying experiment is different (as we saw in Example 15).
+
+Next up, to tackle the problem of unifying the concepts of densities and expectations of different types of distributions, we will consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
