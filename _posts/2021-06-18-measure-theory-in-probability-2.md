@@ -117,7 +117,7 @@ This change of perspective is useful, as it allows us to define when two random 
 
 $$\mathbb P_X((-\infty,x]) = \mathbb P_Y((-\infty,x]),$$
 
-which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if they induce identical probability spaces on the event space, even if they are defined on totally different sample spaces.
+which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ (the *pushforward measures*) as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if and only if they induce identical probability spaces on the event space (via the pushforward measure), even if they are defined on totally different sample spaces.
 
 Lets see an example of this, coming from our previous examples.
 
