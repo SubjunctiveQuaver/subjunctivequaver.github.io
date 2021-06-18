@@ -129,7 +129,7 @@ this is precisely the event $$A_{00\dotsb 1}$$ defined above, so we know that $$
 1. What is the well-known distribution of $$X$$?
 2. Thus, what should $$\mathbb P$$ assign to this event $$B_n$$?
 3. Show that each singleton set (containing a single sequence of tosses) is in the event space, so that it makes sense to talk about its probability. What is this probability of any individual sequence $$\omega = (x_1,x_2,...)$$ of tosses in $$B_n$$?
-4. Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$, and is this a contradiction? (*Hint:* consider *countable* additivity of $$\mathbb P$$. In particular, what is $$\lvert B_n \rvert$$? Can you show that it is *uncountable*? Consider Cantor's diagonalisation argument.)
+4. Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$, and is this a contradiction, since the $$B_n$$ are pairwise disjoint and we expect the probability of the union to be the sum of the probabilities? (*Hint:* consider *countable* additivity of $$\mathbb P$$. In particular, what is $$\lvert B_n \rvert$$? Can you show that it is *uncountable*? Consider Cantor's diagonalisation argument.)
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
