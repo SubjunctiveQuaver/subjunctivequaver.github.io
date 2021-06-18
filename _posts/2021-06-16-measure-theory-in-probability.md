@@ -229,7 +229,7 @@ i.e. the two events $$\{X_n = 0\}$$ and $$\{X_n = 1\}$$ are disjoint (as expecte
 
 $$\mathbb P(a < X < b) = \mathbb P(X^{-1}((a,b))) = \mathbb P((a,b)) = b - a.$$
 
-Now, recall that the composition of measurable functions is measurable, so if $$f$$ is for instance continuous, then $$f(X) = f \circ X$$ is also a random variable! Let's take $$f$$ to be the squaring function $$x \mapsto x^2$$. Let's investigate the random variable $$f(X) = X^2$$:
+Now, recall that the composition of measurable functions is measurable, so if $$f$$ is for instance continuous, then $$f(X) = f \circ X$$ is also a random variable! Let's take $$f$$ to be the squaring function $$x \mapsto x^2$$. Let's investigate the random variable $$f(X) = X^2 : [0,1] \to \mathbb R$$ where $$X^2(\omega) = \omega^2$$:
 
 **Challenge question 5 (related to example 9).**
 
