@@ -177,7 +177,7 @@ Hopefully you can see the similarity: just replace "measurable" with "open"! Aga
 
 **Proposition 13.** Suppose $$f : (\Omega,\tau) \to (E,\mathcal T)$$ is a *continuous* function. Then for a sigma algebra $$\mathcal F$$ on $$\Omega$$ that *contains* the Borel sigma algebra $$\mathcal B(\tau)$$, the function $$f : (\Omega,\mathcal F) \to (E,\mathcal B(\mathcal T))$$ is *measurable*.
 
-*Proof.* Let $$A \in \mathcal B(\mathcal T)$$ be a Borel set. Recall that this means that there is a countable sequence of union/intersection/complement operations such that $$A$$ is constructed from a (countable) family of open sets $$(A_i)_{i \in I}$$. But note that the preimage of any union/intersection/complement is the union/intersection/complement of the preimages, so it follows that $$f^{-1}(A)$$ is constructed from the sets $$(f^{-1}(A_i))_{i \in I}$$ using the exact same sequence of operations. But $$f^{-1}(A_i)$$ is open for any $$i$$ by continuity of $$f$$ (by definition), thus measurable (since $$\mathcal F$$ contains $$\mathcal B(\tau)$$, which contains all open sets in $$\Omega$$). So $$f^{-1}(A)$$ is constructed from the measurable sets $$(f^{-1}(A_i))_{i \in I}$$ using a countable sequence of union/intersection/complement operations, so $$f^{-1}(A) \in \mathcal F$$ (sigma algebras are closed under these operations). $$\square$$
+*Proof.* Let $$A \in \mathcal B(\mathcal T)$$ be a Borel set. Recall that this means that there is a countable sequence of union/intersection/complement operations such that $$A$$ is constructed from a (countable) family of open sets $$(A_i)_{i \in I}$$. But note that the preimage of any union/intersection/complement is the union/intersection/complement of the preimages (in general, $$f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B),f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B),f^{-1}(A \setminus B) = f^{-1}(A) \setminus f^{-1}(B)$$), so it follows that $$f^{-1}(A)$$ is constructed from the sets $$(f^{-1}(A_i))_{i \in I}$$ using the exact same sequence of operations. But $$f^{-1}(A_i)$$ is open for any $$i$$ by continuity of $$f$$ (by definition), thus measurable (since $$\mathcal F$$ contains $$\mathcal B(\tau)$$, which contains all open sets in $$\Omega$$). So $$f^{-1}(A)$$ is constructed from the measurable sets $$(f^{-1}(A_i))_{i \in I}$$ using a countable sequence of union/intersection/complement operations, so $$f^{-1}(A) \in \mathcal F$$ (sigma algebras are closed under these operations). $$\square$$
 
 This immediately gives many, many measurable functions! Assuming the sample space is $$\mathbb R$$, polynomial functions, rational functions, exponentials, trigonometric functions, logarithmic functions etc. are all measurable, and so are their sums, products, quotients (where defined), and compositions (which are all continuous)! So are the minimum/maximum of two continuous/measurable functions (in fact, supremums and infimums also work). So is the wild [Weierstrass function](https://en.wikipedia.org/wiki/Weierstrass_function), which is differentiable nowhere, but continuous everywhere, thus measurable!
 
@@ -199,7 +199,54 @@ Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now f
 
 ### Fun with random variables
 
-Let's first introduce some notation. Recall that a random variable is a *measurable function* from a probability space to a measurable space. It's not a *variable*! And it's not even random... the "randomness" comes from the fact that a probability measure assigns "chances" to different events. Let's now combine the notion of *random variable*, with the notion of *probability space*. This is how you've learnt random variables in high school/early university!
+Let's first introduce some notation. Recall that a random variable $$X : \Omega \to E$$ is a *measurable function* from a probability space $$(\Omega,\mathcal F,\mathbb P)$$ to a measurable space $$(E,\mathcal E)$$. It's not a *variable*! And it's not even random... the "randomness" comes from the fact that a probability measure assigns "chances" to different events. Let's now combine the notion of *random variable*, with the notion of *probability space*. This is how you've learnt random variables in high school/early university!
+
+For the following, we take $$E = \mathbb R$$. Let $$A \subseteq \mathbb R$$ be a Borel set. Then since $$X$$ is measurable, $$X^{-1}(A)$$ is a valid event. Thus we may take its probability, and we write it in the following ways:
+
+$$\mathbb P(X^{-1}(A)) = \mathbb P(\{\omega \in \Omega : X(\omega) \in A\}) = \mathbb P(X \in A).$$
+
+Of these, the last is probably the most familiar. But they all mean the same thing! In fact, what we *mean* when we write $$X \in A$$, is precisely the event $$X^{-1}(A)$$!
+
+**Example 8 (continued).** Recall this example, in which we had an infinite sequence of coin tosses and a sample space $$\Omega = \{0,1\}^\infty$$. For $$n \geq 1$$, consider the following random variable $$X_n : \Omega \to \mathbb R,$$
+
+$$\omega = (\omega_1,\omega_2,...) \mapsto \omega_n,$$
+
+which is simply projection onto the $$n$$th coordinate. For example, if $$n = 2$$ and we consider the outcome $$\omega = (1,0,1,0,...)$$, we get $$X_2(\omega) = 0$$. We can see that this essentially measures the outcome of the $$n$$th toss: if it was a tail, then $$X_n(\omega) = 0$$; if a head, then $$X_n(\omega) = 1$$. Assuming that each toss independently has probability $$p \in (0,1)$$ of appearing as a head, we observe the following: for any $$n$$,
+
+$$\mathbb P(X_n = 1) = \mathbb P(X_n^{-1}(\{1\})) = \mathbb P(\{\omega \in \Omega : X_n(\omega) = 1\}) = p,$$
+
+by our assertion. Similarly, $$\mathbb P(X_n = 0) = \mathbb P(\{\omega \in \Omega : X_n(\omega) = 0\}) = 1 - p$$, since
+
+$$X_n^{-1}(0) \cup X_n^{-1}(1) = X_n^{-1}(\{0,1\}) = \Omega$$
+
+and
+
+$$X_n^{-1}(0) \cap X_n^{-1}(1) = X_n^{-1}(\{0\} \cap \{1\}) = X_n^{-1}(\varnothing) = \varnothing,$$
+
+i.e. the two events $$\{X_n = 0\}$$ and $$\{X_n = 1\}$$ are disjoint (as expected), and their union is the sample space (this is called a **partition**), so the sum of the above two probabilities should be 1. (Note that here we use general properties of preimages of functions ($$f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B),f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B),f^{-1}(A \setminus B) = f^{-1}(A) \setminus f^{-1}(B)$$), and when taking the preimage of a point, we often drop the curly brackets. It does *not* mean the inverse function; $$X_n$$ is certainly not invertible!)
+
+**Example 9 (continued).** Let's again consider the uniform distribution on $$[0,1]$$, and the random variable $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$ defined above. Then, for example, for $$(a,b) \subseteq (0,1)$$,
+
+$$\mathbb P(a < X < b) = \mathbb P(X^{-1}((a,b))) = \mathbb P((a,b)) = b - a.$$
+
+Now, recall that the composition of measurable functions is measurable, so if $$f$$ is for instance continuous, then $$f(X) = f \circ X$$ is also a random variable! Let's take $$f$$ to be the squaring function $$x \mapsto x^2$$. Let's investigate the random variable $$f(X) = X^2$$:
+
+**Challenge question 5 (related to example 9).**
+
+1. Find $$(X^2)^{-1}(I) \subseteq [0,1]$$ any open interval $$I = (a,b) \subseteq [0,1]$$. Is this a valid event?
+2. Thus compute the probability $$\mathbb P(a < X^2 < b)$$.
+3. For $$x \in (0,1)$$, find $$(X^2)^{-1}((-\infty,x])$$ and thus find $$G(x) = \mathbb P(X^2 \leq x)$$. What is $$G(b) - G(a)$$?
+4. Can you find a function $$g : (0,1) \to \mathbb R$$ such that $$\mathbb P(a < X^2 < b) = \int_a^b g(x)\,dx$$? (*Hint:* consider the function $$G : (0,1) \to [0,1]$$, and apply the *fundamental theorem of calculus*, which implies $$\int_a^b G'(x)\,dx = G(b) - G(a)$$.)
+
+Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+
+A subtle but important change of perspective is to notice that for a probability measure $$\mathbb P$$ on the sample space, and a random variable $$X : \Omega \to E$$, we can actually define a *new* probability measure on the event space $$E$$, that arises naturally from $$X$$! This is the *pushforward measure* $$\mathbb P_X = \mathbb P \circ X^{-1} : \mathcal E \to [0,1]$$, defined by
+
+$$\mathbb P_X(A) := \mathbb P(X^{-1}(A)) = \mathbb P(X \in A).$$
+
+Here, $$A \in \mathcal E$$ is a (Borel) measurable set. Then the triple $$(E,\mathcal E,\mathbb P_X)$$ is a *probability space*, induced by the random variable $$X$$, so we can directly talk about probabilities using only the event space! And this is crucial in defining *probability distributions*, as we can then largely ignore the sample space! Don't worry too much if this doesn't make sense, but it's something that we like to do a lot in maths: which is to start off with a structure on a set, and use a mapping to *transfer* that structure over to a different set. This is one such example; other examples of similar structure-preserving maps are continuous maps (preserving open sets), homeomorphisms (preserving topologies), isometries (preserving distances), linear transformations (preserving vector space structure), and homomorphisms/isomorphisms (preserving algebraic structure).
+
+### Probability distributions
 
 To be continued...
 
