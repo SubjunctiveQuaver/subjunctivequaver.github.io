@@ -155,4 +155,4 @@ As another example, we compute $$\mathbb P(\mathbb A \cap \Omega)$$, where $$\ma
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
-We've now had quite a bit of experience with probability spaces, and maybe you can start to appreciate the role of measure theory in probability! Now we are finally ready, and will attempt to answer the age-old question: what is a random variable? Check out the next post for the answers!
+We've now had quite a bit of experience with probability spaces, and maybe you can start to appreciate the role of measure theory in probability! Now we are finally ready, and will attempt to answer the age-old question: what is a random variable? Check out the [next post](https://subjunctivequaver.github.io/posts/measure-theory-in-probability-2/) for the answers!

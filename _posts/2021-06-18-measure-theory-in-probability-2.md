@@ -6,6 +6,8 @@ tags: [probability, measure-theory, statistics, topology, uni-maths]     # TAG n
 math: true
 ---
 
+If you haven't already read part 1, make sure you read it [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/)!
+
 ## Random variables: neither random, nor a variable
 
 ### What is a random variable?
