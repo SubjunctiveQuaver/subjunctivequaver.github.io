@@ -71,8 +71,6 @@ For example, $$[0,1)$$ is a Borel set. Why? Notice that $$[0,1) = [(-\infty,0) \
 
 Almost any "reasonable" set you can think of will (almost surely, with probability 1!) be a Borel set (come up with your own examples and prove it), and these turn out to be precisely one broad class of sets $$A$$ for which it makes sense to talk about the probability of the event $$\{X \in A\}$$. Now it's time to tie this all back to probability. But to do so, we may as well (finally, for some of you) define probability rigorously...
 
-## The star of probability: probability spaces
-
 ### Measure and probability spaces
 
 We define a way to assign "sizes" to measurable sets. This is the essence of measure theory.
