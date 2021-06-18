@@ -114,7 +114,7 @@ so $$\mathbb P(A^c) = 1 - \mathbb P(A)$$, as claimed. $$\square$$
    $$\mathbb P_E(B) = \frac{\mathbb P(B)}{\mathbb P(E)}.$$
    Show that this is a probability measure on $$\mathcal F_E$$, i.e. $$(E,\mathcal F_E,\mathbb P_E)$$ is a probability space.
 
-Note that $$B \in \mathcal F_E$$ means that $$B = E \cap A$$ for some $$A \in \mathcal F$$, so $$\mathbb P_E(B) = \frac{\mathbb P(E \cap A)}{\mathbb P(E)}$$; we often use the notation $$\mathbb P(A|E) = \mathbb P_E(E \cap A)$$. This is called **conditional probability**: essentially, we restrict our event space to events that intersect the conditioning event $$E$$, and reweight all probabilities so that we still have a valid probability measure (with $$\mathbb P_E(E) = 1$$).
+Note that $$B \in \mathcal F_E$$ means that $$B = E \cap A$$ for some $$A \in \mathcal F$$, so $$\mathbb P_E(B) = \frac{\mathbb P(E \cap A)}{\mathbb P(E)}$$; we often use the notation $$\mathbb P(A \mid E) = \mathbb P_E(E \cap A)$$. This is called **conditional probability**: essentially, we restrict our event space to events that intersect the conditioning event $$E$$, and reweight all probabilities so that we still have a valid probability measure (with $$\mathbb P_E(E) = 1$$).
 
 ### Examples of probability spaces
 
