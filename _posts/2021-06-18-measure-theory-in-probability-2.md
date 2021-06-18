@@ -111,17 +111,29 @@ This is something that we like to do a lot in maths: which is to start off with 
 
 Now, let's consider $$(-\infty,x]$$ which is clearly a Borel set. We define the cumulative distribution function using the probability that $$X$$ takes on a value in this set:
 
-**Definition 14.** For a random variable $$X : \Omega \to \mathbb R$$, its **cumulative distribution function (cdf)** is the measurable function $$F_X : \mathbb R \to [0,1]$$, defined by
+**Definition 14.** For a random variable $$X : \Omega \to \mathbb R$$, its **(cumulative) distribution function (cdf)** is the measurable function $$F_X : \mathbb R \to [0,1]$$, defined by
 
 $$F_X(x) = \mathbb P(X \leq x) = \mathbb P(X^{-1}((-\infty,x])) = \mathbb P_X((-\infty,x]).$$
 
-That is, the cdf of $$X$$ gives us the probability measure of the event $$(-\infty,x]$$, where we push the probability measure from the sample space over to the event space! As a quick note, the cdf of a random variable fully determines its properties, as we may recover the event $$X^{-1}(A) = \{X \in A\}$$ (thus $$\mathbb P(X \in A)$$) for any Borel set $$A$$ from countable unions/intersections/complements of events $$X^{-1}((-\infty,x]) = \{X \leq x\}$$ with $$x \in \mathbb R$$.
+That is, the cdf of $$X$$ gives us the probability measure of the event $$(-\infty,x]$$, where we push the probability measure from the sample space over to the event space! Similarly, if we have a probability space $$(\Omega,\mathcal F,\mathbb P)$$ with sample space $$\Omega \subseteq \mathbb R$$, we can define the **distribution function** of the probability measure $$\mathbb P$$ as $$F : \mathbb R \to [0,1]， x \mapsto \mathbb P((-\infty,x])$$.
+
+As a quick note, the cdf of a random variable $$X$$ fully determines its properties, as we may recover the event $$X^{-1}(A) = \{X \in A\}$$ (thus $$\mathbb P(X \in A)$$) for any Borel set $$A$$ from countable unions/intersections/complements of events $$X^{-1}((-\infty,x]) = \{X \leq x\}$$ with $$x \in \mathbb R$$.
+
+It is possible to see that any cdf must be *increasing* (i.e. if $$a < b$$, then $$F(a) \leq F(b)$$):
+
+*Proof* For $$a < b$$, we have
+
+$$F(b) = \mathbb P((-\infty,b]) = \mathbb P((-\infty,a] \cup (a,b]) = \mathbb P((-\infty,a]) + \underbrace{\mathbb P((a,b])}_{\geq 0} \geq F(a). \square$$
+
+Additionally, cdfs have [*countably many discontinuities*](https://math.stackexchange.com/questions/147612/discontinuity-points-of-a-distribution-function), and must be *right-continuous*, meaning that not *every* increasing measurable function with codomain $$[0,1]$$ is the cdf of some random variable.
 
 This change of perspective is useful, as it allows us to define when two random variables have the *same probability distribution*, even when they aren't defined on the *same probability space*! We say that two random variables $$X : (\Omega_1,\mathcal F_1,\mathbb P_1) \to (\mathbb R,\mathcal B)$$ and $$Y : (\Omega_2,\mathcal F_2,\mathbb P_2) \to (\mathbb R,\mathcal B)$$ are **equal in distribution** if their cdfs are equal as functions: $$F_X = F_Y$$; this means that $$\mathbb P_1(X \leq x) = \mathbb P_2(Y \leq x)$$ for all $$x \in \mathbb R$$ (note the different probability measures), or equivalently,
 
 $$\mathbb P_X((-\infty,x]) = \mathbb P_Y((-\infty,x]),$$
 
 which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ (the *pushforward measures*) as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if and only if they induce identical probability spaces on the event space (via the pushforward measure), even if they are defined on totally different sample spaces.
+
+### Examples of distributions
 
 **Example 15.** Lets see an example of this, coming from our previous examples. Consider the first probability space to be the example with rolling two fair dice (independently) with $$\Omega_1 = \{1,...,6\} \times \{1,...,6\}$$, and the second probability space be the uniform distribution on $$\Omega_2 = [0,1]$$. Clearly these random variables are vastly different. Define the random variable $$X : \Omega_1 \to \mathbb R$$ as giving $$1$$ if the first die resulted in an equal or higher roll than the second, or $$0$$ otherwise:
 
@@ -141,12 +153,6 @@ $$F_X(x) = \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \e
 
 **Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of their common induced probability space on $$\mathbb R$$!) If you need a reminder of how $$(\Omega_2,\mathcal F_2,\mathbb P_2)$$ works, the example is Example 9 in [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/).
 
-### Mass and density functions
+At this point, we are finally ready to *define* discrete and continuous random variables, or more fundamentally, probability distributions.
 
-To be continued...
-
-## Lebesgue integration: a superior integral?
-
-### Expected value: a Lebesgue integral?
-
-To be continued...
+Next up, to tackle the problem of densities, such as the normal pdf given at the start of part 1, we must consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
