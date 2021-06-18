@@ -236,7 +236,7 @@ Now, recall that the composition of measurable functions is measurable, so if $$
 1. Find $$(X^2)^{-1}(I) \subseteq [0,1]$$ any open interval $$I = (a,b) \subseteq [0,1]$$. Is this a valid event?
 2. Thus compute the probability $$\mathbb P(a < X^2 < b)$$.
 3. For $$x \in (0,1)$$, find $$(X^2)^{-1}((-\infty,x])$$ and thus find $$G(x) = \mathbb P(X^2 \leq x)$$. What is $$G(b) - G(a)$$?
-4. Can you find a function $$g : (0,1) \to \mathbb R$$ such that $$\mathbb P(a < X^2 < b) = \int_a^b g(x)\,dx$$? (*Hint:* consider the function $$G : (0,1) \to [0,1]$$, and apply the *fundamental theorem of calculus*, which implies $$\int_a^b G'(x)\,dx = G(b) - G(a)$$.) This is called the *probability density function* (or *pdf*) of $$X^2$$.
+4. Can you find a function $$g : (0,1) \to \mathbb R$$ such that $$\mathbb P(a < X^2 < b) = \int_a^b g(x)\,dx$$? (*Hint:* consider the function $$G : (0,1) \to [0,1]$$, and apply the *fundamental theorem of calculus*, which implies $$\int_a^b G'(x)\,dx = G(b) - G(a)$$.) This is (almost) the *probability density function* (or *pdf*) of $$X^2$$.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
