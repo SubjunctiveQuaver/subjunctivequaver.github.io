@@ -6,7 +6,7 @@ tags: [probability, measure-theory, statistics, topology, uni-maths]     # TAG n
 math: true
 ---
 
-If you haven't already read part 1, make sure you read it [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/) first! Or else, much of the below will 
+If you haven't already read part 1, make sure you read it [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/) first! Or else, much of the below will not make sense!
 
 ## Random variables: neither random, nor a variable
 
@@ -139,7 +139,7 @@ by a simple combinatorial argument, and the fact that the 21 outcomes in that ev
 
 $$F_X(x) = \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \end{cases}$$
 
-**Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of their common induced probability space on $$\mathbb R$$!)
+**Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of their common induced probability space on $$\mathbb R$$!) If you need a reminder of how $$(\Omega_2,\mathcal F_2,\mathbb P_2)$$ works, the example is Example 9 in [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/).
 
 ### Mass and density functions
 
