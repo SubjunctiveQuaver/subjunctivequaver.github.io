@@ -52,7 +52,7 @@ since $$\operatorname{sgn}$$ only takes on values in $$\{0,\pm 1\}$$. Therefore,
 
 Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now follows that the inclusion map $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$, is a *random variable*, since it is continuous (thus measurable). This is how we typically think of a random variable with a uniform distribution!
 
-Briefly, let's consider random variables from finite probability spaces. Since the natural sigma algebra is the power set, it follows that *every* function is measurable. So *any* function $$X : \Omega \to E$$ is a valid random variable. Let's now look at random variables in a bit more depth.
+Briefly, let's consider random variables from finite probability spaces. Since the natural sigma algebra is the power set (the *discrete topology*), it follows that *every* function is measurable. So *any* function $$X : \Omega \to E$$ is a valid random variable. Let's now look at random variables in a bit more depth.
 
 ### Fun with random variables
 
@@ -161,6 +161,6 @@ At this point, we are finally ready to *define* discrete and continuous random v
 
 1. A **continuous random variable** $$X : \Omega \to \mathbb R$$ is such that $$\mathbb P(X = x) = \mathbb P_X(\{x\}) = 0$$ for all $$x \in \mathbb R$$.
 2. An **absolutely continuous random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a function $$f : \mathbb R \to [0,\infty]$$ such that $$\mathbb P(X \in A) = \int_A f(x)\,dx$$ for *any* Borel set $$A \subseteq \mathbb R$$. This function $$f$$ is the **probability density function (pdf)** of $$X$$. (Absolutely continuous random variables are continuous.)
-3. A **discrete random variable** $$X : \Omega \to \mathbb R$$
+3. A **discrete random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a *countable* Borel set $$A$$ with $$\mathbb P(X \in A) = \mathbb P_X(A) = 1$$. (If $$\Omega$$ is discrete, any random variable will be discrete.)
 
-Next up, to tackle the problem of densities, such as the normal pdf given at the start of part 1, we must consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
+Next up, to tackle the problem of unifying the concepts of densities (such as the normal pdf given at the start of part 1) and expectations of different types of distributions, we will consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
