@@ -195,7 +195,7 @@ since $$\operatorname{sgn}$$ only takes on values in $$\{0,\pm 1\}$$. Therefore,
 
 **Challenge question 5.** Complete the above proof that the signum function is measurable by identifying the remaining 7 cases, and checking that $$\operatorname{sgn}^{-1}(A)$$ is a Borel set in each case.
 
-Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now follows that the inclusion map $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$, is a *random variable*, since it is continuous (thus measurable). Let's now look at random variables in a bit more depth.
+Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now follows that the inclusion map $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$, is a *random variable*, since it is continuous (thus measurable). This is how we typically think of a random variable with a uniform distribution! Let's now look at random variables in a bit more depth.
 
 ### Fun with random variables
 
