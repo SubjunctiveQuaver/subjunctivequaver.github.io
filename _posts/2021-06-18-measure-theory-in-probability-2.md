@@ -101,11 +101,11 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 ### Probability distributions and pushforwards
 
-A subtle but important change of perspective is to notice that for a probability measure $$\mathbb P$$ on the sample space, and a random variable $$X : \Omega \to E$$, we can actually define a *new* probability measure on the event space $$E$$, that arises naturally from $$X$$! This is the *pushforward measure* $$\mathbb P_X = X_*\mathbb P = \mathbb P \circ X^{-1} : \mathcal E \to [0,1]$$, defined by
+A subtle but important change of perspective is to notice that for a probability measure $$\mathbb P$$ on the sample space, and a random variable $$X : \Omega \to E$$, we can actually define a *new* probability measure on the state space $$E$$, that arises naturally from $$X$$! This is the *pushforward measure* $$\mathbb P_X = X_*\mathbb P = \mathbb P \circ X^{-1} : \mathcal E \to [0,1]$$, defined by
 
 $$\mathbb P_X(A) := \mathbb P(X^{-1}(A)) = \mathbb P(X \in A).$$
 
-Here, $$A \in \mathcal E$$ is a (Borel) measurable set. Then the triple $$(E,\mathcal E,\mathbb P_X)$$ is a *probability space*, induced by the random variable $$X$$, so we can directly talk about probabilities using only the event space! And this is crucial in defining *probability distributions*, as we can then largely ignore the sample space!
+Here, $$A \in \mathcal E$$ is a (Borel) measurable set. Then the triple $$(E,\mathcal E,\mathbb P_X)$$ is a *probability space*, induced by the random variable $$X$$, so we can directly talk about probabilities using only the state space! And this is crucial in defining *probability distributions*, as we can then largely ignore the sample space!
 
 This is something that we like to do a lot in maths: which is to start off with a structure on a set, and use a mapping to *transfer* that structure over to a different set. This is one such example; other examples of similar structure-preserving maps are continuous maps (preserving open sets), homeomorphisms (preserving topologies), isometries (preserving distances), linear transformations (preserving vector space structure), homomorphisms/isomorphisms (preserving algebraic structure), and pullbacks of bilinear forms under a linear map.
 
@@ -115,7 +115,7 @@ Now, let's consider $$(-\infty,x]$$ which is clearly a Borel set. We define the 
 
 $$F_X(x) = \mathbb P(X \leq x) = \mathbb P(X^{-1}((-\infty,x])) = \mathbb P_X((-\infty,x]).$$
 
-That is, the cdf of $$X$$ gives us the probability measure of the event $$(-\infty,x]$$, where we push the probability measure from the sample space over to the event space! Similarly, if we have a probability space $$(\Omega,\mathcal F,\mathbb P)$$ with sample space $$\Omega \subseteq \mathbb R$$, we can define the **distribution function** of the probability measure $$\mathbb P$$ as $$F : \mathbb R \to [0,1]， x \mapsto \mathbb P((-\infty,x])$$.
+That is, the cdf of $$X$$ gives us the probability measure of the event $$(-\infty,x]$$, where we push the probability measure from the sample space over to the state space! Similarly, if we have a probability space $$(\Omega,\mathcal F,\mathbb P)$$ with sample space $$\Omega \subseteq \mathbb R$$, we can define the **distribution function** of the probability measure $$\mathbb P$$ as $$F : \mathbb R \to [0,1]， x \mapsto \mathbb P((-\infty,x])$$.
 
 As a quick note, the cdf of a random variable $$X$$ fully determines its properties, as we may recover the event $$X^{-1}(A) = \{X \in A\}$$ (thus $$\mathbb P(X \in A)$$) for any Borel set $$A$$ from countable unions/intersections/complements of events $$X^{-1}((-\infty,x]) = \{X \leq x\}$$ with $$x \in \mathbb R$$.
 
@@ -131,7 +131,7 @@ This change of perspective is useful, as it allows us to define when two random 
 
 $$\mathbb P_X((-\infty,x]) = \mathbb P_Y((-\infty,x]),$$
 
-which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ (the *pushforward measures*) as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if and only if they induce identical probability spaces on the event space (via the pushforward measure), even if they are defined on totally different sample spaces.
+which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ (the *pushforward measures*) as probability measures on the state space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if and only if they induce identical probability spaces on the event space (via the pushforward measure), even if they are defined on totally different sample spaces.
 
 ### Examples of distributions
 
@@ -154,5 +154,11 @@ $$F_X(x) = \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \e
 **Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of their common induced probability space on $$\mathbb R$$!) If you need a reminder of how $$(\Omega_2,\mathcal F_2,\mathbb P_2)$$ works, the example is Example 9 in [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/).
 
 At this point, we are finally ready to *define* discrete and continuous random variables, or more fundamentally, probability distributions.
+
+**Definition 16.**
+
+1. A **continuous random variable** $$X : \Omega \to \mathbb R$$ is such that $$\mathbb P(X = x) = \mathbb P_X(\{x\}) = 0$$ for all $$x \in \mathbb R$$.
+2. An **absolutely continuous random variable** $$X : \Omega \to \mathbb R$$ is such that there exists a function $$f : \mathbb R \to [0,\infty]$$ such that $$\mathbb P(X \in A) = \int_A f(x)\,dx$$ for *any* Borel set $$A \subseteq \mathbb R$$. This function $$f$$ is the **probability density function (pdf)** of $$X$$. (Absolutely continuous random variables are continuous.)
+3. A **discrete random variable** $$X : \Omega \to \mathbb R$$
 
 Next up, to tackle the problem of densities, such as the normal pdf given at the start of part 1, we must consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
