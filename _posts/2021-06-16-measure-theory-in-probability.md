@@ -147,8 +147,9 @@ As another example, we compute $$\mathbb P(\mathbb A \cap \Omega)$$, where $$\ma
 
 **Challenge question 4 (related to example 9).**
 
-1. Show, using only the properties of a probability measure, that for any $$x \in [0,1]$$, $$\mathbb P(\{x\}) = 0$$. Thus show that $$\mathbb P([a,b]) = b - a$$ for *closed intervals* $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too).
-2. It is known that $$B = \sin^2(\mathbb N) = \{\sin^2(n) : n \in \mathbb N\}$$ (where $$0 \in \mathbb N$$) is dense in $$[0,1]$$ (meaning that you can find points in $$B$$ within *any* (possibly arbitrary small) open subinterval of $$[0,1]$$); find the probability that you do *not* randomly choose a number in $$B$$, i.e. $$\mathbb P(\Omega \setminus B)$$.
+1. Show, using only the properties of a probability measure, that for any $$x \in [0,1]$$, $$\mathbb P(\{x\}) = 0$$.
+2. Thus show that $$\mathbb P([a,b]) = b - a$$ for *closed intervals* $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too).
+3. It is known that $$B = \sin^2(\mathbb N) = \{\sin^2(n) : n \in \mathbb N\}$$ (where $$0 \in \mathbb N$$) is dense in $$[0,1]$$ (meaning that you can find points in $$B$$ within *any* (possibly arbitrary small) open subinterval of $$[0,1]$$); find the probability that you do *not* randomly choose a number in $$B$$, i.e. $$\mathbb P(\Omega \setminus B)$$.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
