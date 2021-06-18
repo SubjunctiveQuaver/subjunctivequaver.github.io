@@ -95,9 +95,9 @@ Now, recall that the composition of measurable functions is measurable, so if $$
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
-### Probability distributions
+### Probability distributions and pushforwards
 
-A subtle but important change of perspective is to notice that for a probability measure $$\mathbb P$$ on the sample space, and a random variable $$X : \Omega \to E$$, we can actually define a *new* probability measure on the event space $$E$$, that arises naturally from $$X$$! This is the *pushforward measure* $$\mathbb P_X = \mathbb P \circ X^{-1} : \mathcal E \to [0,1]$$, defined by
+A subtle but important change of perspective is to notice that for a probability measure $$\mathbb P$$ on the sample space, and a random variable $$X : \Omega \to E$$, we can actually define a *new* probability measure on the event space $$E$$, that arises naturally from $$X$$! This is the *pushforward measure* $$\mathbb P_X = X_*\mathbb P = \mathbb P \circ X^{-1} : \mathcal E \to [0,1]$$, defined by
 
 $$\mathbb P_X(A) := \mathbb P(X^{-1}(A)) = \mathbb P(X \in A).$$
 
