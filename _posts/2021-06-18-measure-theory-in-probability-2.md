@@ -6,7 +6,7 @@ tags: [probability, measure-theory, statistics, topology, uni-maths]     # TAG n
 math: true
 ---
 
-If you haven't already read part 1, make sure you read it [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/)!
+If you haven't already read part 1, make sure you read it [here](https://subjunctivequaver.github.io/posts/measure-theory-in-probability/) first! Or else, much of the below will 
 
 ## Random variables: neither random, nor a variable
 
@@ -103,9 +103,9 @@ $$\mathbb P_X(A) := \mathbb P(X^{-1}(A)) = \mathbb P(X \in A).$$
 
 Here, $$A \in \mathcal E$$ is a (Borel) measurable set. Then the triple $$(E,\mathcal E,\mathbb P_X)$$ is a *probability space*, induced by the random variable $$X$$, so we can directly talk about probabilities using only the event space! And this is crucial in defining *probability distributions*, as we can then largely ignore the sample space!
 
-This is something that we like to do a lot in maths: which is to start off with a structure on a set, and use a mapping to *transfer* that structure over to a different set. This is one such example; other examples of similar structure-preserving maps are continuous maps (preserving open sets), homeomorphisms (preserving topologies), isometries (preserving distances), linear transformations (preserving vector space structure), and homomorphisms/isomorphisms (preserving algebraic structure).
+This is something that we like to do a lot in maths: which is to start off with a structure on a set, and use a mapping to *transfer* that structure over to a different set. This is one such example; other examples of similar structure-preserving maps are continuous maps (preserving open sets), homeomorphisms (preserving topologies), isometries (preserving distances), linear transformations (preserving vector space structure), homomorphisms/isomorphisms (preserving algebraic structure), and pullbacks of bilinear forms under a linear map.
 
-Now, let's consider $$(-\infty,x]$$ which is clearly a Borel set. We define
+Now, let's consider $$(-\infty,x]$$ which is clearly a Borel set. We define the cumulative distribution function using the probability that $$X$$ takes on a value in this set:
 
 **Definition 14.** For a random variable $$X : \Omega \to \mathbb R$$, its **cumulative distribution function (cdf)** is the measurable function $$F_X : \mathbb R \to [0,1]$$, defined by
 
