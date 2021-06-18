@@ -50,7 +50,9 @@ since $$\operatorname{sgn}$$ only takes on values in $$\{0,\pm 1\}$$. Therefore,
 
 **Challenge question 5.** Complete the above proof that the signum function is measurable by identifying the remaining 7 cases, and checking that $$\operatorname{sgn}^{-1}(A)$$ is a Borel set in each case.
 
-Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now follows that the inclusion map $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$, is a *random variable*, since it is continuous (thus measurable). This is how we typically think of a random variable with a uniform distribution! Let's now look at random variables in a bit more depth.
+Going back to our example 9 with the uniform distribution on $$[0,1]$$, it now follows that the inclusion map $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$, is a *random variable*, since it is continuous (thus measurable). This is how we typically think of a random variable with a uniform distribution!
+
+Briefly, let's consider random variables from finite probability spaces. Since the natural sigma algebra is the power set, it follows that *every* function is measurable. So *any* function $$X : \Omega \to E$$ is a valid random variable. Let's now look at random variables in a bit more depth.
 
 ### Fun with random variables
 
@@ -62,7 +64,7 @@ $$\mathbb P(X^{-1}(A)) = \mathbb P(\{\omega \in \Omega : X(\omega) \in A\}) = \m
 
 Of these, the last is probably the most familiar. But they all mean the same thing! In fact, what we *mean* when we write $$X \in A$$, is precisely the event $$X^{-1}(A)$$!
 
-**Example 8 (continued).** Recall this example, in which we had an infinite sequence of coin tosses and a sample space $$\Omega = \{0,1\}^\infty$$. For $$n \geq 1$$, consider the following random variable $$X_n : \Omega \to \mathbb R,$$
+**Example 8 (continued from part 1).** Recall this example, in which we had an infinite sequence of coin tosses and a sample space $$\Omega = \{0,1\}^\infty$$. For $$n \geq 1$$, consider the following random variable $$X_n : \Omega \to \mathbb R,$$
 
 $$\omega = (\omega_1,\omega_2,...) \mapsto \omega_n,$$
 
@@ -80,7 +82,7 @@ $$X_n^{-1}(0) \cap X_n^{-1}(1) = X_n^{-1}(\{0\} \cap \{1\}) = X_n^{-1}(\varnothi
 
 i.e. the two events $$\{X_n = 0\}$$ and $$\{X_n = 1\}$$ are disjoint (as expected), and their union is the sample space (this is called a **partition**), so the sum of the above two probabilities should be 1. (Note that here we use general properties of preimages of functions ($$f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B)$$, $$f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B)$$, and $$f^{-1}(A \setminus B) = f^{-1}(A) \setminus f^{-1}(B)$$), and when taking the preimage of a point, we often drop the curly brackets. It does *not* mean the inverse function; $$X_n$$ is certainly not invertible!)
 
-**Example 9 (continued).** Let's again consider the uniform distribution on $$[0,1]$$, and the random variable $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$ defined above. Then, for example, for $$(a,b) \subseteq (0,1)$$,
+**Example 9 (continued from part 1).** Let's again consider the uniform distribution on $$[0,1]$$, and the random variable $$X : \Omega \hookrightarrow \mathbb R, x \mapsto x$$ defined above. Then, for example, for $$(a,b) \subseteq (0,1)$$,
 
 $$\mathbb P(a < X < b) = \mathbb P(X^{-1}((a,b))) = \mathbb P((a,b)) = b - a.$$
 
@@ -94,6 +96,8 @@ Now, recall that the composition of measurable functions is measurable, so if $$
 4. Can you find a function $$g : (0,1) \to \mathbb R$$ such that $$\mathbb P(a < X^2 < b) = \int_a^b g(x)\,dx$$? (*Hint:* consider the function $$G : (0,1) \to [0,1]$$, and apply the *fundamental theorem of calculus*, which implies $$\int_a^b G'(x)\,dx = G(b) - G(a)$$.) This is (almost) the *probability density function* (or *pdf*) of $$X^2$$.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+
+## Distributions: a change in perspective
 
 ### Probability distributions and pushforwards
 
@@ -119,7 +123,29 @@ $$\mathbb P_X((-\infty,x]) = \mathbb P_Y((-\infty,x]),$$
 
 which turns out to imply that $$\mathbb P_X = \mathbb P_Y$$ (the *pushforward measures*) as probability measures on the event space $$(\mathbb R,\mathcal B)$$ (again via the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). And hopefully this explains why the pushforward measure is so important: $$X$$ and $$Y$$ have the same probability distribution if and only if they induce identical probability spaces on the event space (via the pushforward measure), even if they are defined on totally different sample spaces.
 
-Lets see an example of this, coming from our previous examples.
+**Example 15.** Lets see an example of this, coming from our previous examples. Consider the first probability space to be the example with rolling two fair dice (independently) with $$\Omega_1 = \{1,...,6\} \times \{1,...,6\}$$, and the second probability space be the uniform distribution on $$\Omega_2 = [0,1]$$. Clearly these random variables are vastly different. Define the random variable $$X : \Omega_1 \to \mathbb R$$ as giving $$1$$ if the first die resulted in an equal or higher roll than the second, or $$0$$ otherwise:
+
+$$X(\omega) = X((\omega_1,\omega_2)) = \begin{cases} 1, & \omega_1 \geq \omega_2 \\ 0, & \omega_1 < \omega_2 \end{cases}$$
+
+Let $$Y : \Omega_2 \to \mathbb R$$ be given by the following transformation:
+
+$$Y(\omega) = \begin{cases} 1, & \omega \leq 21/36 \\ 0, & \omega > 21/36 \end{cases}$$
+
+Let's compute the cdfs of $$X$$ and $$Y$$. For $$X$$, for any $$x \in (-\infty,0)$$, we have $$X^{-1}((-\infty,x]) = \varnothing$$, so $$F_X(x) = \mathbb P_X((-\infty,x]) = \mathbb P_1(\varnothing) = 0$$. For $$x \in [0,1)$$, $$X^{-1}((-\infty,x]) = X^{-1}(0) = \{(\omega_1,\omega_2) \in \Omega_1 : \omega_1 \geq \omega_2\}$$, so
+
+$$F_X(x) = \mathbb P_X((-\infty,x]) = \mathbb P_1(\{(\omega_1,\omega_2) \in \Omega_1 : \omega_1 \geq \omega_2\}) = \frac{21}{36}$$
+
+by a simple combinatorial argument, and the fact that the 21 outcomes in that event are equiprobable. Now for $$x \in [1,\infty)$$, $$X^{-1}((-\infty,x]) = X^{-1}(\{0,1\}) = \Omega_1$$, so $$F_X(x) = \mathbb P_X((-\infty,x]) = \mathbb P_1(\Omega_1) = 1$$. In summary:
+
+$$F_X(x) \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \end{cases}$$
+
+**Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of this common distribution!)
+
+### Mass and density functions
+
+To be continued...
+
+## Lebesgue integration: a superior integral?
 
 ### Expected value: a Lebesgue integral?
 
