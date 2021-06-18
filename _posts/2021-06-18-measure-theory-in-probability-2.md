@@ -171,6 +171,6 @@ for *any* Borel set $$A \subseteq \mathbb R$$, which may feel backwards. Don't w
 
 $$f_\theta : \mathbb{R} \to \mathbb{R}, \quad x \mapsto \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
 
-at the start of part 1, we can either think of a probability space and a random variable which happens to have this as a density, or we can think of this density as characterising the pushforward measure of *some* random variable whose sample space is unimportant. And it is this second perspective that we tend to prefer, as the analysis then directly applies to *any* scenario in which the pushforward measure has the same density, even if the underlying experiment is different (as we saw in Example 15).
+at the start of part 1, we can either think of a probability space and a random variable which happens to have this as a density, or we can think of this density as characterising the pushforward measure of *some* random variable whose sample space is unimportant. And it is this second perspective that we tend to prefer, as the analysis (probability calculations, expectation/moments, statistics, etc.) then directly applies to *any* scenario in which the pushforward measure has the same density, even if the underlying experiment is different (as we saw in Example 15).
 
 Next up, to tackle the problem of unifying the concepts of densities and expectations of different types of distributions, we will consider a new form of integral: the Lebesgue integral. We leave this to the next part of this series!
