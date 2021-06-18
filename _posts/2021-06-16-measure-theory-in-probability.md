@@ -145,7 +145,12 @@ meaning that $$\mathbb P(A) = 0$$. Again, this is an event that is possible (we 
 
 As another example, we compute $$\mathbb P(\mathbb A \cap \Omega)$$, where $$\mathbb A \subseteq \mathbb C$$ is the set of algebraic numbers, i.e. roots of polynomials with *integer* coefficients. By the fundamental theorem of algebra, a degree $$n$$ polynomial has at most $$n$$ roots. By identifying the degree-$$n$$ polynomial $$p(x) = a_0 + a_1x + \dotsb + a_nx^n \in \mathbb Z[x]$$ with the sequence $$(a_0,a_1,...,a_n) \in \mathbb Z^n$$ and taking a union over all $$n \in \mathbb N$$, it is possible to see that the set of polynomials $$\mathbb Z[x]$$ with integral coefficients is [countable](https://math.stackexchange.com/questions/341349/prove-that-the-set-of-integer-coefficients-polynomials-is-countable). Thus there are at most a countable number of algebraic numbers (by counting the roots as you count these polynomials). As shown in the following challenge question, $$\mathbb P(\{x\}) = 0$$ for any $$x \in [0,1]$$. Since $$\mathbb A \cap \Omega$$ is a countable union of such singleton sets, it follows by countable additivity that $$\mathbb P(\mathbb A \cap \Omega) = 0$$.
 
-**Challenge question 4 (related to example 9).** Show, using only the properties of a probability measure, that for any $$x \in [0,1]$$, $$\mathbb P(\{x\}) = 0$$. Thus show that $$\mathbb P([a,b]) = b - a$$ for *closed intervals* $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too). What is the probability that a randomly chosen number is irrational, i.e. $$\mathbb P(\Omega \setminus \mathbb Q)$$?
+**Challenge question 4 (related to example 9).**
+
+1. Show, using only the properties of a probability measure, that for any $$x \in [0,1]$$, $$\mathbb P(\{x\}) = 0$$. Thus show that $$\mathbb P([a,b]) = b - a$$ for *closed intervals* $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too).
+2. It is known that $$B = \sin^2(\mathbb N) = \{\sin^2(n) : n \in \mathbb N\}$$ (where $$0 \in \mathbb N$$) is dense in $$[0,1]$$ (meaning that you can find points in $$B$$ within *any* (possibly arbitrary small) open subinterval of $$[0,1]$$); find the probability that you do *not* randomly choose a number in $$B$$, i.e. $$\mathbb P(\Omega \setminus B)$$.
+
+Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 We've now had quite a bit of experience with probability spaces, and maybe you can start to appreciate the role of measure theory in probability! Now we are finally ready, and will attempt to answer the age-old question: what is a random variable?
 
