@@ -137,7 +137,7 @@ $$F_X(x) = \mathbb P_X((-\infty,x]) = \mathbb P_1(\{(\omega_1,\omega_2) \in \Ome
 
 by a simple combinatorial argument, and the fact that the 21 outcomes in that event are equiprobable. Now for $$x \in [1,\infty)$$, $$X^{-1}((-\infty,x]) = X^{-1}(\{0,1\}) = \Omega_1$$, so $$F_X(x) = \mathbb P_X((-\infty,x]) = \mathbb P_1(\Omega_1) = 1$$. In summary:
 
-$$F_X(x) \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \end{cases}$$
+$$F_X(x) = \begin{cases} 0, & x < 0 \\ 21/36, & 0 \leq x < 1 \\ 1, & x \geq 1 \end{cases}$$
 
 **Challenge question 6 (related to example 15).** Compute the cdf of $$Y$$, and show that $$X$$ and $$Y$$ are equal in distribution. (This then implies $$\mathbb P_X = \mathbb P_Y$$ and $$\mathbb P_1(X \in A) = \mathbb P_2(Y \in A)$$ for any Borel set $$A$$, and we may as well forget about the original sample spaces and consider the abstract properties of this common distribution!)
 
