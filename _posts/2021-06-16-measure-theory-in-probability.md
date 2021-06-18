@@ -112,9 +112,9 @@ so $$\mathbb P(A^c) = 1 - \mathbb P(A)$$, as claimed. $$\square$$
 1. Consider the collection of sets $$\mathcal F_E := \{E \cap A : A \in \mathcal F\}$$. Show that $$\mathcal F_E$$ is a sigma algebra on $$E$$.
 2. Define a function $$\mathbb P_E : \mathcal F_E \to [0,1]$$ by
    $$\mathbb P_E(B) = \frac{\mathbb P(B)}{\mathbb P(E)}.$$
-   Show that this is a probability measure on $$\mathcal F_E$$, i.e. $$(E,\mathcal F_E,\mathbb P_E)$$ is a probability space.
+   Show that this is a probability measure on $$(E,\mathcal F_E)$$, i.e. $$(E,\mathcal F_E,\mathbb P_E)$$ is a probability space.
 
-Note that $$B \in \mathcal F_E$$ means that $$B = E \cap A$$ for some $$A \in \mathcal F$$, so $$\mathbb P_E(B) = \frac{\mathbb P(E \cap A)}{\mathbb P(E)}$$; we often use the notation $$\mathbb P(A \mid E) = \mathbb P_E(E \cap A)$$. This is called **conditional probability**: essentially, we restrict our event space to events that intersect the conditioning event $$E$$, and reweight all probabilities so that we still have a valid probability measure (with $$\mathbb P_E(E) = 1$$).
+Note that $$B \in \mathcal F_E$$ means that $$B = A \cap E$$ for some $$A \in \mathcal F$$, so $$\mathbb P_E(B) = \frac{\mathbb P(A \cap E)}{\mathbb P(E)}$$; we often use the notation $$\mathbb P(A \mid E) = \mathbb P_E(A \cap E)$$. This is called **conditional probability**: essentially, we restrict our event space to events that intersect the conditioning event $$E$$, and reweight all probabilities so that we still have a valid probability measure (with $$\mathbb P_E(E) = 1$$).
 
 ### Examples of probability spaces
 
