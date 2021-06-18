@@ -161,6 +161,24 @@ Let $$(\Omega,\mathcal F,\mathbb P)$$ be a probability space.
 
 **Definition 10.** A **random variable** is a *measurable* function $$X : \Omega \to E$$, where $$(E,\mathcal E)$$ is the **state space**. We usually take $$E$$ to be a topological space $$(E,\tau)$$ (e.g. $$\mathbb R,\mathbb R^n,\mathbb C$$ with the usual topologies), so that $$(E,\mathcal B)$$ is endowed with the *Borel sigma algebra*.
 
+Clearly we must define measurable functions.
+
+**Definition 11.** A function $$f : (\Omega,\mathcal F) \to (E,\mathcal E)$$ between measurable spaces is **measurable** if, for any measurable subset $$A \in \mathcal E$$ of $$E$$, its *preimage*
+
+$$f^{-1}(A) := \{x \in \Omega : f(x) \in A\}$$
+
+is measurable in $$\Omega$$, i.e. $$f^{-1}(A) \in \mathcal F$$.
+
+For now, we will take $$\Omega = E = \mathbb R$$, and the Borel sigma algebra on $$\mathbb R$$. What are some examples of measurable functions? Well, it turns out that every function you can think of (well, with probability 1) will be measurable! One particularly nice class of measurable functions in this case are the *continuous functions*:
+
+**Definition 12.** A function $$f : (\Omega,\tau) \to (E,\mathcal T)$$ between *topological spaces* is **measurable** if, for any open subset $$A \in \mathcal T$$ of $$E$$, its *preimage* $$f^{-1}(A)$$ is open in $$\Omega$$, i.e. $$f^{-1}(A) \in \tau$$.
+
+Hopefully you can see the similarity: just replace "measurable" with "open"! Again, this may be different to the usual notion of continuity that you know (nearby inputs map to nearby outputs), but they turn out to be [equivalent](https://math.stackexchange.com/questions/2762135/equivalence-of-continuity-between-metric-and-topological-spaces). Here is a quick proof of the above claim:
+
+**Proposition 13.** Suppose $$f : (\Omega,\tau) \to (E,\mathcal T)$$ is a *continuous* function. Then for a sigma algebra $$\mathcal F$$ on $$\Omega$$ that *contains* the Borel sigma algebra $$\mathcal B(\tau)$$, the function $$f : (\Omega,\mathcal F) \to (E,\mathcal B(\mathcal T))$$ is *measurable*.
+
+*Proof.* Let $$A \in \mathcal B(\mathcal T)$$ be measurable
+
 To be continued...
 
 ### Expected value: a Lebesgue integral?
