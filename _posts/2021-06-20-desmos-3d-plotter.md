@@ -6,6 +6,8 @@ tags: [differential-geometry, linear-algebra, uni-maths] # TAG names should alwa
 math: true
 ---
 
+Note: this article is currently a WIP.
+
 ## Some examples of surface visualisations
 
 Here are a couple of versions of the Desmos save file with different cool pre-loaded plots:
