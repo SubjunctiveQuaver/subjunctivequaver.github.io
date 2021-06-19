@@ -89,11 +89,19 @@ $$\pi_{e,e'} = T_{b,e'} \pi'_{b',b} M_{e \to b'} =
 
 Now, recall that there is a pair $$(\theta,\phi)$$ corresponding to $$N = \tau(\theta,\phi)$$. For simplicity, we will assume that $$\theta \in (-\pi/2,\pi/2)$$, so that a suitable restriction of $$\tau$$ forms a regular chart for $$S^2$$. We aim to find an orthonormal basis for $$\Pi$$ by finding an orthonormal basis for $$T_NS^2$$. Note that $$\{\tau_u,\tau_v\}$$ forms a basis for $$T_NS^2$$, where
 
-$$\tau_u(\theta,\phi) = (-\sin\theta\cos\phi,-\sin\theta\sin\phi,\cos\theta) \quad \text{and} \quad \tau_v(\theta,\phi) = (-\cos\theta\sin\phi,\cos\theta\cos\phi,0).$$
+$$\tau_u(\theta,\phi) = (-\sin\theta\cos\phi,-\sin\theta\sin\phi,\cos\theta)$$
+
+and
+
+$$\tau_v(\theta,\phi) = (-\cos\theta\sin\phi,\cos\theta\cos\phi,0).$$
 
 It is easy to check that these are orthogonal, so an orthonormal basis $$\{b_1,b_2\}$$ for $$\Pi$$ is found by normalising these vectors, yielding
 
-$$b_2 = (-\sin\theta\cos\phi,-\sin\theta\sin\phi,\cos\theta) \quad \text{and} \quad b_1 = (-\sin\phi,\cos\phi,0).$$
+$$b_2 = (-\sin\theta\cos\phi,-\sin\theta\sin\phi,\cos\theta)$$
+
+and
+
+$$b_1 = (-\sin\phi,\cos\phi,0).$$
 
 (It turns out that this also works when $$\theta \in \{\pm\pi/2\}$$; these span the tangent planes $$T_{(0,0,\pm 1)}S^2 = \mathbb R^2 \times \{0\}$$!) Note that we needed to take $$b_1 = \tau_v/\lVert \tau_v\rVert$$ and $$b_2 = \tau_u/\lVert \tau_u\rVert$$, so that indeed $$b_1 \times b_2 = N = \tau(\theta,\phi)$$.
 
