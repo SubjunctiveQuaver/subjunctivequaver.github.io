@@ -28,7 +28,11 @@ Here is an [interactive visualisation of surfaces](https://www.desmos.com/calcul
 
 ### Projecting down to a plane
 
-There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a way to choose a sensible, well-behaved projection is to choose a plane $$\Pi$$ through the origin (a linear subspace of $$\mathbb R^3$$), and perform an orthogonal projection $$\pi'$$. Such a plane can be uniquely determined by using *spherical coordinates*. Consider an "observer" at $$N \in S^2$$, the unit sphere, and a standard map $$\tau : \mathbb R^2 \to S^2$$ given by $$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u)$$; here, $$(u,v)$$ respectively measure latitude and longitude. The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
+There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a way to choose a sensible, well-behaved projection is to choose a plane $$\Pi$$ through the origin (a linear subspace of $$\mathbb R^3$$), and perform an orthogonal projection $$\pi'$$. Such a plane can be uniquely determined by using *spherical coordinates*. Consider an "observer" at $$N \in S^2$$, the unit sphere, and a standard map $$\tau : \mathbb R^2 \to S^2$$ given by
+
+$$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u);$$
+
+here, $$(u,v)$$ respectively measure latitude and longitude. The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
 
 [^2]: See Example 2.17 from MTH3110 chapter 5 notes.
 
