@@ -12,7 +12,7 @@ Note: this article is currently a WIP.
 
 Here are a couple of versions of the Desmos save file with different cool pre-loaded plots:
 
-- The default: [a hemisphere (select the second plot for a full sphere)](https://www.desmos.com/calculator/gmqk43pxkp)
+- The default: [a hemisphere (select the second plot for a full sphere)](https://www.desmos.com/calculator/u5ma8mrq4e)
 - [A mobius band](https://www.desmos.com/calculator/dqsysshxwj)
 - [An immersed Klein bottle in $$\mathbb R^3$$](https://www.desmos.com/calculator/bdrerelimf) (thanks to cFOURbon for entering the formula)
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
@@ -22,7 +22,7 @@ Here are a couple of versions of the Desmos save file with different cool pre-lo
 
 ## The explanation and geometry of the Desmos visualisation
 
-Here is an [interactive visualisation of surfaces](https://www.desmos.com/calculator/gmqk43pxkp) on Desmos (a graphing website), made by me. It takes a (continuous) function $$f : U \to \mathbb R$$, for some $$U \subseteq \mathbb R^2$$, and plots a projection of the graph of $$f$$ onto $$\mathbb R^2$$ as a "wire-frame"; it can also take a parametrisation $$\sigma : U \to \mathbb R^3$$ and plot a projection of its image in the plane.[^1] We discuss the algebra and geometry used in its construction, and some geometric properties of the projection map. Henceforth, let us assume that $$U$$ is open, $$f$$ is a smooth function, and that $$\sigma$$ is a regular surface patch.
+Here is an [interactive visualisation of surfaces](https://www.desmos.com/calculator/u5ma8mrq4e) on Desmos (a graphing website), made by me. It takes a (continuous) function $$f : U \to \mathbb R$$, for some $$U \subseteq \mathbb R^2$$, and plots a projection of the graph of $$f$$ onto $$\mathbb R^2$$ as a "wire-frame"; it can also take a parametrisation $$\sigma : U \to \mathbb R^3$$ and plot a projection of its image in the plane.[^1] We discuss the algebra and geometry used in its construction, and some geometric properties of the projection map. Henceforth, let us assume that $$U$$ is open, $$f$$ is a smooth function, and that $$\sigma$$ is a regular surface patch.
 
 [^1]: To switch modes, click on the "plot" folder to hide it, and click on the "parametric plot" folder to show that.
 
@@ -32,7 +32,7 @@ There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a
 
 $$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u);$$
 
-here, $$(u,v)$$ respectively measure latitude and longitude. The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
+here, $$(u,v)$$ respectively measure latitude and longitude.[^2] The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
 
 [^2]: See Example 2.17 from MTH3110 chapter 5 notes.
 
@@ -234,4 +234,4 @@ This concludes our analysis of the 2-dimensional visualisation of surfaces in $$
 
 ### Acknowledgements
 
-I would like to acknowledge Dan Mathews for giving useful feedback (especially with respect to interpreting the effect on changing perspective on the position of points) and verifying the procedure used to derive the projection matrix. Errors in my initial formula for the projection were also corrected through discussion and testing with various members of the Maths @ Monash Discord server.
+I would like to acknowledge Dan Mathews for giving useful feedback (especially with respect to interpreting the effect on changing perspective on the position of points) and verifying the procedure used to derive the projection matrix. Errors in my initial formula for the projection were also corrected through discussion and testing with various members of the [Maths @ Monash Discord server](http://discord.gg/invite/hx63ZwSXBg).
