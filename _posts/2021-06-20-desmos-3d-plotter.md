@@ -18,7 +18,7 @@ Here are a couple of versions of the Desmos save file with different cool pre-lo
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
 - [A shell](https://www.desmos.com/calculator/8fth0oldky) (thanks to Kevin D. for the help and idea)
 
-*Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it!*
+*Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces.*
 
 ## The explanation and geometry of the Desmos visualisation
 
@@ -46,7 +46,7 @@ $$\pi'_{b',b} =
     0 & 1 & 0
 \end{pmatrix}.$$
 
-The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are *not foreshortened*, that is, no length distortion due to perspective (see Figure~\mathbb Ref{fig:cylinder_perspective}).\footnote{See explanation of perspective and foreshortening in art: \url{https://drawpaintacademy.com/foreshortening/}.} Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
+The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are *not foreshortened*, that is, no length distortion due to perspective (see Figure~\mathbb Ref{fig:cylinder_perspective}).\footnote{See explanation of perspective and [foreshortening in art](https://drawpaintacademy.com/foreshortening/).} Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
 
 \begin{figure}[p!]
     \centering
