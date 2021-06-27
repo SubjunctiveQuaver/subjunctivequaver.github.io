@@ -18,7 +18,7 @@ Here are a couple of versions of the Desmos save file with different cool pre-lo
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
 - [A shell](https://www.desmos.com/calculator/8fth0oldky) (thanks to Kevin D. for the help and idea)
 
-*Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces.*
+_Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces._
 
 ## The explanation and geometry of the Desmos visualisation
 
@@ -28,7 +28,7 @@ Here is an [interactive visualisation of surfaces](https://www.desmos.com/calcul
 
 ### Projecting down to a plane
 
-There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a way to choose a sensible, well-behaved projection is to choose a plane $$\Pi$$ through the origin (a linear subspace of $$\mathbb R^3$$), and perform an orthogonal projection $$\pi'$$. Such a plane can be uniquely determined by using *spherical coordinates*. Consider an "observer" at $$N \in S^2$$, the unit sphere, and a standard map $$\tau : \mathbb R^2 \to S^2$$ given by
+There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a way to choose a sensible, well-behaved projection is to choose a plane $$\Pi$$ through the origin (a linear subspace of $$\mathbb R^3$$), and perform an orthogonal projection $$\pi'$$. Such a plane can be uniquely determined by using _spherical coordinates_. Consider an "observer" at $$N \in S^2$$, the unit sphere, and a standard map $$\tau : \mathbb R^2 \to S^2$$ given by
 
 $$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u);$$
 
@@ -40,35 +40,40 @@ A fact from differential geometry is that $$T_N S^2 = \{v \in \mathbb R^3 : N \c
 
 Next, we consider the problem of projecting from $$\mathbb R^3$$ into $$\Pi$$ (and then into $$\mathbb R^2$$). Given an orthonormal basis $$b = \{b_1,b_2\}$$ for $$\Pi$$ that extends to a right-handed orthonormal basis $$b' = \{b_1,b_2,N\}$$ of $$\mathbb R^3$$, where $$N = b_1 \times b_2$$, consider the orthogonal projection $$\pi' : \mathbb R^3 \to \Pi$$. Since $$\ker\pi' = \Pi^\perp$$ and $$\pi\vert_\Pi$$ is the identity, it follows that $$\pi'(b_1) = b_1$$, $$\pi'(b_2) = b_2$$, and $$\pi'(N) = 0$$. The map $$\pi'$$ is linear, so its matrix with respect to the bases $$b',b$$ is
 
-$$\pi'_{b',b} =
+$$
+\pi'_{b',b} =
 \begin{pmatrix}
     1 & 0 & 0 \\
     0 & 1 & 0
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
-The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are *not foreshortened*, that is, no length distortion due to perspective (see Figure~\mathbb Ref{fig:cylinder_perspective}).\footnote{See explanation of perspective and [foreshortening in art](https://drawpaintacademy.com/foreshortening/).} Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
+The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are _not foreshortened_, that is, no length distortion due to perspective (see Figure~\mathbb Ref{fig:cylinder_perspective}).\footnote{See explanation of perspective and [foreshortening in art](https://drawpaintacademy.com/foreshortening/).} Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
 
 \begin{figure}[p!]
-    \centering
-    \includegraphics[width=0.75\textwidth]{cylinder_perspective.png}
-    \caption{Plot of cylinder $$\sigma : (0,2\pi) \times (-4,4) \to S$$, $$\sigma(u,v) = (v,\cos u,\sin v)$$ with perspective $$(\theta,\phi) = (0.1,-0.1)$$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. *foreshortening*) in the negative $$x$$-direction.}
-    \label{fig:cylinder_perspective}
+\centering
+\includegraphics[width=0.75\textwidth]{cylinder_perspective.png}
+\caption{Plot of cylinder $$\sigma : (0,2\pi) \times (-4,4) \to S$$, $$\sigma(u,v) = (v,\cos u,\sin v)$$ with perspective $$(\theta,\phi) = (0.1,-0.1)$$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. _foreshortening_) in the negative $$x$$-direction.}
+\label{fig:cylinder_perspective}
 \end{figure}
 
 Next, we consider the map that transforms points on $$\Pi$$ into points in $$\mathbb R^2$$. Given our basis $$b$$ for $$\Pi$$, there is a natural sense in which $$b_1$$ can be thought of as pointing "right", and $$b_2$$ as pointing "up". This is described by $$T : \Pi \to \mathbb R^2$$, the linear isometry such that $$T(b_1) = e_1$$ and $$T(b_2) = e_2$$. Letting $$e' = \{e_1,e_2\} \subseteq \mathbb R^2$$, $$T$$ is simply the identity in coordinates $$b,e'$$: $$T_{b,e'} = I_2$$, the $$2 \times 2$$ identity matrix.
 
-Thus, our overall projection $$\pi : \mathbb R^3 \to \mathbb R^2$$ in the direction of $$\Pi$$ would be given by $$\pi = T \circ \pi'$$, with matrix $$T_{b,e'} \pi'_{b',b}$$. However, we wish to express the matrix for $$\pi$$ with respect to the standard basis $$e = \{e_1,e_2,e_3\}$$ for $$\mathbb R^3$$. For this, we recall that the *change-of-basis matrix* from $$b'$$ to $$e$$ is given by
+Thus, our overall projection $$\pi : \mathbb R^3 \to \mathbb R^2$$ in the direction of $$\Pi$$ would be given by $$\pi = T \circ \pi'$$, with matrix $$T_{b,e'} \pi'_{b',b}$$. However, we wish to express the matrix for $$\pi$$ with respect to the standard basis $$e = \{e_1,e_2,e_3\}$$ for $$\mathbb R^3$$. For this, we recall that the _change-of-basis matrix_ from $$b'$$ to $$e$$ is given by
 
-$$M_{b' \to e} =
+$$
+M_{b' \to e} =
 \begin{pmatrix}
     \vert & \vert & \vert \\
     b_1 & b_2 & N \\
     \vert & \vert & \vert
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 Since $$b'$$ is an orthonormal set, it follows that $$M_{b' \to e} \in O(3)$$, so $$M_{e \to b'} = (M_{b' \to e})^{-1} = (M_{b' \to e})^\top$$. It follows that the matrix for $$\pi$$ w.r.t. the bases $$e,e'$$ of $$\mathbb R^3,\mathbb R^2$$ respectively is
 
-$$\pi_{e,e'} = T_{b,e'} \pi'_{b',b} M_{e \to b'} =
+$$
+\pi_{e,e'} = T_{b,e'} \pi'_{b',b} M_{e \to b'} =
 \begin{pmatrix}
     1 & 0 \\
     0 & 1
@@ -85,7 +90,8 @@ $$\pi_{e,e'} = T_{b,e'} \pi'_{b',b} M_{e \to b'} =
 \begin{pmatrix}
     \text{---} & b_1 & \text{---} \\
     \text{---} & b_2 & \text{---}
-\end{pmatrix} =: M.$$
+\end{pmatrix} =: M.
+$$
 
 Now, recall that there is a pair $$(\theta,\phi)$$ corresponding to $$N = \tau(\theta,\phi)$$. For simplicity, we will assume that $$\theta \in (-\pi/2,\pi/2)$$, so that a suitable restriction of $$\tau$$ forms a regular chart for $$S^2$$. We aim to find an orthonormal basis for $$\Pi$$ by finding an orthonormal basis for $$T_NS^2$$. Note that $$\{\tau_u,\tau_v\}$$ forms a basis for $$T_NS^2$$, where
 
@@ -107,7 +113,8 @@ $$b_1 = (-\sin\phi,\cos\phi,0).$$
 
 In summary, for our perspective given by spherical coordinates $$(\theta,\phi)$$ (or equivalently $$N = \tau(\theta,\phi) \in S^2$$), the projection $$\pi : \mathbb R^3 \to \mathbb R^2$$ is given by
 
-$$\begin{equation*}
+$$
+\begin{equation*}
     \pi(x,y,z) = \underbrace{
     \begin{pmatrix}
         -\sin\phi & \cos\phi & 0 \\
@@ -122,7 +129,8 @@ $$\begin{equation*}
         -x\sin\phi + y\cos\phi \\
         -x\sin\theta\cos\phi - y\sin\theta\sin\phi + z\cos\theta
     \end{pmatrix}. \tag{*}
-\end{equation*}$$
+\end{equation*}
+$$
 
 ### Visualising the surface in Desmos
 
@@ -134,27 +142,32 @@ Consider a set of points $$\{(u_i,v_i)\}_i \subseteq U$$, and the families of cu
 
 ### Differential geometry of the projection: changing perspective
 
-For spherical coordinates $$(\theta,\phi)$$, let *principal latitude* denote $$\theta_0 \in [-\pi/2,\pi/2]$$ such that there is $$\phi_0 \in \mathbb R$$ with $$\tau(\theta,\phi) = \tau(\theta_0,\phi_0)$$. We see that $$M(\theta,\phi)$$ is a smooth function of $$\theta,\phi$$, so the matrix (and projection) smoothly varies with $$\theta,\phi$$:
+For spherical coordinates $$(\theta,\phi)$$, let _principal latitude_ denote $$\theta_0 \in [-\pi/2,\pi/2]$$ such that there is $$\phi_0 \in \mathbb R$$ with $$\tau(\theta,\phi) = \tau(\theta_0,\phi_0)$$. We see that $$M(\theta,\phi)$$ is a smooth function of $$\theta,\phi$$, so the matrix (and projection) smoothly varies with $$\theta,\phi$$:
 
-$$M_\theta(\theta,\phi) =
+$$
+M_\theta(\theta,\phi) =
 \begin{pmatrix}
     0 & 0 & 0 \\
     -\cos\theta\cos\phi & -\cos\theta\sin\phi & -\sin\theta
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 and
 
-$$\begin{equation*}
+$$
+\begin{equation*}
     M_\phi(\theta,\phi) =
     \begin{pmatrix}
         -\cos\phi & -\sin\phi & 0 \\
         \sin\theta\sin\phi & -\sin\theta\cos\phi & 0
     \end{pmatrix} \tag*{(from (*)).}
-\end{equation*}$$
+\end{equation*}
+$$
 
 Fixing a point $$p = (x,y,z) \in \mathbb R^3$$, we can think of $$\pi$$ as a function $$\mathbb R^2 \to \mathbb R^2$$, where the inputs are spherical coordinates $$(\theta,\phi)$$; let us call this map $$\pi' : \mathbb R^2 \to \mathbb R^2$$, $$(\theta,\phi) \mapsto \pi(p) = M(\theta,\phi)p$$. Then the directional derivatives of $$\pi'$$ are given by $$D_{(\theta,\phi)}\pi' : T_{(\theta,\phi)}\mathbb R^2 \to T_{\pi'(\theta,\phi)}\mathbb R^2$$, which is such that
 
-$$(\lambda,\mu) \mapsto \underbrace{
+$$
+(\lambda,\mu) \mapsto \underbrace{
 \begin{pmatrix}
     \vert & \vert \\
     \pi'_\theta & \pi'_\phi \\
@@ -171,7 +184,8 @@ $$(\lambda,\mu) \mapsto \underbrace{
 \begin{pmatrix}
     \lambda \\
     \mu
-\end{pmatrix}.$$
+\end{pmatrix}.
+$$
 
 So, if we change perspective from $$(\theta,\phi)$$ with velocity $$(\lambda,\mu) \in T_{(\theta,\phi)}\mathbb R^2$$ (i.e. increasing latitude by $$\lambda$$ and longitude by $$\mu$$), the image of $$p$$ in $$\mathbb R^2$$ moves with velocity $$D_{(\theta,\phi)}\pi'(\lambda,\mu)$$, given explicitly above. Note that
 
@@ -201,7 +215,7 @@ the above directional derivative is simply $$\dot\delta_p(\phi)$$. By trigonomet
 
 $$\delta_p(t) = (\sqrt{x^2 + y^2}\cos T,-\sin\theta\sqrt{x^2 + y^2}\sin T + z\cos\theta);$$
 
-this is clearly an ellipse (with period $$2\pi$$) with axis lengths $$\sqrt{x^2 + y^2}$$ and $$\lvert\sin\theta\rvert\sqrt{x^2 + y^2}$$, oriented negatively (clockwise) whenever principal latitude is positive (and positively if principal latitude is negative). Additionally, it has 4 vertices by Example 6.3 of chapter 4 (as long as $$\lvert\sin\theta\rvert \neq 1$$ and both axis lengths are nonzero); these vertices correspond to locations where the $$x$$ or $$y$$-coordinate of $$\pi(p)$$ is greatest or smallest. In summary, we see that for fixed latitude $$\theta$$, projected points move in an elliptic shape (in a clockwise direction when viewed from with positive principal latitude); this agrees with the intuition that as we increase longitude $$\phi$$, in order for the normal $$N$$ to the plane of projection $$\Pi$$ to point "into the screen", points must rotate *clockwise* about the projected $$z$$-axis.
+this is clearly an ellipse (with period $$2\pi$$) with axis lengths $$\sqrt{x^2 + y^2}$$ and $$\lvert\sin\theta\rvert\sqrt{x^2 + y^2}$$, oriented negatively (clockwise) whenever principal latitude is positive (and positively if principal latitude is negative). Additionally, it has 4 vertices by Example 6.3 of chapter 4 (as long as $$\lvert\sin\theta\rvert \neq 1$$ and both axis lengths are nonzero); these vertices correspond to locations where the $$x$$ or $$y$$-coordinate of $$\pi(p)$$ is greatest or smallest. In summary, we see that for fixed latitude $$\theta$$, projected points move in an elliptic shape (in a clockwise direction when viewed from with positive principal latitude); this agrees with the intuition that as we increase longitude $$\phi$$, in order for the normal $$N$$ to the plane of projection $$\Pi$$ to point "into the screen", points must rotate _clockwise_ about the projected $$z$$-axis.
 
 <!--- ### Further differential geometry of the projection
 

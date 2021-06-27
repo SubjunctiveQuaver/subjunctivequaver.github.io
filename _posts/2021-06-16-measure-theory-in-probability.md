@@ -2,38 +2,38 @@
 title: Why probability and statistics need measure theory, part 1
 date: 2021-06-16 21:57:00 +1000
 categories: [Epic Maths Time, New Perspectives]
-tags: [probability, measure-theory, statistics, topology, uni-maths]     # TAG names should always be lowercase
+tags: [probability, measure-theory, statistics, topology, uni-maths] # TAG names should always be lowercase
 math: true
 ---
 
 ## Introduction to the problem
 
-You may have encountered continuous probability distributions such as the normal distribution. It's often used to model things in the real world, and has nice statistical properties. You know the bell curve. But what you may not have seen is its formula: the *probability density function* (often shortened to just *density*),
+You may have encountered continuous probability distributions such as the normal distribution. It's often used to model things in the real world, and has nice statistical properties. You know the bell curve. But what you may not have seen is its formula: the _probability density function_ (often shortened to just _density_),
 
 $$f_\theta : \mathbb{R} \to \mathbb{R}, \quad x \mapsto \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
 
-given a value of $$\theta = (\mu,\sigma^2) \in \Theta$$. In our case, $$\Theta = \mathbb{R} \times (0,\infty)$$; this is known as the *parameter space*, and this is central to the study of statistics.
+given a value of $$\theta = (\mu,\sigma^2) \in \Theta$$. In our case, $$\Theta = \mathbb{R} \times (0,\infty)$$; this is known as the _parameter space_, and this is central to the study of statistics.
 
 ![The probability density function of a normally distributed random variable.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/2880px-Standard_deviation_diagram.svg.png)
 
-How does this relate to probability? Well, everything. We begin informally: suppose that $$X$$ is a continuous random variable with density $$f_\theta$$. The meaning of this is unimportant initially; think of $$X$$ as a "variable" that takes on values randomly (we will see that this is very much *not* a random variable *should* be). For a "reasonable" subset $$A \subseteq \mathbb{R}$$, let $$\mathbb{P}(X \in A)$$ denote the probability that $$X \in A$$, i.e. the probability of the event $$\{X \in A\}$$ (whatever that means). It turns out that, and as is often taught in a class in probability (even at high school level),
+How does this relate to probability? Well, everything. We begin informally: suppose that $$X$$ is a continuous random variable with density $$f_\theta$$. The meaning of this is unimportant initially; think of $$X$$ as a "variable" that takes on values randomly (we will see that this is very much _not_ a random variable _should_ be). For a "reasonable" subset $$A \subseteq \mathbb{R}$$, let $$\mathbb{P}(X \in A)$$ denote the probability that $$X \in A$$, i.e. the probability of the event $$\{X \in A\}$$ (whatever that means). It turns out that, and as is often taught in a class in probability (even at high school level),
 
 $$\mathbb P(X \in A) = \int_A f_\theta(x)\,dx = \int_A \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)\,dx.$$
 
 In fact, we are kind of working backwards. The probability density function is essentially defined to be a function such that integrating it over the desired subset yields the probability of $$X$$ taking on a value in that set. We get a couple of questions:
 
 1. How does the probability-assignment process work?
-2. What should $$A$$ be allowed to be? Should we allow *every* subset of the reals?
-3. In particular, if $$A = \{x_0\}$$ for some $$x_0 \in \mathbb{R}$$, the previous formula implies that $$\mathbb P(X = x_0) = 0$$, as an integral over a point. Does that make sense? Does that mean the event $$\{X = x_0\}$$ is impossible? (It turns out it *is* possible!)
+2. What should $$A$$ be allowed to be? Should we allow _every_ subset of the reals?
+3. In particular, if $$A = \{x_0\}$$ for some $$x_0 \in \mathbb{R}$$, the previous formula implies that $$\mathbb P(X = x_0) = 0$$, as an integral over a point. Does that make sense? Does that mean the event $$\{X = x_0\}$$ is impossible? (It turns out it _is_ possible!)
 4. Also, what about the seemingly irreconcilable differences between continuous and discrete probability distributions (density vs mass, expectation formulas, the general vibe, etc.)?
 
-It turns out that *measure theory* has the answer to all of these questions.
+It turns out that _measure theory_ has the answer to all of these questions.
 
 ## Some measure theory, with a probabilistic flavour
 
 ### Topologies and sigma algebras
 
-Measure theory is essentially the theory of assigning sizes to sets, done rigorously. We will motivate probability spaces, which are measure spaces in which the "total size" is 1. But first, we define a *topology*; it turns out that it is intimately related to measures. (*Warning:* this subsection is rather technical, so feel free to skim over it; it's mostly here for background.)
+Measure theory is essentially the theory of assigning sizes to sets, done rigorously. We will motivate probability spaces, which are measure spaces in which the "total size" is 1. But first, we define a _topology_; it turns out that it is intimately related to measures. (_Warning:_ this subsection is rather technical, so feel free to skim over it; it's mostly here for background.)
 
 **Definition 1.** Let $$\Omega$$ be a set, called the **sample space** in our context. A **topology** on $$\Omega$$ is a collection $$\tau$$ of subsets of $$\Omega$$ satisfying the following properties:
 
@@ -43,11 +43,11 @@ Measure theory is essentially the theory of assigning sizes to sets, done rigoro
 
 If $$\tau$$ is a topology on $$\Omega$$, then the pair $$(\Omega,\tau)$$ is a **topological space**, and the elements in the topology (subsets of $$\Omega$$) are called **open sets**. A set $$B$$ is **closed** if $$\Omega \setminus B$$ is open.
 
-Yes, this is the *topology* in which donuts are the same as (homeomorphic to) coffee mugs!
+Yes, this is the _topology_ in which donuts are the same as (homeomorphic to) coffee mugs!
 
 ![Classic image of a mug and torus morphing into each other, from Wikipedia.](https://upload.wikimedia.org/wikipedia/commons/2/26/Mug_and_Torus_morph.gif)
 
-Let's look at a simple example of a topological space: the usual one $$(\mathbb{R},\tau)$$ on the reals. We define it via the open sets: a subset $$A \subseteq \mathbb{R}$$ is *open* if, for *each* point $$a \in A$$, there is an open interval $$I = (a - \epsilon,a + \epsilon)$$ (with $$\epsilon > 0$$) centred at $$a$$ that is wholly contained in $$A$$, i.e. $$I \subseteq A$$. For example, the set $$\mathbb{R}$$ is open: for $$a \in \mathbb{R}$$, we have $$(a - 1,a + 1) \subseteq \mathbb{R}$$. Additionally, the set $$(0,1)$$ is open: for $$a \in (0,1)$$, let $$\epsilon = \min(a,1 - a) \leq a,1 - a$$; note that $$0 = a - a \leq a - \epsilon$$ and $$a + \epsilon \leq a + (1 - a) = 1$$, so $$(a - \epsilon,a + \epsilon) \subseteq (0,1)$$. However, the set $$[0,1)$$ is not open: at $$a = 0$$, *every* open interval centred at $$0$$ goes "outside" of $$(0,1)$$. From these, we see that $$\mathbb R \setminus \mathbb R = \varnothing$$ and $$\mathbb R \setminus (0,1) = (-\infty,0] \cup [1,\infty)$$ are *closed*. A similar argument shows that $$[0,1]$$ is closed (its complement is open); this suggests that the *intervals* that are open sets are precisely the open intervals $$(a,b)$$, and those that are closed sets are precisely the closed intervals $$[a,b]$$ (where we allow infinity and $$a = b$$).
+Let's look at a simple example of a topological space: the usual one $$(\mathbb{R},\tau)$$ on the reals. We define it via the open sets: a subset $$A \subseteq \mathbb{R}$$ is _open_ if, for _each_ point $$a \in A$$, there is an open interval $$I = (a - \epsilon,a + \epsilon)$$ (with $$\epsilon > 0$$) centred at $$a$$ that is wholly contained in $$A$$, i.e. $$I \subseteq A$$. For example, the set $$\mathbb{R}$$ is open: for $$a \in \mathbb{R}$$, we have $$(a - 1,a + 1) \subseteq \mathbb{R}$$. Additionally, the set $$(0,1)$$ is open: for $$a \in (0,1)$$, let $$\epsilon = \min(a,1 - a) \leq a,1 - a$$; note that $$0 = a - a \leq a - \epsilon$$ and $$a + \epsilon \leq a + (1 - a) = 1$$, so $$(a - \epsilon,a + \epsilon) \subseteq (0,1)$$. However, the set $$[0,1)$$ is not open: at $$a = 0$$, _every_ open interval centred at $$0$$ goes "outside" of $$(0,1)$$. From these, we see that $$\mathbb R \setminus \mathbb R = \varnothing$$ and $$\mathbb R \setminus (0,1) = (-\infty,0] \cup [1,\infty)$$ are _closed_. A similar argument shows that $$[0,1]$$ is closed (its complement is open); this suggests that the _intervals_ that are open sets are precisely the open intervals $$(a,b)$$, and those that are closed sets are precisely the closed intervals $$[a,b]$$ (where we allow infinity and $$a = b$$).
 
 Now back to our question: which sets can we talk about probabilities of? Suppose that we only allowed open and closed sets. Then sets as simple as $$[0,1)$$ would be disallowed, but it seems quite reasonable to talk about the probability of $$\{0 \leq X < 1\}$$! Thus we introduce sigma algebras:
 
@@ -61,13 +61,13 @@ If $$\mathcal F$$ is a sigma algebra on $$\Omega$$, then the pair $$(\Omega,\mat
 
 Note that by de Morgan's laws, we also have closure under countable intersections: if $$A_1,A_2,... \in \mathcal F$$, then $$A_1^c,A_2^c,... \in \mathcal F$$; then $$\bigcup_{i = 1}^\infty A_i^c = \left(\bigcap_{i = 1}^\infty A_i\right)^c \in \mathcal F$$, so its complement $$\bigcap_{i = 1}^\infty A_i \in \mathcal F$$.
 
-Now, what's an example of a sigma algebra on the reals? For this, essentially take our standard topology from above, and just force it to be a sigma algebra: this gives the *Borel sigma algebra*.
+Now, what's an example of a sigma algebra on the reals? For this, essentially take our standard topology from above, and just force it to be a sigma algebra: this gives the _Borel sigma algebra_.
 
 **Definition 3.** Let $$(\Omega,\tau)$$ be a topological space. The **Borel sigma algebra** $$\mathcal B = \mathcal B(\tau)$$ is the (smallest) sigma algebra generated by $$\tau$$, formed from a countable number of unions, intersections, and complements of open sets in $$\Omega$$. Elements of $$\mathcal B$$ are then called **Borel sets**.
 
 For example, $$[0,1)$$ is a Borel set. Why? Notice that $$[0,1) = [(-\infty,0) \cup [1,\infty)]^c$$. Since $$(-\infty,0)$$ is open, it must be a Borel set (as the Borel sigma algebra contains the topology). Also, since $$(-\infty,1)$$ is open, it too is a Borel set; its complement $$[1,\infty)$$ is then a Borel set (by property 3 of sigma algebras). Then $$(-\infty,0) \cup [1,\infty)$$ is a Borel set as a countable union of Borel sets. Finally, its complement $$[0,1)$$ is a Borel set, as claimed.
 
-**Challenge exercise 1:** using a similar approach, prove that the set of irrational numbers is a Borel set. (*Hint:* at some point, you may want to consider a union of singleton sets $$\{x_0\}$$ for certain $$x_0 \in \mathbb{R}$$.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+**Challenge exercise 1:** using a similar approach, prove that the set of irrational numbers is a Borel set. (_Hint:_ at some point, you may want to consider a union of singleton sets $$\{x_0\}$$ for certain $$x_0 \in \mathbb{R}$$.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Almost any "reasonable" set you can think of will (almost surely, with probability 1!) be a Borel set (come up with your own examples and prove it), and these turn out to be precisely one broad class of sets $$A$$ for which it makes sense to talk about the probability of the event $$\{X \in A\}$$. Now it's time to tie this all back to probability. But to do so, we may as well (finally, for some of you) define probability rigorously...
 
@@ -83,15 +83,15 @@ We define a way to assign "sizes" to measurable sets. This is the essence of mea
 
 Then $$(\Omega,\mathcal F,\mu)$$ is a **measure space**. If we add the additional property that $$\mu(\Omega) = 1$$, then $$\mu$$ is a **probability measure**, and $$(\Omega,\mathcal F,\mu)$$ is a **probability space**. (In this case, we usually write $$\mathbb P$$ instead of $$\mu$$, so that $$(\Omega,\mathcal F,\mathbb P)$$ is a probability space; here, $$\mathcal F$$ is the **event space**, and its elements are **events**.)
 
-For example, the *Lebesgue measure* $$\lambda$$ on $$\mathbb{R}$$ is a way to assign lengths to subsets of the reals in a sensible way: $$\lambda((0,1)) = \lambda([0,1]) = 1$$, $$\lambda((0,1) \cup (3,5]) = 3$$, $$\lambda(\{1,2,3,4,5\}) = \lambda(\mathbb{N}) = \lambda(\mathbb{Q}) = 0$$, $$\lambda(\mathbb{R}) = \lambda(\mathbb{R} \setminus \mathbb{Q}) = \infty$$, etc. However, not *every* subset of $$\mathbb R$$ can be sensibly assigned a Lebesgue measure. And this is the entire point of measure theory and sigma algebras: if we did try to assign a measure to *every* subset, we get [contradictions](https://en.wikipedia.org/wiki/Vitali_set). And it turns out that in probability, we run into the exact same issues. When we use the usual Borel sigma algebra on the reals, we run into no such issues (intuitively because the topology is very nice, and thus the sigma algebra it contains sufficiently nice sets), and we thus stick with it.
+For example, the _Lebesgue measure_ $$\lambda$$ on $$\mathbb{R}$$ is a way to assign lengths to subsets of the reals in a sensible way: $$\lambda((0,1)) = \lambda([0,1]) = 1$$, $$\lambda((0,1) \cup (3,5]) = 3$$, $$\lambda(\{1,2,3,4,5\}) = \lambda(\mathbb{N}) = \lambda(\mathbb{Q}) = 0$$, $$\lambda(\mathbb{R}) = \lambda(\mathbb{R} \setminus \mathbb{Q}) = \infty$$, etc. However, not _every_ subset of $$\mathbb R$$ can be sensibly assigned a Lebesgue measure. And this is the entire point of measure theory and sigma algebras: if we did try to assign a measure to _every_ subset, we get [contradictions](https://en.wikipedia.org/wiki/Vitali_set). And it turns out that in probability, we run into the exact same issues. When we use the usual Borel sigma algebra on the reals, we run into no such issues (intuitively because the topology is very nice, and thus the sigma algebra it contains sufficiently nice sets), and we thus stick with it.
 
-But now we turn our attention back to probability spaces. Let's unpack this definition, at least for probability measures. Firstly, a probability is a function from the *event space* to $$[0,\infty]$$ (in fact, we can see that its codomain is $$[0,1]$$, by the other properties). The probability of the empty set must be 0; this makes sense, as we always expect some outcome to occur in an experiment. The probability of the sample space is 1; again this makes sense, as the sample space is the set of all outcomes. Finally, the key property of probability is that for a (countable) sequence of pairwise *disjoint* events, often called **mutually exclusive** events, the probability of their union is the sum of their probabilities. Again, this is intuitive from elementary probability: if two events can't happen simultaneously, we should be able to add their probabilities to get the probability of their union.
+But now we turn our attention back to probability spaces. Let's unpack this definition, at least for probability measures. Firstly, a probability is a function from the _event space_ to $$[0,\infty]$$ (in fact, we can see that its codomain is $$[0,1]$$, by the other properties). The probability of the empty set must be 0; this makes sense, as we always expect some outcome to occur in an experiment. The probability of the sample space is 1; again this makes sense, as the sample space is the set of all outcomes. Finally, the key property of probability is that for a (countable) sequence of pairwise _disjoint_ events, often called **mutually exclusive** events, the probability of their union is the sum of their probabilities. Again, this is intuitive from elementary probability: if two events can't happen simultaneously, we should be able to add their probabilities to get the probability of their union.
 
-Let's firstly try our hand at proving some simple results we know from probability, using our new axioms! Let $$(\Omega,\mathcal F,\mathbb P)$$ be *any* probability space.
+Let's firstly try our hand at proving some simple results we know from probability, using our new axioms! Let $$(\Omega,\mathcal F,\mathbb P)$$ be _any_ probability space.
 
 **Proposition 5.** For disjoint (mutually exclusive) $$A,B \in \mathcal F$$, we have $$\mathbb P(A \cup B) = \mathbb P(A) + \mathbb P(B)$$.
 
-*Proof.* Observe that the sequence $$A,B,\varnothing,\varnothing,...$$ is such that any two events are pairwise disjoint. Then using property 2 of measures,
+_Proof._ Observe that the sequence $$A,B,\varnothing,\varnothing,...$$ is such that any two events are pairwise disjoint. Then using property 2 of measures,
 
 $$\mathbb P(A \cup B) = \mathbb P(A \cup B \cup \varnothing \cup \dotsb) = \mathbb P(A) + \mathbb P(B) + \mathbb P(\varnothing) + \dotsb = \mathbb P(A) + \mathbb P(B),$$
 
@@ -99,13 +99,13 @@ where we use the fact that $$\mathbb P(\varnothing) = 0$$, i.e. property 1 of me
 
 **Proposition 6.** For $$A \in \mathcal F$$, we have $$\mathbb P(A^c) = 1 - \mathbb P(A)$$.
 
-*Proof.* Observe that $$A,A^c$$ are disjoint, and $$A \cup A^c = \Omega$$. Then by Proposition 5,
+_Proof._ Observe that $$A,A^c$$ are disjoint, and $$A \cup A^c = \Omega$$. Then by Proposition 5,
 
 $$1 = \mathbb P(\Omega) = \mathbb P(A \cup A^c) = \mathbb P(A) + \mathbb P(A^c),$$
 
 so $$\mathbb P(A^c) = 1 - \mathbb P(A)$$, as claimed. $$\square$$
 
-**Challenge question 2.1.** Prove that for *any* $$A,B \in \mathcal F$$ (not necessarily disjoint), we have $$\mathbb P(A \cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A \cap B)$$. (*Hint:* decompose $$A \cup B$$ into two disjoint events in $$\mathcal F$$.)
+**Challenge question 2.1.** Prove that for _any_ $$A,B \in \mathcal F$$ (not necessarily disjoint), we have $$\mathbb P(A \cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A \cap B)$$. (_Hint:_ decompose $$A \cup B$$ into two disjoint events in $$\mathcal F$$.)
 
 **Challenge question 2.2 (conditional probability).** Fix $$E \in \mathcal F$$ with $$\mathbb P(E) \neq 0$$, where $$(\Omega,\mathcal F,\mathbb P)$$ is a probability space.
 
@@ -118,7 +118,7 @@ Note that $$B \in \mathcal F_E$$ means that $$B = A \cap E$$ for some $$A \in \m
 
 ### Examples of probability spaces
 
-Note that the probability measure $$\mathbb P$$ is extremely abstract: once we have decided on a *sample space*, that is, a set of possible outcomes, *any* function $$\mathbb{P} : \mathcal F \to [0,1]$$ satisfying the above properties of a measure, defines a "probability" on $$\Omega$$. This probability may range from something usual, to something wild. We consider a few simple examples:
+Note that the probability measure $$\mathbb P$$ is extremely abstract: once we have decided on a _sample space_, that is, a set of possible outcomes, _any_ function $$\mathbb{P} : \mathcal F \to [0,1]$$ satisfying the above properties of a measure, defines a "probability" on $$\Omega$$. This probability may range from something usual, to something wild. We consider a few simple examples:
 
 **Example 7 (rolling two independent fair dice).** Here, a possible sample space is $$\Omega = \{1,...,6\} \times \{1,...,6\}$$, i.e. ordered pairs of numbers in $$1,...,6$$. This naturally encodes the outcome of a sequence of two dice rolls. Now what are the valid events? Since the sample space has $$36$$ elements (and is finite), we may take $$\mathcal F = \mathcal P(\Omega)$$, the power set of the sample space; that is, every subset of $$\Omega$$ is a valid event. (You can check that this is indeed a sigma algebra on $$\Omega$$. How many events are there in total?)
 
@@ -145,27 +145,27 @@ this is precisely the event $$A_{00\dotsb 1}$$ defined above, so we know that $$
 1. What is the well-known distribution of $$X$$?
 2. Thus, what should $$\mathbb P$$ assign to this event $$B_n$$?
 3. Show that each singleton set (containing a single sequence of tosses) is in the event space, so that it makes sense to talk about its probability. What is this probability of any individual sequence $$\omega = (x_1,x_2,...)$$ of tosses in $$B_n$$?
-4. Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$, and is this a contradiction, since the $$B_n$$ are pairwise disjoint and we expect the probability of the union to be the sum of the probabilities? (*Hint:* what is $$\lvert B_n \rvert$$? Can you show that it is *uncountable*? Consider Cantor's diagonalisation argument.)
+4. Is $$\mathbb P(B_n) = \mathbb P\left(\bigcup_{\omega \in B_n} \{\omega\}\right) = \sum_{\omega \in B_n} \mathbb P(\{\omega\})$$, and is this a contradiction, since the $$B_n$$ are pairwise disjoint and we expect the probability of the union to be the sum of the probabilities? (_Hint:_ what is $$\lvert B_n \rvert$$? Can you show that it is _uncountable_? Consider Cantor's diagonalisation argument.)
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 In this previous example, we saw an example of an event with probability 0, but is certainly possible: of course, the event of any particular sequence of heads/tails is a possible outcome.
 
-**Example 9 (uniform distribution on unit interval).** In this example, $$\Omega = [0,1]$$. Imagine randomly selecting a number in $$[0,1]$$; random number generators do this (pseudorandomly) all the time. What is the probability of getting a particular number $$\omega \in [0,1]$$? (We'll answer this later.) Let's firstly consider the event space. It turns out the power set of $$[0,1]$$ is too big (we cannot define a probability measure on it); this is where we use the *Borel sigma algebra*! Recall the Borel sets in $$\mathbb R$$. We say that $$A \subseteq [0,1]$$ is a Borel set (in $$[0,1]$$) if it is a Borel set in $$\mathbb R$$, under the usual topology (open sets contain open intervals about every point). So $$\mathcal F = \mathcal B$$; for example, $$[0,1],(0,1),(1/2,3/4),\mathbb Q \cap [0,1]$$ are all valid events.
+**Example 9 (uniform distribution on unit interval).** In this example, $$\Omega = [0,1]$$. Imagine randomly selecting a number in $$[0,1]$$; random number generators do this (pseudorandomly) all the time. What is the probability of getting a particular number $$\omega \in [0,1]$$? (We'll answer this later.) Let's firstly consider the event space. It turns out the power set of $$[0,1]$$ is too big (we cannot define a probability measure on it); this is where we use the _Borel sigma algebra_! Recall the Borel sets in $$\mathbb R$$. We say that $$A \subseteq [0,1]$$ is a Borel set (in $$[0,1]$$) if it is a Borel set in $$\mathbb R$$, under the usual topology (open sets contain open intervals about every point). So $$\mathcal F = \mathcal B$$; for example, $$[0,1],(0,1),(1/2,3/4),\mathbb Q \cap [0,1]$$ are all valid events.
 
-We define $$\mathbb P : \mathcal F \to [0,1]$$ in a natural way: for any open interval $$I = (a,b) \subseteq [0,1]$$, we define $$\mathbb P(I) = b - a$$. Moreover, define $$\mathbb P([0,a)) = a$$ and $$\mathbb P((a,1]) = 1 - a$$ for $$a \in (0,1)$$. This then extends to all the other Borel sets via the properties of a probability measure (invoking the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). The intuition behind this is that probability should be proportional to the length/size, or *Lebesgue measure*, of the set. For example, the probability of $$A = \{0,1/2\}$$ is $$0$$: $$A^c = (0,1/2) \cup (1/2,1]$$. We defined $$\mathbb P((0,1/2)) = \mathbb P((1/2,1]) = 1/2$$. Therefore,
+We define $$\mathbb P : \mathcal F \to [0,1]$$ in a natural way: for any open interval $$I = (a,b) \subseteq [0,1]$$, we define $$\mathbb P(I) = b - a$$. Moreover, define $$\mathbb P([0,a)) = a$$ and $$\mathbb P((a,1]) = 1 - a$$ for $$a \in (0,1)$$. This then extends to all the other Borel sets via the properties of a probability measure (invoking the [Hahn-Kolmogorov theorem](https://handwiki.org/wiki/Hahn%E2%80%93Kolmogorov_theorem)). The intuition behind this is that probability should be proportional to the length/size, or _Lebesgue measure_, of the set. For example, the probability of $$A = \{0,1/2\}$$ is $$0$$: $$A^c = (0,1/2) \cup (1/2,1]$$. We defined $$\mathbb P((0,1/2)) = \mathbb P((1/2,1]) = 1/2$$. Therefore,
 
 $$\mathbb P(A^c) = \mathbb P\left(\left(0,\frac{1}{2}\right) \cup \left(\frac{1}{2},1\right]\right) = \mathbb P\left(\left(0,\frac{1}{2}\right)\right) + \mathbb P\left(\left(\frac{1}{2},1\right]\right) = \frac{1}{2} + \frac{1}{2} = 1,$$
 
-meaning that $$\mathbb P(A) = 0$$. Again, this is an event that is possible (we *can* pick $$0$$ or $$1/2$$ randomly, but the *probability* is $$0$$.)
+meaning that $$\mathbb P(A) = 0$$. Again, this is an event that is possible (we _can_ pick $$0$$ or $$1/2$$ randomly, but the _probability_ is $$0$$.)
 
-As another example, we compute $$\mathbb P(\mathbb A \cap \Omega)$$, where $$\mathbb A \subseteq \mathbb C$$ is the set of algebraic numbers, i.e. roots of polynomials with *integer* coefficients. By the fundamental theorem of algebra, a degree $$n$$ polynomial has at most $$n$$ roots. By identifying the degree-$$n$$ polynomial $$p(x) = a_0 + a_1x + \dotsb + a_nx^n \in \mathbb Z[x]$$ with the sequence $$(a_0,a_1,...,a_n) \in \mathbb Z^n$$ and taking a union over all $$n \in \mathbb N$$, it is possible to see that the set of polynomials $$\mathbb Z[x]$$ with integral coefficients is [countable](https://math.stackexchange.com/questions/341349/prove-that-the-set-of-integer-coefficients-polynomials-is-countable). Thus there are at most a countable number of algebraic numbers (by counting the roots as you count these polynomials). As shown in the following challenge question, $$\mathbb P(\{x\}) = 0$$ for any $$x \in [0,1]$$. Since $$\mathbb A \cap \Omega$$ is a countable union of such singleton sets, it follows by countable additivity that $$\mathbb P(\mathbb A \cap \Omega) = 0$$.
+As another example, we compute $$\mathbb P(\mathbb A \cap \Omega)$$, where $$\mathbb A \subseteq \mathbb C$$ is the set of algebraic numbers, i.e. roots of polynomials with _integer_ coefficients. By the fundamental theorem of algebra, a degree $$n$$ polynomial has at most $$n$$ roots. By identifying the degree-$$n$$ polynomial $$p(x) = a_0 + a_1x + \dotsb + a_nx^n \in \mathbb Z[x]$$ with the sequence $$(a_0,a_1,...,a_n) \in \mathbb Z^n$$ and taking a union over all $$n \in \mathbb N$$, it is possible to see that the set of polynomials $$\mathbb Z[x]$$ with integral coefficients is [countable](https://math.stackexchange.com/questions/341349/prove-that-the-set-of-integer-coefficients-polynomials-is-countable). Thus there are at most a countable number of algebraic numbers (by counting the roots as you count these polynomials). As shown in the following challenge question, $$\mathbb P(\{x\}) = 0$$ for any $$x \in [0,1]$$. Since $$\mathbb A \cap \Omega$$ is a countable union of such singleton sets, it follows by countable additivity that $$\mathbb P(\mathbb A \cap \Omega) = 0$$.
 
 **Challenge question 4 (related to example 9).**
 
 1. Show, using only the properties of a probability measure, that for any $$x \in [0,1]$$, $$\mathbb P(\{x\}) = 0$$.
-2. Thus show that $$\mathbb P([a,b]) = b - a$$ for *closed intervals* $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too).
-3. It is known that $$B = \sin^2(\mathbb N) = \{\sin^2(n) : n \in \mathbb N\}$$ (where $$0 \in \mathbb N$$) is dense in $$[0,1]$$ (meaning that you can find points in $$B$$ within *any* (possibly arbitrary small) open subinterval of $$[0,1]$$); find the probability that you do *not* randomly choose a number in $$B$$, i.e. $$\mathbb P(\Omega \setminus B)$$.
+2. Thus show that $$\mathbb P([a,b]) = b - a$$ for _closed intervals_ $$[a,b] \subseteq [0,1]$$ with $$a \neq 0$$ and $$b \neq 1$$ (although it is true for those too).
+3. It is known that $$B = \sin^2(\mathbb N) = \{\sin^2(n) : n \in \mathbb N\}$$ (where $$0 \in \mathbb N$$) is dense in $$[0,1]$$ (meaning that you can find points in $$B$$ within _any_ (possibly arbitrary small) open subinterval of $$[0,1]$$); find the probability that you do _not_ randomly choose a number in $$B$$, i.e. $$\mathbb P(\Omega \setminus B)$$.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
