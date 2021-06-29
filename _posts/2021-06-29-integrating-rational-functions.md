@@ -132,4 +132,4 @@ Valuations, gcds, Euclidean algorithm
 
 To be continued...
 
-Make sure you read part 2, which can be found [here]().
+Make sure you read part 2, which can be found here soon.
