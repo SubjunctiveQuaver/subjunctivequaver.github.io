@@ -7,7 +7,9 @@ math: true
 ---
 
 You know how to integrate a polynomial:
+
 $$\int (a_0 + a_1x + \dotsb + a_nx^n) \,dx = C + a_0x + \frac{a_1}{2}x^2 + \dotsb + \frac{a_n}{n + 1}x^{n + 1},$$
+
 where $$C \in \mathbb R$$ is a real constant. But what about a _rational function_ $$\frac{p}{q}$$ where $$p,q$$ are polynomials? Is the indefinite integral
 $$\int \frac{p(x)}{q(x)}\,dx$$
 a family of _elementary_ functions? It turns out that it is — that is, in theory at least, we can take any rational function and write its integral explicitly using "nice" functions (namely other rational functions, logarithms, and arctangents).
@@ -17,17 +19,27 @@ The key idea is to use polynomial division with remainder, and _partial fraction
 ## A quick recap on partial fractions
 
 You may have previously learnt partial fractions to solve the problem of integrating certain rational functions (or simply plotting rational functions). More or less, the process looks like the following: we have a rational function (a quotient of polynomials)
+
 $$\frac{p(x)}{q(x)}$$
+
 where the degree of $$p$$ is strictly less than the degree of $$q$$. We then factorise $$q$$ into
+
 $$q(x) = q_1(x)^{a_1} q_2(x)^{a_2} \dotsb q_k(x)^{a_k}$$
+
 where typically the $$q_i$$ are _irreducible_ in the sense that there are no nontrivial factorisations of $$q_i$$ into a product of lower degree polynomials (and each $$a_i \in \mathbb Z^+$$). Then we can write
+
 $$\frac{p(x)}{q(x)} = \sum_{j = 1}^{a_1} \frac{p_{1j}(x)}{q_1(x)^j} + \sum_{j = 1}^{a_2} \frac{p_{2j}(x)}{q_2(x)^j} + \dotsb + \sum_{j = 1}^{a_k} \frac{p_{kj}(x)}{q_k(x)^j}$$
+
 where $$\deg p_{ij} < \deg q_i$$ for all $$i,j$$.
 
 For example, for given $$a,b,c,d,e \in \mathbb R$$, we may decompose
+
 $$\frac{ax^4 + bx^3 + cx^2 + dx + e}{x(x - 1)^2(x^2 + x + 1)} = \frac{A}{x} + \frac{B}{x - 1} + \frac{C}{(x - 1)^2} + \frac{Dx + E}{x^2 + x + 1}.$$
+
 A usual technique is, once we have the correct form of the partial fraction decomposition, we cross-multiply to yield
+
 $$ax^4 + bx^3 + cx^2 + dx + e = A(x - 1)^2(x^2 + x + 1) + Bx(x - 1)(x^2 + x + 1) + Cx(x^2 + x + 1) + (Dx + E)x(x - 1)^2,$$
+
 which, considering as an equation in $$\mathbb R_4[x]$$ (the vector space of real polynomials of degree at most 4) and explicitly rewriting the right-hand side as a linear combination of basis polynomials $$x^4,x^3,x^2,x,1$$, allows us to compare coefficients and form a system of 5 equations in 5 variables, which must be consistent (as we will see in the existence of decomposition proof). Gaussian elimination (or another approach) then yields the unique coefficients $$A,B,C,D,E \in \mathbb R$$, at which point we have found the partial fraction decomposition.
 
 ### Partial fractions for... fractions?
@@ -35,6 +47,7 @@ which, considering as an equation in $$\mathbb R_4[x]$$ (the vector space of rea
 Partial fractions for rational functions is something that most people have studied. But you may be more surprised to find out that the same process works if we replace the real number polynomial coefficients with _any_ other field (essentially a set with addition and multiplication, where you can divide by anything nonzero), e.g. the complex numbers, rationals, or integers modulo a prime! Perhaps even more surprisingly, we can do partial fractions for the _rational numbers_ $$\mathbb Q$$.
 
 What exactly do I mean? We start off with a proper fraction (numerator is less than denominator). We can let _prime numbers_ take the place of irreducible (quadratic and linear) polynomials on the denominators, and instead of the condition that the degree of the numerator is strictly less than that of the irreducible polynomial in the denominator, we require that the _absolute value_ of the numerator is strictly less than that of the prime in the denominator. For example, I calculated that
+
 $$\frac{37}{300} = \frac{1}{2} + \frac{1}{2^2} + \frac{1}{3} - \frac{4}{5} - \frac{4}{5^2}.$$
 
 Why should this be the correct generalisation? In the proof of the existence of a partial fraction decomposition, we will see that we don't need to explicitly assume we are working with polynomials. In fact, the same argument works for any _Euclidean domain_, which is, roughly speaking, a set with addition, multiplication, and a null factor law, where we can also perform division with remainder (with a notion of size called a _valuation_). For real polynomials (which are building blocks of rational functions), the valuation is the degree function, but in the integers (which are building blocks of the rationals), a valuation is the _absolute value function_. The notion of an Euclidean domain is abstract algebraic, but allows us to abstract away from a concrete construction and prove results simultaneously for a general class of objects; furthermore, the algorithm in each Euclidean domain is _identical_, up to the actual division with remainder algorithm. And this is just a taste of the power of abstract algebra.
@@ -81,9 +94,13 @@ Some examples of (unital) rings include $$\mathbb R,\mathbb C,\mathbb Q,\mathbb 
 **Challenge question 3.** Let us consider the ring of $$2 \times 2$$ integer matrices $$M_2(\mathbb Z)$$, endowed with the usual addition and multiplication of square matrices (from say $$M_2(\mathbb R)$$).
 
 1. Argue that if
+
    $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in M_2(\mathbb Z)$$
+
    has a (multiplicative) inverse $$A^{-1} \in M_2(\mathbb Z)$$ such that $$AA^{-1} = A^{-1}A = I$$ (where $$I$$ is the usual $$2 \times 2$$ identity matrix), then
+
    $$A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} \in M_2(\mathbb R)$$.
+
 2. Thus conclude that $$A \in M_2(\mathbb Z)$$ has an inverse if and only if $$\det A \in \{\pm 1\} = \mathbb Z^*$$. This proves that the unit group is $$GL_2(\mathbb Z) := (M_2(\mathbb Z))^* = \{A \in M_2(\mathbb Z) : \det A = \pm 1\}$$.
 3. Use this to conjecture what $$GL_n(\mathbb Z) := (M_n(\mathbb Z))^*$$ is, for any integer $$n \geq 1$$.
 4. Prove that for _any_ commutative (unital) ring $$R$$ (where multiplication is commutative), $$GL_2(R) := (M_2(R))^* = \{A \in M_2(R) : \det A \in R^*\}$$, where the determinant is defined as usual. This is the **general linear group**: the set of invertible matrices with entries in $$R$$.
