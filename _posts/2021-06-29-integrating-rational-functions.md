@@ -128,7 +128,7 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 ### Euclidean domains and the Euclidean algorithm
 
-Valuations, gcds, Euclidean algorithm
+Valuations, gcds, Euclidean algorithm, etc
 
 To be continued...
 
