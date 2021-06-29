@@ -18,6 +18,7 @@ Here are a couple of versions of the Desmos save file with different cool pre-lo
 - [An immersed Klein bottle in $$\mathbb R^3$$](https://www.desmos.com/calculator/bdrerelimf) (thanks to cFOURbon for entering the formula)
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
 - [A shell](https://www.desmos.com/calculator/8fth0oldky) (thanks to Kevin D. for the help and idea)
+- [Give me my chemistry degree immediately?](https://www.desmos.com/calculator/ng56wooahk)
 
 _Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces._
 
