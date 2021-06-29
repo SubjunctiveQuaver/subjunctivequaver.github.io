@@ -54,7 +54,7 @@ Why should this be the correct generalisation? In the proof of the existence of 
 
 ## Rings, fields, and Euclidean domains
 
-This section will be a self-contained brief introduction to the relevant ring theory required for the proof. It may seem very definition heavy, and if you cannot follow, feel free to skip (at your own risk) to the [next section](#polynomial-rings-over-fields). We firstly define rings.
+This section will be a self-contained brief introduction to the relevant ring theory required for the proof. It may seem very definition heavy, and if you cannot follow, feel free to skip (at your own risk) to part 2. We firstly define rings.
 
 **Definition 1.** A **binary operation** on a set $$X$$ is a map $$f : X \times X \to X$$ from the Cartesian product. It takes in two elements of $$X$$, and returns a single element, _also in_ $$X$$. We often write $$f(x,y) = x * y$$.
 
