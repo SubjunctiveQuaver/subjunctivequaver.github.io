@@ -116,7 +116,7 @@ Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the 
 1. Show that $$ij = k$$, $$jk = i$$, $$ki = j$$, $$ji = -k$$, $$kj = -i$$, and $$ik = -j$$. (Think of this with $$ijk$$ written cyclically, with a negative sign if we go backwards.)
 2. For a quaternion $$\alpha = a + bi + cj + dk \in \mathbb H$$, define $$\bar\alpha = a - bi - cj - dk$$. Define the **norm** $$N(\alpha) = \alpha\bar \alpha$$. What is $$N(\alpha)$$, explicitly?
 3. Prove that $$N(\alpha\beta) = N(\alpha)N(\beta)$$ for $$\alpha,\beta \in \mathbb H$$, and that $$N(\alpha) = 0$$ if and only if $$\alpha = 0$$.
-4. If $$\alpha \neq 0$$, Let $$\beta = \alpha/N(\alpha)$$. What is $$\alpha\beta$$ and $$\beta\alpha$$? Thus conclude that $$\mathbb H^* = \mathbb H \setminus \{0\}$$, i.e. that $$\mathbb H$$ is a division ring.
+4. If $$\alpha \neq 0$$, Let $$\beta = \bar\alpha/N(\alpha)$$. What is $$\alpha\beta$$ and $$\beta\alpha$$? Thus conclude that $$\mathbb H^* = \mathbb H \setminus \{0\}$$, i.e. that $$\mathbb H$$ is a division ring.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
