@@ -109,7 +109,7 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 ### Fields, division rings, and the quaternions
 
-**Definition 4.** A **field** $$F$$ is a commutative (unital) ring such that $$F^* = F \setminus \{0\}$$, that is, every nonzero element has a (multiplicative) inverse. (It follows that $$F \setminus \{0\}$$ is an abelian group under multiplication.)
+**Definition 4.** A **field** $$K$$ is a commutative (unital) ring such that $$K^* = K \setminus \{0\}$$, that is, every nonzero element has a (multiplicative) inverse. (It follows that $$K \setminus \{0\}$$ is an abelian group under multiplication.)
 
 Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the integers modulo $$p$$ where $$p$$ is prime: $$\mathbb Z_p$$. Fields are also the building blocks of linear algebra: the scalars in a vector space belong to a field. If we remove the condition that the ring is commutative (but maintain the requirement that $$F^* = F \setminus \{0\}$$), we get a **skew-field** or **division ring**: a prominent example is $$\mathbb H$$, the **quaternions**, which is a 4-dimensional $$\mathbb R$$-vector space with (abstract) basis elements $$1,i,j,k$$ with multiplication satisfying $$1\alpha = \alpha 1 = \alpha$$ and $$\lambda\alpha = \alpha\lambda$$ for all $$\alpha \in \mathbb H$$ and $$\lambda \in \mathbb R$$, and
 
@@ -124,9 +124,27 @@ $$i^2 = j^2 = k^2 = ijk = -1.$$
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
-**Definition 5.** SUBRINGS/SUBFIELDS
+**Definition 5.** A subset $$S \subseteq R$$ is a **subring** of a ring $$(R,+,\cdot)$$ if $$(S,+,\cdot)$$ is a ring, when the binary operations are restricted to $$S$$ (in particular, must be maps $$S \times S \to S$$). Replacing "ring" with "field", we get the notion of a **subfield**.
 
 ### Euclidean domains and the Euclidean algorithm
+
+**Definition 6.** An **Euclidean domain (ED)** is a commutative (unital) ring $$R$$ with a **valuation** $$\nu : R \setminus \{0\} \to \mathbb N$$ such that:
+
+0. **(No zero divisors)** if $$ab = 0$$ for $$a,b \in R$$, then $$a = 0$$ or $$b = 0$$ (so that it is an **integral domain**),
+1. **(Division with remainder)** if $$a,b \in R$$ with $$b \neq 0$$, there exist $$q,r \in R$$ with $$a = qb + r$$ with $$\nu(r) < \nu(b)$$ or $$r = 0$$,
+2. if $$a,b \in R$$ with $$a,b \neq 0$$, then $$\nu(a) \leq \nu(ab)$$.
+
+In particular, $$\mathbb Z$$ is an Euclidean domain with valuation $$\nu v(z) = \lvert z \rvert$$. So are the Gaussian integers, $$\mathbb Z[i] := \{a + bi : a,b \in \mathbb Z\}$$ with valuation $$\nu v(a + bi) = a^2 + b^2$$. So is any field $$K$$, with valuation $$\nu(\alpha) = 1$$. (As we will shortly see, and as may be suggestive, _polynomial rings over fields_ are also Euclidean domains with the degree as the valuation!)
+
+In Euclidean domains (and in integral domains), we have a notion of divisibility, and a notion of primality: irreducibility.
+
+**Definition 7.** If $$R$$ is an ED and $$a,b \in R$$, then $$a$$ **divides** $$b$$ (and $$a$$ is a **divisor** of $$b$$), written $$a \mid b$$, if there is $$k \in R$$ such that $$b = ka$$.
+
+**Definition 8.** If $$r = ab$$ implies $$a$$ or $$b$$ is a unit (in $$R^*$$), then $$r$$ is **irreducible**. Otherwise, it is **reducible**, and there are non-units $$a,b$$ with $$r = ab$$. This is essentially a _nontrivial factorisation_.
+
+The definition of irreducible looks very much like the definition of a prime in $$\mathbb N$$ (or $$\mathbb Z$$). In fact, it is precisely the same definition: it essentially says that if $$p = ab$$ implies $$a = 1$$ or $$b = 1$$ (over $$\mathbb N$$), then $$p$$ is prime, which essentially is the usual definition. In Euclidean domains (and integral domains), there is another notion or **prime element**: one such that $$p \mid ab$$ implies $$p \mid a$$ or $$p \mid b$$. It turns out that they are equivalent to irreducible elements in EDs!
+
+**Theorem 9.** Every Euclidean domain has unique factorisation: if $$a \in R$$ is nonzero and not a unit, then there are irreducible elements
 
 Valuations, gcds, Euclidean algorithm, etc
 
