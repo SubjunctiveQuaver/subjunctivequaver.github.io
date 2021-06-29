@@ -76,7 +76,7 @@ Some examples of (unital) rings include $$\mathbb R,\mathbb C,\mathbb Q,\mathbb 
 
 1. Prove, using the axioms only, that the zero $$0$$ and unity $$1$$ are unique in a ring.
 2. Thus prove that if additive or multiplicative inverses exist, then they are unique.
-3. Prove that $$R^* := \{u \in R : u\ \text{is a unit}\}$$ forms a group under multiplication from $$R$$. (That is, it is associative, has an identity, and every element has an inverse.)
+3. Prove that $$R^* := \{u \in R : u\ \text{is a unit}\}$$ forms a group under multiplication from $$R$$. (That is, multiplication is a binary operation (i.e. the product of two units is a unit), it is associative, has an identity, and every element has an inverse.)
 
 **Challenge question 3.** Let us consider the ring of $$2 \times 2$$ integer matrices $$M_2(\mathbb Z)$$, endowed with the usual addition and multiplication of square matrices (from say $$M_2(\mathbb R)$$).
 
@@ -86,7 +86,7 @@ Some examples of (unital) rings include $$\mathbb R,\mathbb C,\mathbb Q,\mathbb 
    $$A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} \in M_2(\mathbb R)$$.
 2. Thus conclude that $$A \in M_2(\mathbb Z)$$ has an inverse if and only if $$\det A \in \{\pm 1\} = \mathbb Z^*$$. This proves that the unit group is $$GL_2(\mathbb Z) := (M_2(\mathbb Z))^* = \{A \in M_2(\mathbb Z) : \det A = \pm 1\}$$.
 3. Use this to conjecture what $$GL_n(\mathbb Z) := (M_n(\mathbb Z))^*$$ is, for any integer $$n \geq 1$$.
-4. Prove that for _any_ commutative (unital) ring $$R$$ (where multiplication is commutative), $$GL_2(R) := (M_2(R))^* = \{A \in M_2(R) : \det A \in R^*\}$$, where the determinant is defined as usual. This is the **general linear group**.
+4. Prove that for _any_ commutative (unital) ring $$R$$ (where multiplication is commutative), $$GL_2(R) := (M_2(R))^* = \{A \in M_2(R) : \det A \in R^*\}$$, where the determinant is defined as usual. This is the **general linear group**: the set of invertible matrices with entries in $$R$$.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
