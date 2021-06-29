@@ -1,6 +1,6 @@
 ---
 title: Integrating rational functions, partial fractions, and a taste of algebra
-date: 2021-06-28 15:42:00 +1000
+date: 2021-06-29 15:42:00 +1000
 categories: [Epic Maths Time, Cool Stuff]
 tags: [algebra, calculus, rings, polynomials] # TAG names should always be lowercase
 math: true
