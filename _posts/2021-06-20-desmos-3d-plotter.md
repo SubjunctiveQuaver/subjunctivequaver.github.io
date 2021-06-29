@@ -14,6 +14,7 @@ Here are a couple of versions of the Desmos save file with different cool pre-lo
 
 - The default: [a hemisphere (select the second plot for a full sphere)](https://www.desmos.com/calculator/u5ma8mrq4e)
 - [A mobius band](https://www.desmos.com/calculator/dqsysshxwj)
+- [A heliocoid](https://www.desmos.com/calculator/p3ztoufvpn)
 - [An immersed Klein bottle in $$\mathbb R^3$$](https://www.desmos.com/calculator/bdrerelimf) (thanks to cFOURbon for entering the formula)
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
 - [A shell](https://www.desmos.com/calculator/8fth0oldky) (thanks to Kevin D. for the help and idea)
@@ -52,8 +53,8 @@ The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then
 
 \begin{figure}[p!]
 \centering
-\includegraphics[width=0.75\textwidth]{cylinder_perspective.png}
-\caption{Plot of cylinder $$\sigma : (0,2\pi) \times (-4,4) \to S$$, $$\sigma(u,v) = (v,\cos u,\sin v)$$ with perspective $$(\theta,\phi) = (0.1,-0.1)$$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. _foreshortening_) in the negative $$x$$-direction.}
+\includegraphics[width=0.75\textwidth]{cylinder*perspective.png}
+\caption{Plot of cylinder $$\sigma : (0,2\pi) \times (-4,4) \to S$$, $$\sigma(u,v) = (v,\cos u,\sin v)$$ with perspective $$(\theta,\phi) = (0.1,-0.1)$$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. \_foreshortening*) in the negative $$x$$-direction.}
 \label{fig:cylinder_perspective}
 \end{figure}
 
