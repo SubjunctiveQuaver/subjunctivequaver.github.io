@@ -1,5 +1,5 @@
 ---
-title: Integrating rational functions, partial fractions, and a taste of algebra
+title: Integrating rational functions, partial fractions, and a taste of algebra, part 1
 date: 2021-06-29 15:42:00 +1000
 categories: [Epic Maths Time, Cool Stuff]
 tags: [algebra, calculus, rings, polynomials] # TAG names should always be lowercase
@@ -107,9 +107,13 @@ Some examples of (unital) rings include $$\mathbb R,\mathbb C,\mathbb Q,\mathbb 
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
+### Fields, division rings, and the quaternions
+
 **Definition 4.** A **field** $$F$$ is a commutative (unital) ring such that $$F^* = F \setminus \{0\}$$, that is, every nonzero element has a (multiplicative) inverse. (It follows that $$F \setminus \{0\}$$ is an abelian group under multiplication.)
 
-Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the integers modulo $$p$$ where $$p$$ is prime: $$\mathbb Z_p$$. Fields are also the building blocks of linear algebra: the scalars in a vector space belong to a field. If we remove the condition that the ring is commutative (but maintain the requirement that $$F^* = F \setminus \{0\}$$), we get a **skew-field** or **division ring**: a prominent example is $$\mathbb H$$, the **quaternions**, which is a 4-dimensional $$R$$-vector space with (abstract) basis elements $$1,i,j,k$$ with multiplication satisfying $$i^2 = j^2 = k^2 = ijk = -1$$.
+Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the integers modulo $$p$$ where $$p$$ is prime: $$\mathbb Z_p$$. Fields are also the building blocks of linear algebra: the scalars in a vector space belong to a field. If we remove the condition that the ring is commutative (but maintain the requirement that $$F^* = F \setminus \{0\}$$), we get a **skew-field** or **division ring**: a prominent example is $$\mathbb H$$, the **quaternions**, which is a 4-dimensional $$\mathbb R$$-vector space with (abstract) basis elements $$1,i,j,k$$ with multiplication satisfying
+
+$$i^2 = j^2 = k^2 = ijk = -1.$$
 
 **Challenge question 4.** We work with the quaternions $$\mathbb H$$. Recall that we define multiplication so that it is a ring.
 
@@ -122,26 +126,10 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 **Definition 5.** SUBRINGS/SUBFIELDS
 
-### Euclidean domains
+### Euclidean domains and the Euclidean algorithm
+
+Valuations, gcds, Euclidean algorithm
 
 To be continued...
 
-## Polynomial rings over fields
-
-### Polynomial division with remainder, and the factor theorem
-
-### Evaluating polynomials in (extension) fields
-
-### Conjugate root theorem for real polynomials
-
-### Complete factorisation of real polynomials
-
-**Theorem.** Every real polynomial $$p \in \mathbb R[\mathrm x]$$ can be factorised over $$\mathbb R$$ into a product of linear and irreducible quadratic factors
-
-## Existence and uniqueness of partial fraction decompositions
-
-It also works over any Euclidean domain!!
-
-## Solving the problem
-
-To be continued...
+Make sure you read part 2, which can be found [here]().
