@@ -111,17 +111,16 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 **Definition 4.** A **field** $$F$$ is a commutative (unital) ring such that $$F^* = F \setminus \{0\}$$, that is, every nonzero element has a (multiplicative) inverse. (It follows that $$F \setminus \{0\}$$ is an abelian group under multiplication.)
 
-Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the integers modulo $$p$$ where $$p$$ is prime: $$\mathbb Z_p$$. Fields are also the building blocks of linear algebra: the scalars in a vector space belong to a field. If we remove the condition that the ring is commutative (but maintain the requirement that $$F^* = F \setminus \{0\}$$), we get a **skew-field** or **division ring**: a prominent example is $$\mathbb H$$, the **quaternions**, which is a 4-dimensional $$\mathbb R$$-vector space with (abstract) basis elements $$1,i,j,k$$ with multiplication satisfying $$1\alpha = \alpha 1 = \alpha$$ for all $$\alpha \in \mathbb H$$, and
+Some examples of fields include $$\mathbb R,\mathbb C,\mathbb Q$$, and also the integers modulo $$p$$ where $$p$$ is prime: $$\mathbb Z_p$$. Fields are also the building blocks of linear algebra: the scalars in a vector space belong to a field. If we remove the condition that the ring is commutative (but maintain the requirement that $$F^* = F \setminus \{0\}$$), we get a **skew-field** or **division ring**: a prominent example is $$\mathbb H$$, the **quaternions**, which is a 4-dimensional $$\mathbb R$$-vector space with (abstract) basis elements $$1,i,j,k$$ with multiplication satisfying $$1\alpha = \alpha 1 = \alpha$$ and $$\lambda\alpha = \alpha\lambda$$ for all $$\alpha \in \mathbb H$$ and $$\lambda \in \mathbb R$$, and
 
 $$i^2 = j^2 = k^2 = ijk = -1.$$
 
-**Challenge question 4.** We work with the quaternions $$\mathbb H$$. Recall that we define multiplication so that it is a ring.
+**Challenge question 4.** We work with the quaternions $$\mathbb H$$. Recall that we define multiplication so that it is a ring (it is associative, and distributes over addition).
 
 1. Show that $$ij = k$$, $$jk = i$$, $$ki = j$$, $$ji = -k$$, $$kj = -i$$, and $$ik = -j$$. (Think of this with $$ijk$$ written cyclically, with a negative sign if we go backwards.) What is $$i^{-1}$$, $$j^{-1}$$, and $$k^{-1}$$?
-2. For a quaternion $$\alpha = a + bi + cj + dk \in \mathbb H$$ (where $$a,b,c,d \in \mathbb R$$) and $$\lambda = \lambda + 0i + 0j + 0k \in \mathbb R$$, show that $$\lambda\alpha = \alpha\lambda$$. (Hint: $$\lambda = \lambda 1$$, and use associativity.)
-3. For $$\alpha = a + bi + cj + dk \in \mathbb H$$ (where $$a,b,c,d \in \mathbb R$$), define $$\bar\alpha = a - bi - cj - dk$$. Define the **norm** $$N(\alpha) = \alpha\bar \alpha$$. Expand to show that $$N(\alpha) \in \mathbb R$$ (using distributive laws, and parts 1 & 2).
-4. Prove that $$N(\alpha\beta) = N(\alpha)N(\beta)$$ for $$\alpha,\beta \in \mathbb H$$, and that $$N(\alpha) = 0$$ if and only if $$\alpha = 0$$.
-5. If $$\alpha \neq 0$$, Let $$\beta = \bar\alpha/N(\alpha)$$. What is $$\alpha\beta$$ and $$\beta\alpha$$? Thus conclude that $$\mathbb H^* = \mathbb H \setminus \{0\}$$, i.e. that $$\mathbb H$$ is a division ring.
+2. For $$\alpha = a + bi + cj + dk \in \mathbb H$$ (where $$a,b,c,d \in \mathbb R$$), define $$\bar\alpha = a - bi - cj - dk$$. Define the **norm** $$\lvert\alpha\rvert = \sqrt{\alpha\bar \alpha}$$. Show that $$\lvert\alpha\rvert^2 \in \mathbb R_{\geq 0}$$ (using distributive laws and part 1), so that this makes sense.
+3. Prove that $$\lvert\alpha\beta\rvert = \lvert\alpha\rvert \lvert\beta\rvert$$ for $$\alpha,\beta \in \mathbb H$$, and that $$\lvert\alpha\rvert = 0$$ if and only if $$\alpha = 0$$. (Hint: show that $$\lvert\alpha\beta\rvert^2 = \lvert\alpha\rvert^2 \lvert\beta\rvert^2$$.)
+4. If $$\alpha \neq 0$$, Let $$\beta = \bar\alpha/\lvert\alpha\rvert^2 \in \mathbb H$$. What is $$\alpha\beta$$ and $$\beta\alpha$$? Thus conclude that $$\mathbb H^* = \mathbb H \setminus \{0\}$$, i.e. that $$\mathbb H$$ is a division ring.
 
 Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
