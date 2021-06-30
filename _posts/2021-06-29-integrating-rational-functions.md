@@ -134,7 +134,7 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 1. **(Division with remainder)** if $$a,b \in R$$ with $$b \neq 0$$, there exist $$q,r \in R$$ with $$a = qb + r$$ with $$\nu(r) < \nu(b)$$ or $$r = 0$$,
 2. if $$a,b \in R$$ with $$a,b \neq 0$$, then $$\nu(a) \leq \nu(ab)$$.
 
-In particular, $$\mathbb Z$$ is an Euclidean domain with valuation $$\nu v(z) = \lvert z \rvert$$. So are the Gaussian integers, $$\mathbb Z[i] := \{a + bi : a,b \in \mathbb Z\}$$ with valuation $$\nu v(a + bi) = a^2 + b^2$$. So is any field $$K$$, with valuation $$\nu(\alpha) = 1$$. (As we will shortly see, and as may be suggestive, _polynomial rings over fields_ are also Euclidean domains with the degree as the valuation!)
+In particular, $$\mathbb Z$$ is an Euclidean domain with valuation $$\nu(z) = \lvert z \rvert$$. So are the Gaussian integers, $$\mathbb Z[i] := \{a + bi : a,b \in \mathbb Z\}$$ with valuation $$\nu(a + bi) = a^2 + b^2$$. So is any field $$K$$, with valuation $$\nu(\alpha) = 1$$. (As we will shortly see, and as may be suggestive, _polynomial rings over fields_ are also Euclidean domains with the degree as the valuation!)
 
 In Euclidean domains (and in integral domains), we have a notion of divisibility, and a notion of primality: irreducibility.
 
