@@ -128,7 +128,7 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 ### Euclidean domains and the Euclidean algorithm
 
-**Definition 6.** An **Euclidean domain (ED)** is a commutative (unital) ring $$R$$ with a **valuation** $$\nu : R \setminus \{0\} \to \mathbb N$$ such that:
+**Definition 6.** An **Euclidean domain (ED)** is a commutative (unital) ring $$R$$ with a **valuation** (or **Euclidean function**) $$\nu : R \setminus \{0\} \to \mathbb N$$ such that:
 
 0. **(No zero divisors)** if $$ab = 0$$ for $$a,b \in R$$, then $$a = 0$$ or $$b = 0$$ (so that it is an **integral domain**),
 1. **(Division with remainder)** if $$a,b \in R$$ with $$b \neq 0$$, there exist $$q,r \in R$$ with $$a = qb + r$$ with $$\nu(r) < \nu(b)$$ or $$r = 0$$,
@@ -142,9 +142,19 @@ In Euclidean domains (and in integral domains), we have a notion of divisibility
 
 **Definition 8.** If $$r = ab$$ implies $$a$$ or $$b$$ is a unit (in $$R^*$$), then $$r$$ is **irreducible**. Otherwise, it is **reducible**, and there are non-units $$a,b$$ with $$r = ab$$. This is essentially a _nontrivial factorisation_.
 
-The definition of irreducible looks very much like the definition of a prime in $$\mathbb N$$ (or $$\mathbb Z$$). In fact, it is precisely the same definition: it essentially says that if $$p = ab$$ implies $$a = 1$$ or $$b = 1$$ (over $$\mathbb N$$), then $$p$$ is prime, which essentially is the usual definition. In Euclidean domains (and integral domains), there is another notion or **prime element**: one such that $$p \mid ab$$ implies $$p \mid a$$ or $$p \mid b$$. It turns out that they are equivalent to irreducible elements in EDs!
+The definition of irreducible looks very much like the definition of a prime in $$\mathbb N$$ (or $$\mathbb Z$$). In fact, it is precisely the same definition: it essentially says that if $$p = ab$$ implies $$a = 1$$ or $$b = 1$$ (over $$\mathbb N$$), then $$p$$ is prime, which essentially is the usual definition. In Euclidean domains (and integral domains), there is another notion or **prime element**: one such that $$p \mid ab$$ implies $$p \mid a$$ or $$p \mid b$$. It turns out that they are equivalent to irreducible elements in EDs! Moreover, in Euclidean domains, we have an analogue of the _fundamental theorem of arithmetic_ that holds:
 
-**Theorem 9.** Every Euclidean domain has unique factorisation: if $$a \in R$$ is nonzero and not a unit, then there are irreducible elements
+**Theorem 9.** Every Euclidean domain has _unique factorisation_ into irreducibles: if $$a \in R$$ is nonzero and not a unit, then there are irreducible elements $$p_1,...,p_r \in R$$ such that $$a = p_1p_2 \dotsb p_r$$. Moreover, this representation is unique up to multiplication (of each irreducible) by units.
+
+For example, in $$\mathbb Z$$, we know that $$12 = 2 \cdot 2 \cdot 3$$. But we may also write $$12 = 2 \cdot (-2) \cdot (-3)$$; we note that $$-2 = (-1) \cdot 2$$ and $$-3 = (-1) \cdot 3$$, which is multiplication by the unit $$-1$$. There is no way to factorise $$12$$ into primes a completely different way. Now, in $$\mathbb R[x]$$ (polynomials with real coefficients), we may write $$2x^2 + 10x + 12 = (x + 2)(2x + 6) = (2x + 4)(x + 3)$$; note that the irreducible linear terms in these two expressions only differ by muliplying/dividing by the unit $$2$$.
+
+We are ready for the Euclidean algorithm. Recall that in the integers, it provides us a way to find the greatest common divisor of two integers, using division with remainder. This suggests that the Euclidean algorithm may also work in Euclidean domains... but first, what even is a greatest common divisor?
+
+**Definition 10.** if $$R$$ is an ED and $$a,b \in R$$, an element $$d \in R$$ is a **common divisor** of $$a$$ and $$b$$ if $$d \mid a$$ and $$d \mid b$$. A **greatest common divisor (gcd)** of $$a$$ and $$b$$ is an common divisor $$g \in R$$ of $$a,b$$, such that for all common divisors $$d$$ of $$a,b$$, we have $$d \mid g$$.
+
+Greatest common divisors are not unique in general, but are unique up to units: $$g$$ is a gcd of $$a,b$$ if and only if $$ug$$ is a gcd of $$a,b$$ for some unit $$u \in R^*$$. For example, $$6$$ is a gcd of $$12$$ and $$18$$, but so is $$-6$$. $$x + 3$$ is a gcd of $$(x + 2)(x + 3),(x - 4)(x + 3) \in \mathbb R[x]$$, but so is $$2x + 6$$: note that $$(x + 2)(x + 3) = (\frac{1}{2}x + 1)(2x + 6)$$ and $$(x - 4)(x + 3) = (\frac{1}{2}x - 2)(2x + 6)$$.
+
+**Algorithm 10 (Euclidean algorithm).**
 
 Valuations, gcds, Euclidean algorithm, etc
 
