@@ -82,6 +82,10 @@ this is true in the formal sense, not just for $\|x\| < 1$ as in the analytical 
 
 $$\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (1).$$
 
+Note that extracting coefficients from power series is somehow "linear", in the sense that $[x^n](A + kB) = [x^n]A + k[x^n]B$ (the formal power series also form a *vector space* over $\mathbb{R}$, and this is a linear map $\mathbb{R}[[x]] \to \mathbb{R}$). This is a useful fact that we use later.
+
+![Extracting coefficients from formal power series is linear: a useful tool that will help us later.](https://i.imgflip.com/31po1l.png)
+
 ## Solving recurrences -- a generatingfunctionological approach
 
 Throughout this section, let $(a_n) \overset{\text{ops}}{\leftrightarrow} A$.
@@ -90,7 +94,7 @@ Throughout this section, let $(a_n) \overset{\text{ops}}{\leftrightarrow} A$.
 
 If we fix a value of $n$, then a recurrence gives us one equation that $(a_n)$ satisfies. However, the expression
 
-$$f\left(\sum_{n \geq k}a_n x^n,\sum_{n \geq k}a_{n + 1} x^n,\sum_{n \geq k}a_{n + 2} x^n,\dotsc\right) = 0$$
+$$\sum_{n \geq k} f(a_n,a_{n + 1},a_{n + 2},\dotsc)x^n = 0$$
 
 simultaneously encodes *every* equation that $(a_n)$ satisfies that is given by the recurrence. In the (usual) case that $k = 0$, we recover the generating function of $(a_n)$; otherwise observe that $\sum_{n \geq k}a_n x^n = A - a_0 - a_1x - \dotsb - a_{k - 1}x^{k - 1}$.
 
@@ -98,13 +102,48 @@ Thus, to solve a recurrence relation, we can attempt to convert the recurrence f
 
 ### The algebra and calculus of generating functions
 
-- Formal derivative of power series
-- The $xD$ operator
-- Rules for generating functions
+**Definition 3.** The **(formal) derivative** of a power series $A = \sum_{n \geq 0} a_nx^n$ is the power series
+
+$$DA = \sum_{n \geq 1} n a_n x^{n - 1}.$$
+
+The **derivative operator** $D$ on $\mathbb{R}[[x]]$ is the map $A \mapsto DA$.
+
+We can verify some common properties of the derivative operator:
+
+- It is *linear* (where we think of $\mathbb{R}[[x]]$ as a vector space): $D(A + kB) = DA + kDB$,
+- It satisfies a sort of *product rule*: $D(AB) = A(DB) + B(DA)$.
+
+Repeated differentiation is denoted by $D^k$, i.e. $D^kA$ is the $k$th (formal) derivative of $A$. A common operator that comes up when solving recurrences is the $xD$ operator, defined as the map $A \mapsto xDA$, i.e. differentiation then multiplication by $x$. This often comes up in *polynomials*; but note that $(xD)^2 = xD(xD) \neq x^2 D^2$. For example, $(xD)^2A = xD(xDA) = x(DA + xD^2A) = xDA + x^2D^2A$ by the product rule.
+
+Using these, we can identify some rules for the generating functions of some transformations of sequences:
+
+**Lemma 2.** Let $(a_n) \overset{\text{ops}}{\leftrightarrow} A$ and $(b_n) \overset{\text{ops}}{\leftrightarrow} B$. Then
+
+1. For any fixed $m > 0$, $(a_{n + m}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x^m}(A - a_0 - a_1x - \dotsb - a_{m - 1}x^{m - 1})$
+2. If $p(n)$ is any polynomial in $n$, then $p(xD)A \overset{\text{ops}}{\leftrightarrow} (p(n)a_n)$
+3. $AB \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k b_{n - k}\right)_n$
+4. For any $k \in \mathbb{R}$, $A + kB \overset{\text{ops}}{\leftrightarrow} (a_n + kb_n)$
+5. $\frac{A}{1 - x} \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k\right)_n$
+6. For a fixed $k > 0$, if $b\_{kn} = a\_n$ for $n \geq 0$ and $b_m = 0$ otherwise, then $A(x^k) = B(x) \overset{\text{ops}}{\leftrightarrow} (b_n)$
+
+Note that in rule 1, we don't mean division by $x^m$ in the ring $\mathbb{R}[[x]]$, as it does not have an inverse. Rather, it is the [quotient in an Euclidean division](https://math.stackexchange.com/questions/3744068/what-is-the-meaning-of-division-of-a-formal-power-series-by-x) (note that $\mathbb{R}[[x]]$ is a *Euclidean domain*).
+
+We give a proof of rule 2; it suffices to prove it for monic monomials; then apply rule 4. Let $p(n) = n^k$; then $p(xD)A = (xD)^kA$. First consider the case $k = 1$: then
+
+$$p(xD)A = xDA = x\sum_{n \geq 1} na_n x^{n - 1} = \sum_{n \geq 1} na_n x^n = \sum_{n \geq 0} na_n x^n \overset{\text{ops}}{\leftrightarrow} (na_n) = (p(n)a_n).$$
+
+Then if $k > 1$, we proceed by induction on $k$ and note that
+
+$$p(xD)A = (xD)^kA = xD(xD)^{k - 1}A = xD \sum_{n \geq 0} n^{k - 1}a_n x^n = x \sum_{n \geq 1} n^ka_n x^{n - 1} = \sum_{n \geq 0} n^ka_n x^n \overset{\text{ops}}{\leftrightarrow} (n^ka_n) = (p(n)a_n);$$
+
+the 3rd equality is by the inductive hypothesis. Thus we are done!
+
+**Exercise 2.** Prove the unproven generating function rules 1,3,4,5,6 above. Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 ### Finding formulas for the geometric and arithmetic sequences
 
 ### A few more applications (an outline only)
 
+- Binomial theorem
 - Fibonacci sequence
 - Catalan numbers
