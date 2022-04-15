@@ -122,7 +122,7 @@ Using these, we can identify some rules for the generating functions of some tra
 1. For any fixed $m > 0$, $(a_{n + m}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x^m}(A - a_0 - a_1x - \dotsb - a_{m - 1}x^{m - 1})$
 2. If $p(n)$ is any polynomial in $n$, then $p(xD)A \overset{\text{ops}}{\leftrightarrow} (p(n)a_n)$
 3. $AB \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k b_{n - k}\right)_n$
-4. For any $k \in \mathbb{R}$, $A + kB \overset{\text{ops}}{\leftrightarrow} (a_n + kb_n)$
+4. For any $k \in \mathbb{R}$, $A + kB \overset{\text{ops}}{\leftrightarrow} (a\_n + kb\_n)$
 5. $\frac{A}{1 - x} \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k\right)_n$
 6. For a fixed $k > 0$, if $b\_{kn} = a\_n$ for $n \geq 0$ and $b_m = 0$ otherwise, then $A(x^k) = B(x) \overset{\text{ops}}{\leftrightarrow} (b_n)$
 
