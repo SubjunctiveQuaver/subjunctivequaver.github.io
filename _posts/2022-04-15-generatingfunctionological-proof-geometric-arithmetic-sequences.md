@@ -6,19 +6,7 @@ tags: [combinatorics, algebra, uni-maths] # TAG names should always be lowercase
 math: true
 ---
 
-Recall from high school that a **geometric sequence** is a sequence
-$(a_n)_{n \geq 0}$
-that satisfies the *recurrence relation*
-$a_{n + 1} = r a_n$
-for some fixed
-$r \in \mathbb{R}$
-, and an **arithmetic sequence** is a sequence
-$(b_n)_{n \geq 0}$
-that satisfies
-$b_{n + 1} = b_n + d$
-for some fixed
-$d \in \mathbb{R}$
-.
+Recall from high school that a **geometric sequence** is a sequence $(a\_n)\_{n \geq 0}$ that satisfies the *recurrence relation* $a\_{n + 1} = r a\_n$ for some fixed $r \in \mathbb{R}$, and an **arithmetic sequence** is a sequence $(b\_n)\_{n \geq 0}$ that satisfies $b_{n + 1} = b_n + d$ for some fixed $d \in \mathbb{R}$.
 
 For example, the sequences $(1,2,4,8,16,\dotsc)$ and $(1,-1,1,-1,1,\dotsc)$ are geometric, while the sequences $(0,1,2,3,4,\dotsc)$ and $(11,7,3,-1,-5,\dotsc)$ are arithmetic.
 
