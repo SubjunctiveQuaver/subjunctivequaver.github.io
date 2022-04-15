@@ -34,9 +34,9 @@ so we get the equation
 
 $$\frac{1}{x}(A(x) - a_0) = rA(x) \implies A(x) = \frac{a_0}{1 - rx} = a_0 \sum_{n \geq 0} (rx)^n = \sum_{n \geq 0} a_0 r^n x^n.$$
 
-But recall that $A(x) = \sum_{n \geq 0} a_n x^n$, so we must have $a_n = a_0 r^n$, which agrees with the known formula!
+But recall that $A(x) = \sum_{n \geq 0} a_n x^n$, so we must surely have $a_n = a_0 r^n$, which agrees with the known formula!
 
-So we solved the recurrence relation by using some sort of magical overkill power series approach. How exactly does it work, and is it even useful? I will attempt to answer that in the rest of this post.
+So we solved the recurrence relation by using some sort of magical overkill power series approach. How exactly does it work, can we be more methodical, and is it even useful? I will attempt to answer that in the rest of this post.
 
 ## Generating functions
 
@@ -76,9 +76,7 @@ So it is reasonable to write that
 
 $$\frac{1}{1 - x} = \sum_{n \geq 0} x^n = 1 + x + x^2 + \dotsb;$$
 
-this is true in the formal sense, not just for
-$|x| < 1$
-as in the analytical case. However, when the power series in the analytical sense converges, it is reasonable to substitute in numerical values for $x$. This also gives us our first (simple) result:
+this is true in the formal sense, not just for $\|x\| < 1$ as in the analytical case. However, when the power series in the analytical sense converges, it is reasonable to substitute in numerical values for $x$. This also gives us our first (simple) result:
 
 **Lemma 1.** Let $(1) = (1,1,\dotsc)$ be the constant sequence; then
 
