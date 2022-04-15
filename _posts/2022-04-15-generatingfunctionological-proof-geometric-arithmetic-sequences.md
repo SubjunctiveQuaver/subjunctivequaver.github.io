@@ -20,6 +20,24 @@ for a generic term of the above geometric and arithmetic sequences, respectively
 
 In this post, I will introduce a totally overkill approach of deriving these two formulas; this approach will turn out to be a general approach to solving many recurrence relations. The key to this approach is to use *generating functions*.
 
+## A "naive" approach for geometric sequences
+
+Starting with $a_{n + 1} = ra_n$, multiply by $x^n$ and sum over all $n \geq 0$ (for which this recurrence is valid for) to get
+
+$$\sum_{n \geq 0} a_{n + 1}x^n = \sum_{n \geq 0} ra_n x^n = r \sum_{n \geq 0} a_n x^n.$$
+
+If we let $A(x) = \sum_{n \geq 0} a_n x^n$, then surely
+
+$$\sum_{n \geq 0} a_{n + 1}x^n = \sum_{n \geq 1} a_nx^{n - 1} = \frac{1}{x} \sum_{n \geq 1} a_nx^n = \frac{1}{x} \left(\sum_{n \geq 0} a_nx^n - a_0\right) = \frac{1}{x}(A(x) - a_0),$$
+
+so we get the equation
+
+$$\frac{1}{x}(A(x) - a_0) = rA(x) \implies A(x) = \frac{a_0}{1 - rx} = a_0 \sum_{n \geq 0} (rx)^n = \sum_{n \geq 0} a_0 r^n x^n.$$
+
+But recall that $A(x) = \sum_{n \geq 0} a_n x^n$, so we must have $a_n = a_0 r^n$, which agrees with the known formula!
+
+So we solved the recurrence relation by using some sort of magical overkill power series approach. How exactly does it work, and is it even useful? I will attempt to answer that in the rest of this post.
+
 ## Generating functions
 
 Unless otherwise stated, all sequences $(a_n)_{n \geq 0} = (a_0,a_1,\dotsc)$ start with a zeroth term $a_0$; I simply write $(a_n)$.
@@ -84,3 +102,8 @@ Thus, to solve a recurrence relation, we can attempt to convert the recurrence f
 - Rules for generating functions
 
 ### Finding formulas for the geometric and arithmetic sequences
+
+### A few more applications (an outline only)
+
+- Fibonacci sequence
+- Catalan numbers
