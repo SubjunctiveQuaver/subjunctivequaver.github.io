@@ -128,15 +128,11 @@ Using these, we can identify some rules for the generating functions of some tra
 
 Note that in rule 1, we don't mean division by $x^m$ in the ring $\mathbb{R}[[x]]$, as it does not have an inverse. Rather, it is the [quotient in an Euclidean division](https://math.stackexchange.com/questions/3744068/what-is-the-meaning-of-division-of-a-formal-power-series-by-x) (note that $\mathbb{R}[[x]]$ is a *Euclidean domain*).
 
-We give a proof of rule 2; it suffices to prove it for monic monomials; then apply rule 4. Let $p(n) = n^k$; then $p(xD)A = (xD)^kA$. First consider the case $k = 1$: then
-
-$$p(xD)A = xDA = x\sum_{n \geq 1} na_n x^{n - 1} = \sum_{n \geq 1} na_n x^n = \sum_{n \geq 0} na_n x^n \overset{\text{ops}}{\leftrightarrow} (na_n) = (p(n)a_n).$$
-
-Then if $k > 1$, we proceed by induction on $k$ and note that
+We give a proof of rule 2; it suffices to prove it for monic monomials; then apply rule 4. Let $p(n) = n^k$; then $p(xD)A = (xD)^kA$. The case $k = 0$ is trivial. Then if $k > 0$, we proceed by induction on $k$ and note that
 
 $$p(xD)A = (xD)^kA = xD(xD)^{k - 1}A = xD \sum_{n \geq 0} n^{k - 1}a_n x^n = x \sum_{n \geq 1} n^ka_n x^{n - 1} = \sum_{n \geq 0} n^ka_n x^n \overset{\text{ops}}{\leftrightarrow} (n^ka_n) = (p(n)a_n);$$
 
-the 3rd equality is by the inductive hypothesis. Thus we are done!
+the 3rd equality is by the inductive hypothesis (i.e. that $(xD)^{k - 1}A = \sum_{n \geq 0} n^{k - 1}a_n x^n \overset{\text{ops}}{\leftrightarrow} (n^{k - 1}a_n)$). Thus we are done!
 
 **Exercise 2.** Prove the unproven generating function rules 1,3,4,5,6 above. Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
