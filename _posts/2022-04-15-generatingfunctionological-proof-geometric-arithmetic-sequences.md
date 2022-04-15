@@ -148,7 +148,7 @@ Extracting coefficients and using (the surprise tool) linearity, we recover
 
 $$a_n = [x^n]A = a_0[x^n]\sum_{n \geq 0}(rx)^n = a_0r^n.$$
 
-Now, the **arithmetic sequence** $(b\_n)\_{n \geq 0}$ satisfies $b_{n + 1} = b_n + d$. Let $(b_n) \overset{\text{ops}}{\leftrightarrow} B$. Then by rule 1, $(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$; Lemma 1 yields $(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$, so the recurrence (and rule 4) yields
+Now, the **arithmetic sequence** $(b\_n)\_{n \geq 0}$ satisfies $b_{n + 1} = b_n + d$. Let $(b_n) \overset{\text{ops}}{\leftrightarrow} B$. Then by rule 1, $(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$; Lemma 1 yields $(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$, so the recurrence (and rule 4) yields (by partial fractions)
 
 $$\frac{1}{x}(B - b_0) = B + \frac{d}{1 - x} \implies B = \frac{b_0 - d}{1 - x} + \frac{d}{(1 - x)^2}.$$
 
@@ -158,7 +158,7 @@ $$xD\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (p(n)1) = (n) \implies
 
 by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring!) Thus by linearity, we extract the coefficient
 
-$$b_n = [x^n]B = (b_0 - d)\[x^n]\frac{1}{1 - x} + d[x^n]\frac{1}{(1 - x)^2} = (b_0 - d)1 + d(n + 1) = b_0 + dn$$
+$$b_n = [x^n]B = (b_0 - d)[x^n]\frac{1}{1 - x} + d[x^n]\frac{1}{(1 - x)^2} = (b_0 - d)1 + d(n + 1) = b_0 + dn$$
 
 since $(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$ and $(n + 1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{(1 - x)^2}$ (recall what this means). This is the formula for the arithmetic sequence; how awesome! (OK that was totally overkill LOL.)
 
