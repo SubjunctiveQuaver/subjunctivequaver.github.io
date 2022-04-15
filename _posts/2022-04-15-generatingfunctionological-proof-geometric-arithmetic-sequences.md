@@ -12,7 +12,7 @@ For example, the sequences $(1,2,4,8,16,\dotsc)$ and $(1,-1,1,-1,1,\dotsc)$ are 
 
 You may recall, again from high school, the formulas
 
-$$a_n = a_0 r^n \quad \text{and} \quad b_n = a_0 + nd$$
+$$a_n = a_0 r^n \quad \text{and} \quad b_n = b_0 + nd$$
 
 for a generic term of the above geometric and arithmetic sequences, respectively.
 
@@ -150,7 +150,7 @@ $$a_n = [x^n]A = a_0[x^n]\sum_{n \geq 0}(rx)^n = a_0r^n.$$
 
 Now, the **arithmetic sequence** $(b\_n)\_{n \geq 0}$ satisfies $b_{n + 1} = b_n + d$. Let $(b_n) \overset{\text{ops}}{\leftrightarrow} B$. Then by rule 1, $(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$; Lemma 1 yields $(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$, so the recurrence (and rule 4) yields
 
-$$\frac{1}{x}(B - a_0) = B + \frac{d}{1 - x} \implies B = \frac{a_0 - d}{1 - x} + \frac{d}{(1 - x)^2}.$$
+$$\frac{1}{x}(B - b_0) = B + \frac{d}{1 - x} \implies B = \frac{b_0 - d}{1 - x} + \frac{d}{(1 - x)^2}.$$
 
 By rule 2 with $p(n) = n$, we have
 
@@ -158,7 +158,7 @@ $$xD\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (p(n)1) = (n) \implies
 
 by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring!) Thus by linearity, we extract the coefficient
 
-$$b_n = [x^n]B = (a_0 - d)\[x^n\]\frac{1}{1 - x} + d\[x^n\]\frac{1}{(1 - x)^2} = (a_0 - d)1 + d(n + 1) = a_0 + dn$$
+$$b_n = [x^n]B = (b_0 - d)\[x^n\]\frac{1}{1 - x} + d\[x^n\]\frac{1}{(1 - x)^2} = (b_0 - d)1 + d(n + 1) = b_0 + dn$$
 
 since $(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$ and $(n + 1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{(1 - x)^2}$ (recall what this means). This is the formula for the arithmetic sequence; how awesome! (OK that was totally overkill LOL.)
 
