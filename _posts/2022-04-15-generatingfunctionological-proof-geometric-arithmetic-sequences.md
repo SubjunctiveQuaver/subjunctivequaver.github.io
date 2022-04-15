@@ -108,12 +108,16 @@ $$DA = \sum_{n \geq 1} n a_n x^{n - 1}.$$
 
 The **derivative operator** $D$ on $\mathbb{R}[[x]]$ is the map $A \mapsto DA$.
 
-We can verify some common properties of the derivative operator:
+We can verify some expected properties of the derivative operator for $A,B \in \mathbb{R}[[x]]$:
 
-- It is *linear* (where we think of $\mathbb{R}[[x]]$ as a vector space): $D(A + kB) = DA + kDB$,
+- It is *linear* (where we think of $\mathbb{R}[[x]]$ as a vector space): $D(A + kB) = DA + kDB$ where $k \in \mathbb{R}$,
 - It satisfies a sort of *product rule*: $D(AB) = A(DB) + B(DA)$.
 
-Repeated differentiation is denoted by $D^k$, i.e. $D^kA$ is the $k$th (formal) derivative of $A$. A common operator that comes up when solving recurrences is the $xD$ operator, defined as the map $A \mapsto xDA$, i.e. differentiation then multiplication by $x$. This often comes up in *polynomials*; but note that $(xD)^2 = xD(xD) \neq x^2 D^2$. For example, $(xD)^2A = xD(xDA) = x(DA + xD^2A) = xDA + x^2D^2A$ by the product rule.
+**Exercise 2.** Check thse both! Remember to use the correct rule for multiplying power series for the product rule.
+
+Repeated differentiation is denoted by $D^k$, i.e. $D^kA$ is the $k$th (formal) derivative of $A$. A common operator that comes up when solving recurrences is the $xD$ operator, defined as the map $A \mapsto xDA$, i.e. differentiation then multiplication by $x$. This often comes up in *polynomials*; but note that $(xD)^2 = xD(xD) \neq x^2 D^2$. For example, $(xD)^2A = xD(xDA) = x(DA + xD^2A) = xDA + x^2D^2A = (xD + x^2D^2)A$ by the product rule.
+
+**Exercise 3.** Similar to the above, what is an expansion of $(xD)^kA$ without any powers of $xD$? (I haven't tried this yet, but it looks promising.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Using these, we can identify some rules for the generating functions of some transformations of sequences:
 
@@ -134,7 +138,7 @@ $$p(xD)A = (xD)^kA = xD(xD)^{k - 1}A = xD \sum_{n \geq 0} n^{k - 1}a_n x^n = x \
 
 the 3rd equality is by the inductive hypothesis (i.e. that $(xD)^{k - 1}A = \sum_{n \geq 0} n^{k - 1}a_n x^n \overset{\text{ops}}{\leftrightarrow} (n^{k - 1}a_n)$). Thus we are done!
 
-**Exercise 2.** Prove the unproven generating function rules 1,3,4,5,6 above. Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+**Exercise 3.** Prove the unproven generating function rules 1,3,4,5,6 above. Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 ### Finding formulas for the geometric and arithmetic sequences
 
@@ -164,6 +168,6 @@ since $(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$ and $(n + 1) \
 
 ### A few more applications (an outline only)
 
-- Binomial theorem
+- Binomial theorem - sequence of binomial coefficients and also the theorem itself
 - Fibonacci sequence
 - Catalan numbers
