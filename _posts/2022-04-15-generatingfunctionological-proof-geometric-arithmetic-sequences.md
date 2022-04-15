@@ -82,7 +82,7 @@ this is true in the formal sense, not just for $\|x\| < 1$ as in the analytical 
 
 $$\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (1).$$
 
-Note that extracting coefficients from power series is somehow "linear", in the sense that $[x^n](A + kB) = [x^n]A + k[x^n]B$ (the formal power series also form a *vector space* over $\mathbb{R}$, and this is a linear map $\mathbb{R}[[x]] \to \mathbb{R}$). This is a useful fact that we use later.
+Note that extracting coefficients from power series is somehow "linear", in the sense that $\[x^n\](A + kB) = [x^n]A + k[x^n]B$ (the formal power series also form a *vector space* over $\mathbb{R}$, and this is a linear map $\mathbb{R}[[x]] \to \mathbb{R}$). This is a useful fact that we use later.
 
 ![Extracting coefficients from formal power series is linear: a useful tool that will help us later.](https://i.imgflip.com/31po1l.png)
 
