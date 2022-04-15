@@ -98,7 +98,7 @@ $$\sum_{n \geq k} f(a_n,a_{n + 1},a_{n + 2},\dotsc)x^n = 0$$
 
 simultaneously encodes *every* equation that $(a_n)$ satisfies that is given by the recurrence. In the (usual) case that $k = 0$, we recover the generating function of $(a_n)$; otherwise observe that $\sum_{n \geq k}a_n x^n = A - a_0 - a_1x - \dotsb - a_{k - 1}x^{k - 1}$.
 
-Thus, to solve a recurrence relation, we can attempt to convert the recurrence for $(a_n)$ into an equation involving its generating function $A$; then if we can solve this for $A$, then we have found $a_n = [x^n]A$. However, we may not explicitly find $A$ as a (formal) power series; using different techniques (such as partial fractions or the binomial theorem) we can find a power series expansion to extract the $a_n$.
+Thus, to solve a recurrence relation, we can attempt to convert the recurrence for $(a_n)$ into an equation involving its generating function $A$ by finding the generating functions of the sequences equated in the recurrence; then if we can solve this for $A$, then we have found $a_n = [x^n]A$. However, we may not explicitly find $A$ as a (formal) power series; using different techniques (such as partial fractions or the binomial theorem) we can find a power series expansion to extract the coefficients $a_n$.
 
 ### The algebra and calculus of generating functions
 
@@ -137,6 +137,30 @@ the 3rd equality is by the inductive hypothesis (i.e. that $(xD)^{k - 1}A = \sum
 **Exercise 2.** Prove the unproven generating function rules 1,3,4,5,6 above. Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 ### Finding formulas for the geometric and arithmetic sequences
+
+Using the algebra and calculus of generating functions, we give a succinct generatingfunctionological proof of the formulas for the geometric and arithmetic sequences.
+
+Recall that the **geometric sequence** $(a\_n)\_{n \geq 0}$ satisfies $a\_{n + 1} = r a\_n$. Let $(a_n) \overset{\text{ops}}{\leftrightarrow} A$. Then by rule 1, $(a_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(A - a_0)$, so the recurrence (and rule 4) yields
+
+$$\frac{1}{x}(A - a_0) = rA \implies A = \frac{a_0}{1 - rx}.$$
+
+Extracting coefficients and using (the surprise tool) linearity, we recover
+
+$$a_n = [x^n]A = a_0[x^n]\sum_{n \geq 0}(rx)^n = a_0r^n.$$
+
+Now, the **arithmetic sequence** $(b\_n)\_{n \geq 0}$ satisfies $b_{n + 1} = b_n + d$. Let $(b_n) \overset{\text{ops}}{\leftrightarrow} B$. Then by rule 1, $(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$; Lemma 1 yields $(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$, so the recurrence (and rule 4) yields
+
+$$\frac{1}{x}(B - a_0) = B + \frac{d}{1 - x} \implies B = \frac{a_0 - d}{1 - x} + \frac{d}{(1 - x)^2}.$$
+
+By rule 2 with $p(n) = n$, we have
+
+$$xD\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (p(n)1) = (n) \implies \frac{1}{(1 - x)^2} = \frac{1}{x} \left(xD\frac{1}{1 - x} - 0\right) \overset{\text{ops}}{\leftrightarrow} (n + 1)$$
+
+by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring!) Thus by linearity, we extract the coefficient
+
+$$b_n = [x^n]B = (a_0 - d)\[x^n\]\frac{1}{1 - x} + d\[x^n\]\frac{1}{(1 - x)^2} = (a_0 - d)1 + d(n + 1) = a_0 + dn$$
+
+since $(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$ and $(n + 1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{(1 - x)^2}$ (recall what this means). This is the formula for the arithmetic sequence; how awesome! (OK that was totally overkill LOL.)
 
 ### A few more applications (an outline only)
 
