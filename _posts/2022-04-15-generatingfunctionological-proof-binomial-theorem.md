@@ -34,7 +34,7 @@ What exactly does $$\binom{\alpha}{n}$$ mean for $$\alpha \not\in \mathbb{N}$$? 
 
 $$\binom{\alpha}{n} := \frac{\overbrace{\alpha(\alpha - 1)(\alpha - 2)\dotsb(\alpha - n + 1)}^{n\ \text{terms}}}{n!}.$$
 
-In the case that $$\alpha \in \mathbb{N}$$, this obviously agrees with the usual definition, as noted above. Let's prove this result using generating functions! It turns out to be quite interesting, and involves solving a *differential equation*!
+In the case that $$\alpha \in \mathbb{N}$$, this obviously agrees with the usual definition, as noted above. Let's prove the binomial theorem using generating functions! The proof turns out to be quite interesting, and involves solving a *differential equation*!
 
 ## A generatingfunctionological proof of the binomial theorem
 
