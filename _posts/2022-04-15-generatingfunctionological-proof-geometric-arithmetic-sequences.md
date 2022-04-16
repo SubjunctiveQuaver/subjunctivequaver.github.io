@@ -119,7 +119,7 @@ We can verify some expected properties of the derivative operator: it is a **der
 
 $$(xD)^2 = xD(xD) = x(D + xD^2) = xD + x^2D^2 \implies (xD)^2A = xDA + x^2D^2A$$
 
-by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$; then $$Dx1 = Dx = 1 \neq 0 = xD1$$ in general). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of *differential operators* with polynomial coefficients (the addition is pointwise addition, and the product is composition of operators).
+by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$; then $$Dx1 = Dx = 1 \neq 0 = xD1$$). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of *differential operators* with polynomial coefficients (the addition is pointwise addition, and the product is composition of operators).
 
 **Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? ~~(I haven't tried this yet, but it looks promising.)~~ Update (thanks [Ally](https://piecewise.org/exploration/an-adventure-in-rewriting-polynomials)): it looks like
 
