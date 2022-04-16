@@ -14,7 +14,7 @@ $$\binom{k}{n} = \frac{k!}{n!(k - n)!} = \frac{\overbrace{k(k - 1)(k - 2)\dotsb(
 
 You may remember from high school that for some $$k \in \mathbb{N}$$,
 
-$$(x + y)^k = \sum_{n = 0}^k \binom{k}{n} x^n y^{k - n} \implies (1 + x)^k = \sum_{n = 0}^k \binom{k}{n} x^n.$$
+$$(x + y)^k = \sum_{n = 0}^k \binom{k}{n} x^n y^{k - n} \implies (1 + x)^k = \sum_{n = 0}^k \binom{k}{n} x^n = \underbrace{\binom{k}{0}}_{= 1} + \underbrace{\binom{k}{1}}_{= k} x + \underbrace{\binom{k}{2}}_{= \frac{k(k - 1)}{2}} x^2 + \dotsb + \underbrace{\binom{k}{k}}_{= 1}x^k.$$
 
 This is the *binomial theorem*.
 
