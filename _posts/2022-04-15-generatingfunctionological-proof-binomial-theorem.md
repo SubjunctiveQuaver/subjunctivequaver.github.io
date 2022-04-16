@@ -26,7 +26,7 @@ But what if we do not restrict $k$ to be a natural number above? This leads us t
 
 $$(1 + x)^\alpha = \sum_{n \geq 0} \binom{\alpha}{n} x^n \overset{\text{ops}}{\leftrightarrow} \left(\binom{\alpha}{n}\right)_n;$$
 
-this is an equality in the formal sense, where we don't care about convergence. (Note that the series converges when $$|x| < 1$$ in the analytic sense.)
+this is an equality in the formal sense, where we don't care about convergence. (Note that the series converges when $$\|x\| < 1$$ in the analytic sense.)
 
 What exactly does $$\binom{\alpha}{n}$$ mean for $$\alpha \not\in \mathbb{N}$$? The factorials are no longer well-defined (even if we consider the [Gamma function](https://en.wikipedia.org/wiki/Gamma_function) $$\Gamma$$ where $$\Gamma(n) = (n - 1)!$$ and enforce that $$\alpha! = \Gamma(\alpha + 1)$$, this still fails for negative integers since $$\Gamma$$ is not defined there); so we instead use this definition:
 
