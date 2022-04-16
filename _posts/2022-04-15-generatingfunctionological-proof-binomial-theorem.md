@@ -66,7 +66,7 @@ and we are done -- we have proved that
 
 $$(1 + x)^\alpha = \sum_{n \geq 0} \binom{\alpha}{n} x^n \overset{\text{ops}}{\leftrightarrow} \left(\binom{\alpha}{n}\right)_n!$$
 
-### Applying the theorem to the Catalan numbers
+## Applying the binomial theorem to the Catalan numbers
 
 Recall from the [last post](https://subjunctivequaver.github.io/posts/generatingfunctionological-proof-geometric-arithmetic-sequences/) that **Catalan numbers** count, for instance, the number of ways to have a balanced string of parentheses of length $$2n$$, e.g. something like `(()(()))(())`, but not `())((())`. Then it turns out that $$C_n = \frac{1}{n + 1} \binom{2n}{n}$$, and their generating function is
 
