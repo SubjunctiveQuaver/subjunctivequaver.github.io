@@ -108,18 +108,18 @@ $$DA = \sum_{n \geq 1} n a_n x^{n - 1} = \sum_{n \geq 0} (n + 1)a_{n + 1}x^n \ov
 
 The **derivative operator** $$D$$ on $$\mathbb{R}[[x]]$$ is the map $$A \mapsto DA$$.
 
-We can verify some expected properties of the derivative operator for $$A,B \in \mathbb{R}[[x]]$$:
+We can verify some expected properties of the derivative operator: it is a **derivation** on $$\mathbb{R}[[x]]$$ (let $$A,B \in \mathbb{R}[[x]]$$), since
 
 - It is *linear* (where we think of $$\mathbb{R}[[x]]$$ as a vector space): $$D(A + kB) = DA + kDB$$ where $$k \in \mathbb{R}$$,
-- It satisfies a sort of *product rule*: $$D(AB) = A(DB) + (DA)B$$.
+- It satisfies a sort of *(Leibniz) product rule*: $$D(AB) = A(DB) + (DA)B$$.
 
 **Exercise 2.** Check thse both! Remember to use the correct rule for multiplying power series for the product rule.
 
-Repeated differentiation is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. A common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. For example,
+*Repeated differentiation* is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. A common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. For example,
 
 $$(xD)^2 = xD(xD) = x(D + xD^2) = xD + x^2D^2 \implies (xD)^2A = xDA + x^2D^2A$$
 
-by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx = 1 \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of differential operators with polynomial coefficients.
+by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$; then $$Dx1 = Dx = 1 \neq 0 = xD1$$ in general). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of *differential operators* with polynomial coefficients (the addition is pointwise addition, and the product is composition of operators).
 
 **Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? ~~(I haven't tried this yet, but it looks promising.)~~ Update (thanks [Ally](https://piecewise.org/exploration/an-adventure-in-rewriting-polynomials)): it looks like
 
