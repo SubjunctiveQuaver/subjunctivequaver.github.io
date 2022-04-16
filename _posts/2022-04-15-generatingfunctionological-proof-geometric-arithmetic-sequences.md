@@ -1,12 +1,12 @@
 ---
 title: A generatingfunctionological proof of the geometric and arithmetic sequence formulas
-date: 2022-04-15 21:23:00 +1000
+date: 2022-04-16 11:28:00 +1000
 categories: [Epic Maths Time, New Perspectives]
 tags: [combinatorics, algebra, uni-maths] # TAG names should always be lowercase
 math: true
 ---
 
-Recall from high school that a **geometric sequence** is a sequence $$(a\_n)\_{n \geq 0}$$ that satisfies the *recurrence relation* $$a\_{n + 1} = r a\_n$$ for some fixed $$r \in \mathbb{R}$$, and an **arithmetic sequence** is a sequence $$(b\_n)\_{n \geq 0}$$ that satisfies $$b_{n + 1} = b_n + d$$ for some fixed $$d \in \mathbb{R}$$.
+Recall from high school that a **geometric sequence** is a sequence $$(a_n)_{n \geq 0}$$ that satisfies the *recurrence relation* $$a_{n + 1} = r a_n$$ for some fixed $$r \in \mathbb{R}$$, and an **arithmetic sequence** is a sequence $$(b_n)_{n \geq 0}$$ that satisfies $$b_{n + 1} = b_n + d$$ for some fixed $$d \in \mathbb{R}$$.
 
 For example, the sequences $$(1,2,4,8,16,\dotsc)$$ and $$(1,-1,1,-1,1,\dotsc)$$ are geometric, while the sequences $$(0,1,2,3,4,\dotsc)$$ and $$(11,7,3,-1,-5,\dotsc)$$ are arithmetic.
 
@@ -88,7 +88,7 @@ Note that extracting coefficients from power series is somehow "linear", in the 
 
 ## Solving recurrences -- a generatingfunctionological approach
 
-Throughout this section, let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$.
+Throughout this section, let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$. A **generatingfunctionological** approach, as coined in [Wilf's book "generatingfunctionology"](https://www2.math.upenn.edu/~wilf/DownldGF.html), is an approach to working with sequences using their generating functions.
 
 **Definition 2.** Let $$(a_n)$$ be a sequence. Then a ($$k$$th order) **recurrence** for $$(a_n)$$ is an equation $$\varphi(n,a_n,a_{n - 1},\dotsc,a_{n - k}) = 0$$ which holds for particular $$n$$.
 
@@ -102,9 +102,9 @@ Thus, to solve a recurrence relation, we can attempt to convert the recurrence f
 
 ### The algebra and calculus of generating functions
 
-**Definition 3.** The **(formal) derivative** of a power series $$A = \sum_{n \geq 0} a_nx^n$$ is the power series
+**Definition 3.** The **(formal) derivative** of a power series $$A = \sum_{n \geq 0} a_nx^n \overset{\text{ops}}{\leftrightarrow} (a_n)$$ is the power series
 
-$$DA = \sum_{n \geq 1} n a_n x^{n - 1}.$$
+$$DA = \sum_{n \geq 1} n a_n x^{n - 1} = \sum_{n \geq 0} (n + 1)a_{n + 1}x^n \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1}).$$
 
 The **derivative operator** $$D$$ on $$\mathbb{R}[[x]]$$ is the map $$A \mapsto DA$$.
 
@@ -130,9 +130,9 @@ Using these, we can identify some rules for the generating functions of some tra
 1. For any fixed $$m > 0$$, $$(a_{n + m}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x^m}(A - a_0 - a_1x - \dotsb - a_{m - 1}x^{m - 1})$$
 2. If $$p(n)$$ is any polynomial in $$n$$, then $$p(xD)A \overset{\text{ops}}{\leftrightarrow} (p(n)a_n)$$
 3. $$AB \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k b_{n - k}\right)_n$$
-4. For any $$k \in \mathbb{R}$$, $$A + kB \overset{\text{ops}}{\leftrightarrow} (a\_n + kb\_n)$$
+4. For any $$k \in \mathbb{R}$$, $$A + kB \overset{\text{ops}}{\leftrightarrow} (a_n + kb_n)$$
 5. $$\frac{A}{1 - x} \overset{\text{ops}}{\leftrightarrow} \left(\sum_{k = 0}^n a_k\right)_n$$
-6. For a fixed $$k > 0$$, if $$b\_{kn} = a\_n$$ for $$n \geq 0$$ and $$b_m = 0$$ otherwise, then $$A(x^k) = B(x) \overset{\text{ops}}{\leftrightarrow} (b_n)$$
+6. For a fixed $$k > 0$$, if $$b_{kn} = a_n$$ for $$n \geq 0$$ and $$b_m = 0$$ otherwise, then $$A(x^k) = B(x) \overset{\text{ops}}{\leftrightarrow} (b_n)$$
 
 Note that in rule 1, we don't mean division by $$x^m$$ in the ring $$\mathbb{R}[[x]]$$, as it does not have an inverse. Rather, it is the [quotient in an Euclidean division](https://math.stackexchange.com/questions/3744068/what-is-the-meaning-of-division-of-a-formal-power-series-by-x) (note that $$\mathbb{R}[[x]]$$ is a *Euclidean domain*).
 
@@ -148,7 +148,7 @@ the 3rd equality is by the inductive hypothesis (i.e. that $$(xD)^{k - 1}A = \su
 
 Using the algebra and calculus of generating functions, we give a succinct generatingfunctionological proof of the formulas for the geometric and arithmetic sequences.
 
-Recall that the **geometric sequence** $$(a\_n)\_{n \geq 0}$$ satisfies $$a\_{n + 1} = r a\_n$$. Let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$. Then by rule 1, $$(a_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(A - a_0)$$, so the recurrence (and rule 4) yields
+Recall that the **geometric sequence** $$(a_n)_{n \geq 0}$$ satisfies $$a_{n + 1} = r a_n$$. Let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$. Then by rule 1, $$(a_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(A - a_0)$$, so the recurrence (and rule 4) yields
 
 $$\frac{1}{x}(A - a_0) = rA \implies A = \frac{a_0}{1 - rx}.$$
 
@@ -156,7 +156,7 @@ Extracting coefficients and using (the surprise tool) linearity, we recover
 
 $$a_n = [x^n]A = a_0[x^n]\sum_{n \geq 0}(rx)^n = a_0r^n.$$
 
-Now, the **arithmetic sequence** $$(b\_n)\_{n \geq 0}$$ satisfies $$b_{n + 1} = b_n + d$$. Let $$(b_n) \overset{\text{ops}}{\leftrightarrow} B$$. Then by rule 1, $$(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$$; Lemma 1 and rule 4 yields $$(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$$, so the recurrence (and rule 4) yields (by partial fractions)
+Now, the **arithmetic sequence** $$(b_n)_{n \geq 0}$$ satisfies $$b_{n + 1} = b_n + d$$. Let $$(b_n) \overset{\text{ops}}{\leftrightarrow} B$$. Then by rule 1, $$(b_{n + 1}) \overset{\text{ops}}{\leftrightarrow} \frac{1}{x}(B - b_0)$$; Lemma 1 and rule 4 yields $$(d) \overset{\text{ops}}{\leftrightarrow} \frac{d}{1 - x}$$, so the recurrence (and rule 4) yields (by partial fractions)
 
 $$\frac{1}{x}(B - b_0) = B + \frac{d}{1 - x} \implies B = \frac{b_0 - d}{1 - x} + \frac{d}{(1 - x)^2}.$$
 
@@ -164,7 +164,7 @@ By rule 2 with $$p(n) = n$$, we have
 
 $$xD\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (p(n)1) = (n) \implies \frac{1}{(1 - x)^2} = \frac{1}{x} \left(xD\frac{1}{1 - x} - 0\right) \overset{\text{ops}}{\leftrightarrow} (n + 1)$$
 
-by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring!) Thus by linearity, we extract the coefficient
+by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring! Also, we can use the fact that if $\frac{1}{1 - x} = A \overset{\text{ops}}{\leftrightarrow} (a_n) = (1)$ then $\frac{1}{(1 - x)^2} = DA \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1}) = (n + 1)$.) Thus by linearity, we extract the coefficient
 
 $$b_n = [x^n]B = (b_0 - d)[x^n]\frac{1}{1 - x} + d[x^n]\frac{1}{(1 - x)^2} = (b_0 - d)1 + d(n + 1) = b_0 + dn$$
 
@@ -172,6 +172,10 @@ since $$(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$$ and $$(n + 1
 
 ### A few more applications (an outline only)
 
-- Binomial theorem - sequence of binomial coefficients and also the theorem itself
-- Fibonacci sequence
-- Catalan numbers
+There are many nice applications of this generatingfunctionological technique. Here are just a few:
+
+- The **Fibonacci sequence** $$F_{n + 2} = F_{n + 1} + F_n$$ for $$n \geq 0$$ with $$F_0 = 0$$ and $$F_1 = 1$$: it has generating function $$F = \frac{x}{1 - x - x^2}$$; we can recover a formula for $$F_n$$ using partial fractions.
+- The **binomial theorem** $$(1 + x)^\alpha = \sum_{n \geq 0} \binom{\alpha}{n} x^n \overset{\text{ops}}{\leftrightarrow} \left(\binom{\alpha}{n}\right)_n$$ where $$\alpha \in \mathbb{R}$$ I talk about this in more detail in the [next post]()!
+- The **Catalan numbers** $$C_n = \frac{1}{n + 1} \binom{2n}{n}$$ have generating function $$C = \frac{1 - \sqrt{1 - 4x}}{2x}$$; using the binomial theorem with $$\alpha = 1/2$$, we can recover this formula for $$C_n$$. Moreover, they satisfy the recurrence $$C_{n + 1} = \sum_{i = 0}^n C_i C_{n - i}$$ with $$C_0 = 1$$; note that $$\left(\sum_{i = 0}^n C_i C_{n - i}\right) \overset{\text{ops}}{\leftrightarrow} C^2$$ so $$\frac{1}{x}(C - 1) = \frac{1}{x}(C - C_0) = C^2$$, which can be used to find $$C$$.
+
+Happy generatingfunctionologing (and happy Easter too $xD$)!
