@@ -58,7 +58,7 @@ and observe that this gives
 
 $$D\left(\left(\frac{1}{1 + x}\right)^\alpha A\right) = 0 \implies \left(\frac{1}{1 + x}\right)^\alpha A = 1$$
 
-where we use the initial condition $$A_0 = \binom{\alpha}{0} = 1$$. Then rearranging, we see that
+where we use the initial condition $$A(0) = \binom{\alpha}{0} = 1$$. Then rearranging, we see that
 
 $$A = \left(\frac{1}{1 + x}\right)^{-\alpha} = (1 + x)^\alpha,$$
 
