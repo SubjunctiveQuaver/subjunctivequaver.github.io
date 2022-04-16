@@ -44,7 +44,7 @@ Note that
 
 $$\frac{\binom{\alpha}{n}}{\binom{\alpha}{n + 1}} = \frac{\alpha(\alpha - 1)\dotsb(\alpha - n + 1)}{\alpha(\alpha - 1)\dotsb(\alpha - n + 1)(\alpha - n)} \frac{(n + 1)!}{n!} = \frac{n + 1}{\alpha - n} \implies (n + 1)\binom{\alpha}{n + 1} = (\alpha - n)\binom{\alpha}{n};$$
 
-this holds for $$n \geq 0$$, with $$\binom{\alpha}{0} = \frac{1}{0!} = 1$$, since 1 is the empty product.
+this is a recurrence for the binomial coefficients that holds for $$n \geq 0$$, with $$\binom{\alpha}{0} = \frac{1}{0!} = 1$$, since 1 is the empty product.
 
 Now recall that if $$A \overset{\text{ops}}{\leftrightarrow} (a_n)$$, then $$DA \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1})$$; this is precisely the left hand side of our recurrence! In summary, and using [rule 2](https://subjunctivequaver.github.io/posts/generatingfunctionological-proof-geometric-arithmetic-sequences/) (on polynomials), we see
 
