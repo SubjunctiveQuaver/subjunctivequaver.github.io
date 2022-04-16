@@ -164,11 +164,23 @@ By rule 2 with $$p(n) = n$$, we have
 
 $$xD\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (p(n)1) = (n) \implies \frac{1}{(1 - x)^2} = \frac{1}{x} \left(xD\frac{1}{1 - x} - 0\right) \overset{\text{ops}}{\leftrightarrow} (n + 1)$$
 
-by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring! Also, we can use the fact that if $\frac{1}{1 - x} = A \overset{\text{ops}}{\leftrightarrow} (a_n) = (1)$ then $\frac{1}{(1 - x)^2} = DA \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1}) = (n + 1)$.) Thus by linearity, we extract the coefficient
+by rule 1. (There are other ways to do this, such as direct manipulation of the power series, but that's boring!) Thus by linearity, we extract the coefficient
 
 $$b_n = [x^n]B = (b_0 - d)[x^n]\frac{1}{1 - x} + d[x^n]\frac{1}{(1 - x)^2} = (b_0 - d)1 + d(n + 1) = b_0 + dn$$
 
 since $$(1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{1 - x}$$ and $$(n + 1) \overset{\text{ops}}{\leftrightarrow} \frac{1}{(1 - x)^2}$$ (recall what this means). This is the formula for the arithmetic sequence; how awesome! (OK that was totally overkill LOL.)
+
+**Exercise 5.** Show that
+
+$$\frac{1}{(1 - x)^2} \overset{\text{ops}}{\leftrightarrow} (n + 1)$$
+
+in the following alternative ways:
+
+1. Use the fact that $$\frac{1}{(1 - x)^2} = D\frac{1}{1 - x}$$, and explicitly differentiating the power series $$\sum_{n \geq 0} x^n$$ and identifying the coefficient that appears.
+2. Use the fact that $$\frac{1}{(1 - x)^2} = D\frac{1}{1 - x}$$ again, but look at the comment in Definition 3 (i.e. that $$DA \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1}).$$ if $$A \overset{\text{ops}}{\leftrightarrow} (a_n)$$; choose $$(a_n)$$ carefully).
+3. Use fact 5 repeatedly, starting from $A = 1$. (What sequence is this the generating function of?)
+
+Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 ### A few more applications (an outline only)
 
