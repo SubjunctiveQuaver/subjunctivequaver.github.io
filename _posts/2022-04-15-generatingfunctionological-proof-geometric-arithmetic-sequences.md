@@ -76,7 +76,7 @@ So it is reasonable to write that
 
 $$\frac{1}{1 - x} = \sum_{n \geq 0} x^n = 1 + x + x^2 + \dotsb;$$
 
-this is true in the formal sense, not just for $$\|x\| < 1$$ as in the analytical case. However, when the power series in the analytical sense converges, it is reasonable to substitute in numerical values for $$x$$. This also gives us our first (simple) result:
+this is true in the formal sense, not just for $$\lvert x\rvert < 1$$ as in the analytical case. However, when the power series in the analytical sense converges, it is reasonable to substitute in numerical values for $$x$$. This also gives us our first (simple) result:
 
 **Lemma 1.** Let $$(1) = (1,1,\dotsc)$$ be the constant sequence; then
 
