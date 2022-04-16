@@ -82,7 +82,7 @@ this is true in the formal sense, not just for $$\lvert x\rvert < 1$$ as in the 
 
 $$\frac{1}{1 - x} \overset{\text{ops}}{\leftrightarrow} (1).$$
 
-Note that extracting coefficients from power series is somehow "linear", in the sense that $$[x^n](A + kB) = [x^n]A + k[x^n]B$$ (the formal power series also form a *vector space* over $$\mathbb{R}$$, and this is a linear map $$\mathbb{R}[[x]] \to \mathbb{R}$$). This is a useful fact that we use later.
+Note that extracting coefficients from power series is somehow "linear", in the sense that $$[x^n](A + kB) = [x^n]A + k[x^n]B$$ (the formal power series also form a *vector space* over $$\mathbb{R}$$, and this is a linear map (functional) $$\mathbb{R}[[x]] \to \mathbb{R}$$). This is a useful fact that we use later.
 
 ![Extracting coefficients from formal power series is linear: a useful tool that will help us later.](https://i.imgflip.com/31po1l.png)
 
@@ -111,17 +111,25 @@ The **derivative operator** $$D$$ on $$\mathbb{R}[[x]]$$ is the map $$A \mapsto 
 We can verify some expected properties of the derivative operator for $$A,B \in \mathbb{R}[[x]]$$:
 
 - It is *linear* (where we think of $$\mathbb{R}[[x]]$$ as a vector space): $$D(A + kB) = DA + kDB$$ where $$k \in \mathbb{R}$$,
-- It satisfies a sort of *product rule*: $$D(AB) = A(DB) + B(DA)$$.
+- It satisfies a sort of *product rule*: $$D(AB) = A(DB) + (DA)B$$.
 
 **Exercise 2.** Check thse both! Remember to use the correct rule for multiplying power series for the product rule.
 
-Repeated differentiation is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. A common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. For example,
+Repeated differentiation is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. A common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. For example,
 
 $$(xD)^2 = xD(xD) = x(D + xD^2) = xD + x^2D^2 \implies (xD)^2A = xDA + x^2D^2A$$
 
-by the product rule.
+by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx = 1 \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of differential operators with polynomial coefficients.
 
-**Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? (I haven't tried this yet, but it looks promising.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+**Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? ~~(I haven't tried this yet, but it looks promising.)~~ Update (thanks [Ally](https://piecewise.org/exploration/an-adventure-in-rewriting-polynomials)): it looks like
+
+$$(xD)^k = \left\{k \atop 0\right\} + \left\{k \atop 1\right\} xD + \left\{k \atop 2\right\} x^2D^2 + \dotsb + \left\{k \atop k\right\} x^k D^k,$$
+
+where
+
+$$\left\{k \atop n\right\} = \frac{1}{n!} \sum_{i = 0}^n (-1)^i \binom{n}{i} (n - i)^k$$
+
+are [Stirling numbers of the 2nd kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind), which count the number of ways to partition $$[n] = \{1,\dotsc,n\}$$ into $$k$$ (nonempty) parts. (Note that $$\left\{k \atop 0\right\} = 0$$ if $$k \geq 1$$, but $$\left\{0 \atop 0\right\} = 1$$, and $$(xD)^0 = 1 = \operatorname{Id}_{\mathbb{R}[[x]]}$$, so the pattern holds.) Prove/disprove this claim, and post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Using these, we can identify some rules for the generating functions of some transformations of sequences:
 
