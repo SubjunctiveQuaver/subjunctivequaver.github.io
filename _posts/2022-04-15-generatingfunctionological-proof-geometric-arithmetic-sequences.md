@@ -90,15 +90,21 @@ Note that extracting coefficients from power series is somehow "linear", in the 
 
 Throughout this section, let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$. A **generatingfunctionological** approach, as coined in [Wilf's book "generatingfunctionology"](https://www2.math.upenn.edu/~wilf/DownldGF.html), is an approach to working with sequences using their generating functions.
 
-**Definition 2.** Let $$(a_n)$$ be a sequence. Then a ($$k$$th order) **recurrence** for $$(a_n)$$ is an equation $$\varphi(n,a_n,a_{n - 1},\dotsc,a_{n - k}) = 0$$ which holds for particular $$n$$.
+**Definition 2.** Let $$(a_n)$$ be a sequence. Then a ($$k$$th order) **recurrence** for $$(a_n)$$ is an equation $$\varphi(n,a_n,a_{n + 1},\dotsc,a_{n + k}) = 0$$ which holds for particular $$n$$.
 
 If we fix a value of $$n$$, then a recurrence gives us one equation that $$(a_n)$$ satisfies. However, the expression
 
-$$\sum_n \varphi(n,a_n,a_{n - 1},\dotsc,a_{n - k})x^n = 0$$
+$$\sum_n \varphi(n,a_n,a_{n + 1},\dotsc,a_{n + k})x^n = 0$$
 
 simultaneously encodes *every* equation that $$(a_n)$$ satisfies that is given by the recurrence. In the (usual) case that $$n$$ ranges over $$\mathbb{N}$$, we recover the generating function of $$(a_n)$$; otherwise observe for instance that $$\sum_{n \geq N} a_n x^n = A - a_0 - a_1x - \dotsb - a_{N - 1}x^{N - 1}$$.
 
 Thus, to solve a recurrence relation, we can attempt to convert the recurrence for $$(a_n)$$ into an equation involving its generating function $$A$$ by finding the generating functions of the sequences equated in the recurrence; then if we can solve this for $$A$$, then we have found $$a_n = [x^n]A$$. However, we may not explicitly find $$A$$ as a (formal) power series; using different techniques (such as partial fractions or the binomial theorem) we can find a power series expansion to extract the coefficients $$a_n$$.
+
+A recurrence is **linear** if $$a_{n + k} = f_0 a_n + f_1 a_{n + 1} + \dotsb + f_{k - 1} a_{n + k - 1}$$ for some $$k$$, where each $$f_i$$, a **coefficient**, is a function of $$n$$. We present a quick theorem without proof:
+
+**Theorem 1.** Let $$A \overset{\text{ops}}{\leftrightarrow} (a_n)$$. Then $$A$$ is a rational function $$p/q$$ (where $$p,q$$ have lowest possible degree) with $$\deg q = k$$ if and only if $$(a_n)$$ satisfies a linear recurrence with constant coefficients of order $$k$$.
+
+After reading this article, you will have the tools to prove this theorem yourself! (If you want to, of course!) One direction is by the technique for finding a generating function outlined below, and the other direction follows by considering an expansion of $$q A = p$$.
 
 ### The algebra and calculus of generating functions
 
@@ -115,13 +121,15 @@ We can verify some expected properties of the derivative operator: it is a **der
 
 **Exercise 2.** Check thse both! Remember to use the correct rule for multiplying power series for the product rule.
 
-*Repeated differentiation* is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. A common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. For example,
+We can also combine the derivative operator with other operators on $$\mathbb{R}[[x]]$$. For operators $$S,T$$, define their **sum** $$S + T$$ to be the map $$A \mapsto SA + TA$$ (*pointwise addtion*), and their **product** $$ST$$ to be the map $$A \mapsto S(TA)$$ (*composition of operators*). Then **iteration** of $$T$$ is defined by $$T^k$$, which is the map $$A \mapsto \underbrace{T(T(\dotsb(TA)\dotsb))}_{k\ \text{times}}$$.
+
+*Repeated differentiation* is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. Another common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, where $$1$$ denotes the **identity operator** $$A \mapsto A$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. Indeed,
 
 $$(xD)^2 = xD(xD) = x(D + xD^2) = xD + x^2D^2 \implies (xD)^2A = xDA + x^2D^2A$$
 
-by the product rule. Furthermore, care must be taken as these operators do not generally commute: $$Dx \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$; then $$Dx1 = Dx = 1 \neq 0 = xD1$$). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of *differential operators* with polynomial coefficients (the addition is pointwise addition, and the product is composition of operators).
+by the product rule. Furthermore, care must be taken as these operators do not generally commute: while $$xD(xD + 1) = (xD)^2 + xD = (xD + 1)xD$$, note that $$Dx \neq xD$$ (we can think of $x$ as an operator on $$\mathbb{R}[[x]]$$ with $$A \mapsto xA$$; then $$Dx1 = Dx = 1 \neq 0 = xD1$$). This is all related to the notion of a [Weyl algebra](https://en.wikipedia.org/wiki/Weyl_algebra), which is a ring of *differential operators* with polynomial coefficients (the addition is pointwise addition, and the product is composition of operators).
 
-**Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? ~~(I haven't tried this yet, but it looks promising.)~~ Update (thanks [Ally](https://piecewise.org/exploration/an-adventure-in-rewriting-polynomials)): it looks like
+**Exercise 3.** Similar to the above, what is an expansion of $$(xD)^k$$ without any powers of $$xD$$? ~~(I haven't tried this yet, but it looks promising.)~~ Update (thanks [Ally](https://piecewise.org/exploration/an-adventure-in-rewriting-polynomials) and Jacob): it looks like
 
 $$(xD)^k = \left\{k \atop 0\right\} + \left\{k \atop 1\right\} xD + \left\{k \atop 2\right\} x^2D^2 + \dotsb + \left\{k \atop k\right\} x^k D^k,$$
 
@@ -194,8 +202,10 @@ Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.g
 
 There are many nice applications of this generatingfunctionological technique. Here are just a few:
 
-- The **Fibonacci sequence** $$F_{n + 2} = F_{n + 1} + F_n$$ for $$n \geq 0$$ with $$F_0 = 0$$ and $$F_1 = 1$$: it has generating function $$F = \frac{x}{1 - x - x^2}$$; we can recover a formula for $$F_n$$ using partial fractions.
+- The **Fibonacci sequence** $$(F_n)$$ satisfies the linear recurrence $$F_{n + 2} = F_{n + 1} + F_n$$ for $$n \geq 0$$ with $$F_0 = 0$$ and $$F_1 = 1$$. It has generating function $$F = \frac{x}{1 - x - x^2}$$; we can recover a formula for $$F_n$$ using partial fractions.
 - The **binomial theorem** $$(1 + x)^\alpha = \sum_{n \geq 0} \binom{\alpha}{n} x^n \overset{\text{ops}}{\leftrightarrow} \left(\binom{\alpha}{n}\right)_n$$ where $$\alpha \in \mathbb{R}$$. I talk about this in more detail in [the next post](https://subjunctivequaver.github.io/posts/generatingfunctionological-proof-binomial-theorem/)!
 - The **Catalan numbers** $$C_n = \frac{1}{n + 1} \binom{2n}{n}$$ have generating function $$C = \frac{1 - \sqrt{1 - 4x}}{2x}$$; using the binomial theorem with $$\alpha = 1/2$$, we can recover this formula for $$C_n$$. Moreover, they satisfy the recurrence $$C_{n + 1} = \sum_{i = 0}^n C_i C_{n - i}$$ with $$C_0 = 1$$; note that $$\left(\sum_{i = 0}^n C_i C_{n - i}\right) \overset{\text{ops}}{\leftrightarrow} C^2$$ by rule 3, so $$\frac{1}{x}(C - 1) = \frac{1}{x}(C - C_0) = C^2 \iff C - 1 = xC^2$$, which can be used to find $$C$$ as before (use the initial condition $$C_0 = 1$$ to pick the negative square root). Note that $$C_n$$ is, for instance, the number of ways to have a balanced string of parentheses of length $$2n$$, e.g. something like `(()(()))(())`, but not `())((())`.
+
+**Exercise 6.** (Adapted from discussion on the [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg) server.) Consider the **triangular numbers** $$T_n = \frac{n(n + 1)}{2}$$, and define a recurrence $$a_{n + 1} = a_n + T_n$$, with $$a_0 = 0$$. Find a linear recurrence with constant coefficients that $$(a_n)$$ satisfies (consider Theorem 2 above), and use a generatingfunctionological approach to find an explicit formula for $$a_n$$ (feel free to use a computer to find a series expansion). Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Happy generatingfunctionologing (and happy Easter too $xD$)!
