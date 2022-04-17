@@ -121,7 +121,7 @@ We can verify some expected properties of the derivative operator: it is a **der
 
 **Exercise 2.** Check thse both! Remember to use the correct rule for multiplying power series for the product rule.
 
-We can also combine the derivative operator with other operators on $$\mathbb{R}[[x]]$$. For operators $$S,T$$, define their **sum** $$S + T$$ to be the map $$A \mapsto SA + TA$$ (*pointwise addtion*), and their **product** $$ST$$ to be the map $$A \mapsto S(TA)$$ (*composition of operators*). Then **iteration** of $$T$$ is defined by $$T^k$$, which is the map $$A \mapsto \underbrace{T(T(\dotsb(TA)\dotsb))}_{k\ \text{times}}$$.
+We can also combine the derivative operator with other operators on $$\mathbb{R}[[x]]$$. For operators $$S,T$$, define their **sum** $$S + T$$ to be the map $$A \mapsto SA + TA$$ (*pointwise addtion*), and their **product** $$ST$$ to be the map $$A \mapsto S(TA)$$ (*composition of operators*). The $$k$$th **iterate** of $$T$$ is defined by $$T^k := \underbrace{TT\dotsb T}_{k\ \text{copies}}$$, which is the map $$A \mapsto \underbrace{T(T(\dotsb(TA)\dotsb))}_{k\ \text{times}}$$.
 
 *Repeated differentiation* is denoted by $$D^k$$, i.e. $$D^kA$$ is the $$k$$th (formal) derivative of $$A$$. Another common operator that comes up when solving recurrences is the **~~ecks dee~~ xD operator** $$xD$$ on $$\mathbb{R}[[x]]$$, defined as the map $$A \mapsto xDA$$, i.e. differentiation then multiplication by $$x$$. We often deal with *polynomials* in $$xD$$, where $$1$$ denotes the **identity operator** $$A \mapsto A$$, but note that $$(xD)^2 = xD(xD) \neq x^2 D^2$$. Indeed,
 
