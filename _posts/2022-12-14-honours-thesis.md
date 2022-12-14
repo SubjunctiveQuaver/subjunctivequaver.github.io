@@ -18,4 +18,10 @@ Below is a recording of my final honours presentation. I motivated my research u
 
 <iframe width="840" height="472.5" src="https://www.youtube.com/embed/CwkCJISUu8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-While I might not be doing as much maths in the future, I hope to continue to review and share some more interesting things I've learnt along my mathematical journey. Thanks for coming along this journey with me, and I look forward to continuing in my new role at the [Department of Education and Training](https://education.vic.gov.au/) and working towards better outcomes for education across our state!
+While I might not be doing as much maths in the future, I hope to continue to review and share some more interesting things I've learnt along my mathematical journey. Despite going into full-time work not directly related to my field of study, my honours year was by no means a waste of time, and I am eternally grateful for this opportunity to spend 2022 studying something I'm passionate about. The following verse helped me get through these bittersweet feelings at the end of my honours year:
+
+"There is a time for everything,\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens"\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- Ecclesiastes 3:1 (NIV)
+
+Thanks for coming along this journey with me, and I look forward to continuing in my new role at the [Department of Education and Training](https://education.vic.gov.au/) and working towards better outcomes for education across our state!
