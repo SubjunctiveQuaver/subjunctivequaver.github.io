@@ -1,6 +1,6 @@
 ---
 title: My honours thesis --- minimum bases for permutation groups
-date: 2022-12-14 23:50:00 +1000
+date: 2022-12-14 23:50:00 +1100
 categories: [Epic Maths Time, Cool Stuff]
 tags: [algebra, uni-maths] # TAG names should always be lowercase
 math: true
@@ -12,6 +12,6 @@ Testing :)
 
 Testing :)
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CwkCJISUu8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CwkCJISUu8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Hello!
