@@ -10,8 +10,8 @@ My honours research was in group theory, on *minimum bases for permutation group
 
 My other passions include music (in particular Taylor Swift lol), transport, geography, history and science. One thing that I realised upon reflection near the end of my honours year was that despite going into full-time work not directly related to my field of study, I am eternally grateful for this God-given opportunity to spend 2022 studying something I'm passionate about. The following verse helped me get through these bittersweet feelings at the end:
 
-``There is a time for everything,
-    and a season for every activity under the heavens''
-    --- Ecclesiastes 3:1 (NIV)
+"There is a time for everything,\
+&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- Ecclesiastes 3:1 (NIV)
 
 By the way, if you understand the meaning behind the blog icon... good job :D
