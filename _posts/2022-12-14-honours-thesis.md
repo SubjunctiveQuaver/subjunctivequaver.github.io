@@ -10,7 +10,7 @@ I'm really excited to share my completed honours thesis! I'm honoured that my su
 
 My research was in *minimum bases for permutation groups*. A permutation group is, loosely speaking, a collection of *permutations* of a set (essentially rearrangements of the set) which, when applied in succession, remains in the collection; the reverse permutation must also be in the collection, as well as the identity *(do nothing)* permutation. A *base* is a collection of points in the set being permuted, such that if a permutation in the collection fixes every point in the base, then that permutation must be the identity. My goal was to talk about what is known about the smallest possible size of a base of a given permutation group, with use of the `GAP` computational language, and with original instructive examples interwoven throughout.
 
-<object data="{{ site.url }}{{ site.baseurl }}/pdfs/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected)_with_marks.pdf" width="840" height="1260" type="application/pdf"></object>
+<object data="{{ site.url }}{{ site.baseurl }}/pdfs/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected)_with_marks.pdf" width="840" height="840" type="application/pdf"></object>
 
 Below is a recording of my final honours presentation. I motivated my research using the Rubik's group (permutations of the Rubik's cube), which is one of the many applications of permutation groups, and one that is close to my heart (thanks Wes). I tried to make it somewhat fun and engaging with the Rubik's cube example --- I hope you will find it as interesting as I did!
 
