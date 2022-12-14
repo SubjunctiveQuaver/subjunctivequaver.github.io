@@ -8,12 +8,7 @@ math: true
 
 Testing :)
 
-<object data="{{ site.url }}/pdfs/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected).pdf" width="840" height="1260" type="application/pdf"></object>
-
-Test part 2
-
-<embed src="{{ site.url }}/pdfs/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected).pdf" width="840" height="1260" 
- type="application/pdf">
+<object data="{{ site.url }}{{ site.baseurl }}/pdfs/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected).pdf" width="840" height="1260" type="application/pdf"></object>
 
 Testing :) pdf should be above
 
