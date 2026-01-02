@@ -4,14 +4,22 @@ icon: fas fa-info
 order: 4
 ---
 
-I'm currently working as a graduate data analyst at the [Department of Education and Training, Victoria](https://education.vic.gov.au/). In 2022, I completed my honours year in pure maths at Monash University, achieving first class honours. I have also completed an undergraduate double degree, majoring in pure maths and econometrics (also at Monash University). I have previously worked as a teaching associate at Monash University, instructing classes in algebra, calculus and discrete maths.
+**Welcome to my blog, *Forms and Formation*!**
 
-My honours research was in group theory, on *minimum bases for permutation groups*, with A/Prof. Heiko Dietrich and Dr Santiago Barrera Acevedo as my supervisors. I love sharing interesting things that I learn, and I hope that this blog will contain some epic content that you will enjoy! Feel free to join us on the unofficial [Maths @ Monash Discord server](https://discord.gg/hx63ZwSXBg)!
+I'm Lawrence, and I work as a data analyst in the Victorian public service, currently at the Department of Education. My academic background is in mathematics: in 2022, I completed first‑class honours in pure mathematics at Monash University, following an undergraduate double degree in pure maths and econometrics.
 
-My other passions include music (in particular Taylor Swift lol), transport, geography, history and science. One thing that I realised was that despite going into full-time work not directly related to my field of study, I am eternally grateful for this God-given opportunity to spend 2022 studying something I'm passionate about. The following verse helped me get through these bittersweet feelings at the end of my honours year:
+During my studies, I worked as a teaching associate at Monash University, teaching classes in algebra, calculus, and discrete mathematics. My honours research was in group theory, focusing on [*minimum bases for permutation groups*](https://subjunctivequaver.github.io/posts/honours-thesis/), supervised by A/Prof. Heiko Dietrich and Dr Santiago Barrera Acevedo.
+
+Although my day‑to‑day work is no longer directly academic, I remain deeply shaped by mathematical thinking – especially ideas of structure, equivalence, and transformation. This blog began as *Epic Maths Time*, a place to share mathematical curiosities, but is shifting into a space for reflecting on how structure and formation unfolds across different domains.
+
+Alongside mathematics, I'm particularly interested in theology, music (yes, including Taylor Swift), transport and reflective AI use. I'm drawn to the ways these fields intersect – how patterns repeat, how systems evolve and how meaning emerges over time.
+
+I'm grateful for the opportunity I had to spend 2022 immersed in a subject I love, and for the ways that season continues to shape me. One verse that stayed with me during that season was:
 
 "There is a time for everything,\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens"\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--- Ecclesiastes 3:1 (NIV)
 
-By the way, if you understand the meaning behind the blog icon... good job :D
+While it spoke most directly to that moment, I still find its wisdom shaping how I think about seasons, formation and the work this blog is becoming – *formed by structure, transformed by grace*.
+
+And yes – if you understand the meaning behind the blog icon, good job 🙂
