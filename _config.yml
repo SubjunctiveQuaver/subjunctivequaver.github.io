@@ -15,12 +15,12 @@ timezone: Australia/Melbourne
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Epic Maths Time                          # the main title
+title: Forms & Formation                          # the main title
 
-tagline: Lawrence's blog on epic mathematical tidbits!   # it will display as the sub-title
+tagline: Formed by structure, transformed by grace   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Lawrence's blog on epic mathematical tidbits!
+  Lawrence’s blog on mathematical ideas, structure, and formation  exploring maths, music, worship, and the quiet work of transformation. Previously ‘Epic Maths Time’.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://subjunctivequaver.github.io/'
@@ -42,6 +42,7 @@ social:
     - https://github.com/SubjunctiveQuaver       # change to your github homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/lawrencechen11
+    - https://www.instagram.com/lawrencechen11
     - https://www.linkedin.com/in/lawrencechen11
 
 google_site_verification: google_meta_tag_verification # change to your verification string
