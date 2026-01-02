@@ -2,7 +2,7 @@
 title: A generatingfunctionological proof of the geometric and arithmetic sequence formulas
 date: 2022-04-16 11:28:00 +1000
 categories: [Epic Maths Time, New Perspectives]
-tags: [combinatorics, algebra, uni-maths] # TAG names should always be lowercase
+tags: [combinatorics, algebra, uni-maths, maths] # TAG names should always be lowercase
 math: true
 ---
 

@@ -2,7 +2,7 @@
 title: Integrating rational functions, partial fractions, and a taste of algebra, part 1
 date: 2021-06-29 15:42:00 +1000
 categories: [Epic Maths Time, Cool Stuff]
-tags: [algebra, calculus, rings, polynomials, uni-maths] # TAG names should always be lowercase
+tags: [algebra, calculus, rings, polynomials, uni-maths, maths] # TAG names should always be lowercase
 math: true
 ---
 

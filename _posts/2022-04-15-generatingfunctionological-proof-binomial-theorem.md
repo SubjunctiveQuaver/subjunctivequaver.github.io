@@ -2,7 +2,7 @@
 title: A generatingfunctionological proof of the binomial theorem
 date: 2022-04-16 13:00:00 +1000
 categories: [Epic Maths Time, New Perspectives]
-tags: [combinatorics, algebra, uni-maths] # TAG names should always be lowercase
+tags: [combinatorics, algebra, uni-maths, maths] # TAG names should always be lowercase
 math: true
 ---
 

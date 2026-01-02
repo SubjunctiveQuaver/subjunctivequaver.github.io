@@ -2,7 +2,7 @@
 title: An interactive visualisation of immersed surfaces on Desmos
 date: 2021-06-20 00:40:00 +1000
 categories: [Epic Maths Time, Cool Stuff]
-tags: [differential-geometry, linear-algebra, uni-maths] # TAG names should always be lowercase
+tags: [geometry, linear-algebra, uni-maths, maths, essay] # TAG names should always be lowercase
 math: true
 ---
 
