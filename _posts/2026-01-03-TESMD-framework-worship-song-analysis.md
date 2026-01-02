@@ -259,6 +259,8 @@ The examples here aren't meant to claim objectivity so much as coherence. They w
 
 ### ***SEVEN* -- 'Majesty on Earth'**
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6ZVXKVGiyL96L6pflgfWrt?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 | Song                         | T   | E   | S   | M   | D   | Lexical spines                                                     |
 | ---------------------------- | --- | --- | --- | --- | --- | ------------------------------------------------------------------ |
 | **Ancient Gates**            | +4  | +4  | +4  | +4  | +2  | Majestic · Proclamatory · Exultant · Anthemic · Pre‑digested       |
@@ -318,6 +320,8 @@ Musically, the album sustains a processional energy -- lifted and expansive -- w
 ---
 
 ### ***EIGHT* -- 'The Cross, the Kingdom and the Way between'**
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0yGuCkWWoXxsPK09agGQQu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 | Song                                   | T   | E   | S   | M   | D   | Lexical spines                                                     |
 | -------------------------------------- | --- | --- | --- | --- | --- | ------------------------------------------------------------------ |
