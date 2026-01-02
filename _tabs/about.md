@@ -16,9 +16,9 @@ Alongside mathematics, I'm particularly interested in theology, music (yes, incl
 
 I'm grateful for the opportunity I had to spend 2022 immersed in a subject I love, and for the ways that season continues to shape me. One verse that stayed with me during that season was:
 
-"There is a time for everything,\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens"\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Ecclesiastes 3:1 (NIV)
+> "There is a time for everything,\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens"\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Ecclesiastes 3:1 (NIV)
 
 While it spoke most directly to that moment, I still find its wisdom shaping how I think about seasons, formation and the work this blog is becoming -- *formed by structure, transformed by grace*.
 
