@@ -1,5 +1,5 @@
 ---
-title: "TESMD: a framework for worship song analysis"
+title: "TESMD: a mathematical framework for worship song analysis"
 date: 2026-01-03 01:30:00 +1100
 categories: [Transformed by Grace, Harmonic Theology]
 tags: [worship, theology, music, frameworks, geometry, ai] # TAG names should always be lowercase
