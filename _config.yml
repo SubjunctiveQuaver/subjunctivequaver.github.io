@@ -78,6 +78,9 @@ img_cdn: ''
 # the avatar on sidebar, support local or CORS resources
 avatar: https://raw.githubusercontent.com/SubjunctiveQuaver/subjunctivequaver.github.io/main/SubjunctiveQuaver.png
 
+# Open Graph image for social sharing (Facebook, Messenger, etc.)
+og_image: /assets/img/SubjunctiveQuaver_Square_1024.png
+
 # boolean type, the global switch for ToC in posts.
 toc: true
 
