@@ -120,8 +120,11 @@ TESMD was developed to describe worship songs with greater precision than common
 
 The goal was to create a model that captures theological, emotional, spiritual, musical and dispositional dimensions independently, allowing songs to be described accurately without conflation. Shared language allows worship leaders and communities to talk about difference without turning preference into judgement.
 
+**A grounding note (thanks to the Men's Theology group from my church, FGAM):** \\
+Worship is fundamentally about God, and Christlikeness is formed through the doing of worship -- obedience, surrender, devotion, participation -- rather than through environment or aesthetic alone. Frameworks like TESMD simply help us notice the patterns of formation we're already participating in.
+
 **A note on application over time (sets and trajectories)** \\
-While the examples here focus on individual songs, one of the most interesting ways to use TESMD is at the level of worship sets and how they unfold over time. Looking at sequences of songs can help surface movement, balance, and formation across a service -- or across months and years -- making it easier to notice the theological and emotional journeys we're inviting congregations into. And, as Iain from my church pointed out, this kind of pattern‑spotting doesn't stop at one church or context -- it opens up ways of noticing how worship takes shape across communities around the world.
+While the examples here focus on individual songs, one of the most interesting ways to use TESMD is at the level of worship sets and how they unfold over time. Looking at sequences of songs can help surface movement, balance, and formation across a service -- or across months and years. This makes it easier to notice the theological and emotional journeys we're inviting congregations into. And, as Iain from my church pointed out, this kind of pattern‑spotting doesn't stop at one church or context -- it opens up ways of noticing how worship takes shape across communities around the world.
 
 The next sections explore the motivation, development, and some mathematical structure behind TESMD. If you'd rather see it in action, you can skip ahead to [the practical examples](#3-tesmd-examples--brooke-ligertwoods-seven-and-eight).
 
