@@ -10,7 +10,7 @@ Dear reader... I'm excited that this blog is back after a 3-year pause. Formerly
 
 Same brain, new name. I'm still guided by my algebraic roots, inclined towards structure and patterns. I'm calling this new direction **harmonic theology**: part musical, part mathematical, fully faithful, and (hopefully) attentive to the deeper patterns that hold things together.
 
-**Harmonic theology** is an intentional bridge between music, mathematics, and theology -- drawing on the depth and power of all three. It brings together lyrical and musical analysis with the tools of algebra, geometry, analysis and statistics, all grounded in theology. The aim is attentiveness to the deeper patterns that shape worship and formation.
+**Harmonic theology** is an intentional bridge between music, mathematics, and theology -- drawing on the depth and power of all 3 fields. It brings together lyrical and musical analysis with the tools of algebra, geometry, analysis and statistics, all grounded in theology. The aim is attentiveness to the deeper patterns that shape worship and formation.
 
 ---
 
