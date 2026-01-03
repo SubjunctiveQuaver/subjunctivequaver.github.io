@@ -20,7 +20,7 @@ Over the 2025--2026 New Year, I was busy -- but a different sort of busy. Busy c
 - what this all reveals about worship that speaks to me
 - an invitation to try TESMD yourself using AI.
 
-I'll admit upfront that TESMD is a slightly ridiculous thing to build. But it grew out of a genuine need for language -- a way of making sense of how I experience worship, and why certain songs shape me differently over time.
+I'll admit upfront that TESMD is a slightly ridiculous thing to build. But it grew out of a genuine need for language -- a way of making sense of how I experience worship, why certain songs shape me differently over time, and how patterns begin to emerge when you stop looking at songs in isolation.
 
 This work was shaped through prayerful reflection and iterative dialogue, with Microsoft Copilot AI used as a tool for refinement, structure and analytical clarity. I've done this intentionally -- as an example of how artificial intelligence, when used humbly and discerningly, can assist spiritual formation, serving the work of theology rather than usurping it.
 
