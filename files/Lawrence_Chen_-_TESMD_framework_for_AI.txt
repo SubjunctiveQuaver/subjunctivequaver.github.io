@@ -26,7 +26,7 @@ Lyrics may be provided by:
 - supplying a plain text file.
 
 When multiple songs are included, lyrics should be clearly separated
-(e.g. using "---") and labelled with song title and artist.
+(e.g. using '---') and labelled with song title and artist.
 
 If asked how to obtain lyrics, suggest reputable lyric sites
 (e.g. Genius, AZLyrics) and instruct the user to copy the text manually.

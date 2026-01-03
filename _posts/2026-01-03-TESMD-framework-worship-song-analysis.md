@@ -17,7 +17,8 @@ Over the 2025--2026 New Year, I was busy -- but a different sort of busy. Busy c
 - mathematical notes
 - lexical spines
 - detailed examples from *SEVEN* and *EIGHT* by Brooke Ligertwood (2 of my favourite worship albums)
-- what this all reveals about worship that speaks to me.
+- what this all reveals about worship that speaks to me
+- an invitation to try TESMD yourself using AI.
 
 I'll admit upfront that TESMD is a slightly ridiculous thing to build. But it grew out of a genuine need for language -- a way of making sense of how I experience worship, and why certain songs shape me differently over time.
 
@@ -117,10 +118,12 @@ This shared orientation keeps the model intuitive and internally consistent: pos
 
 TESMD was developed to describe worship songs with greater precision than common shorthand labels such as *'slow', 'intimate',* or *'majestic'.* These descriptors collapse multiple dimensions into a single impression and obscure important distinctions.
 
-The goal was to create a model that captures theological, emotional, spiritual, musical, and dispositional dimensions independently, allowing songs to be described accurately without conflation.
+The goal was to create a model that captures theological, emotional, spiritual, musical and dispositional dimensions independently, allowing songs to be described accurately without conflation. Shared language allows worship leaders and communities to talk about difference without turning preference into judgement.
 
 **A note on application over time (sets and trajectories)** \\
 While the examples here focus on individual songs, one of the most interesting ways to use TESMD is at the level of worship sets and how they unfold over time. Looking at sequences of songs can help surface movement, balance, and formation across a service -- or across months and years -- making it easier to notice the theological and emotional journeys we're inviting congregations into. And, as Iain from my church pointed out, this kind of pattern‑spotting doesn't stop at one church or context -- it opens up ways of noticing how worship takes shape across communities around the world.
+
+The next sections explore the motivation, development, and some mathematical structure behind TESMD. If you'd rather see it in action, you can skip ahead to [the practical examples](#3-tesmd-examples--brooke-ligertwoods-seven-and-eight).
 
 ---
 
@@ -216,7 +219,7 @@ $$
 
 ---
 
-##### **Alternative metric: Chebyshev (L∞)**
+##### **Alternative metric: Chebyshev (L^∞)**
 
 $$
 d_\infty(a, b) = \max\{|T_a - T_b|, |E_a - E_b|, |S_a - S_b|, |M_a - M_b|, |D_a - D_b|\}
@@ -254,6 +257,8 @@ Formally, these are **morphisms** of the ambient normed space, composed with pro
 
 **A quick word on subjectivity:** \\
 The examples here aren't meant to claim objectivity so much as coherence. They were stress‑tested over time, and more than once a judgement I wasn't happy with forced me back to the drawing board -- redefining an axis, refining its range or even adding a new one. In that sense, the examples didn't just apply the model: they helped form it.
+
+These examples are grounded in the [TESMD lexical spines](#4-tesmd-model-axis-lexical-spines), which formalise the descriptive language used here. The spines are introduced in the following section. Readers may find it helpful to return to them when seeing the framework in use.
 
 ---
 
@@ -313,13 +318,13 @@ Musically, the album sustains a processional energy -- lifted and expansive -- w
 
 - The **proclamatory core is extremely tight**: *Ancient Gates* and *King Jesus* merge first, with *A Thousand Hallelujahs* close behind and *Banner* joining as a slightly looser extension, forming a compact cluster centred on kingship, authority, and declarative praise.
 
-- An **interior / repentant formation cluster** follows, with *Nineveh* and *Burn* cohering first and I Belong to Jesus joining shortly after, forming a prayer‑shaped grouping marked by surrender and inward formation.
+- An **interior--repentant formation cluster** follows, with *Nineveh* and *Burn* cohering first and I Belong to Jesus joining shortly after, forming a prayer‑shaped grouping marked by surrender and inward formation.
 
 - *Honey in the Rock* remains **unclustered** as a joyful testimonial outlier, while *Communion* **stands apart** as a sacramental and cruciform singularity.
 
 ---
 
-### ***EIGHT* -- 'The Cross, the Kingdom and the Way between'**
+### ***EIGHT* -- 'The Cross, the Kingdom and the Way Between'**
 
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0yGuCkWWoXxsPK09agGQQu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
@@ -382,7 +387,7 @@ Reverence and motion are held together: surrender is embodied rather than static
 
 - A **resilient confidence pair** forms at a moderate distance, linking *Desert Song* and *Bless God / Every Chance I Get* around lived trust, forward motion, and steady musical drive.
 
-- A **devotional‑-formational prayer cluster** emerges through mutual closeness between *Lead Me to the Cross*, *I Will Exalt You*, and *Like Incense / Sometimes by Step*, forming a reflective grouping marked by surrender, affection, and interior formation.
+- A **devotional--formational prayer cluster** emerges through mutual closeness between *Lead Me to the Cross*, *I Will Exalt You*, and *Like Incense / Sometimes by Step*, forming a reflective grouping marked by surrender, affection, and interior formation.
 
 - *Calvary's Enough* remains **unclustered** as a cruciform singularity, while *Soon* **stands apart** as a devotional eschatological outlier.
 
