@@ -1,6 +1,8 @@
----
-title: "TESMD: a mathematical framework for worship song analysis -- AI user guide"
+# "TESMD: a mathematical framework for worship song analysis -- AI guide"
+
+author: Lawrence Chen
 date: 2026-01-03 10:52:00 +1100
+
 ---
 
 ## 0. TESMD analysis context
@@ -15,7 +17,7 @@ Source: https://subjunctivequaver.github.io/posts/TESMD-framework-worship-song-a
 Begin by asking the user what they would like to analyse:
 - a single song (Song title -- Artist)
 - an album (Album title -- Artist)
-- a playlist or collection (list songs in track order as Song title -- Artist)
+- a playlist or collection (list songs in track order as Song title -- Artist).
 
 Once the scope is clear, request lyrics before proceeding.
 
@@ -48,7 +50,7 @@ After analysis, ask whether the user would like optional mathematical analysis,
 such as:
 - distance comparisons
 - centroids for albums or playlists
-- cluster identification
+- cluster identification.
 
 ### Note on M (Musical energy)
 
