@@ -488,4 +488,10 @@ At the same time, I have a deep affection for the big **T+** moments -- the cosm
 
 ---
 
+## **5. Try it yourself -- using TESMD with AI**
+
+If you're curious to try this yourself, TESMD works just as well on your own playlists. If you drop the TESMD AI guide into an AI chat, it will first ask what you want to analyse (a song, album, or playlist), then prompt you to supply lyrics in a clear format. It will describe how the songs are oriented across the TESMD axes using evidence from the lyrics, invite discussion about what feels right or wrong, and treat the analysis as provisional and open to refinement. If you wish, it can then apply simple geometric tools -- such as distance, centroids, or clustering -- to explore patterns across a collection.
+
+You can download the TESMD AI guide as a plain text file here: [download the TESMD AI guide]({{ site.url }}{{ site.baseurl }}/files/Lawrence_Chen_-_TESMD_framework_for_AI.txt).
+
 Thanks for reading! One thing's for sure -- there will be more coming. I'm keen to explore further applications of TESMD -- especially how it plays out across worship sets and longer arcs of formation -- and to share a few other frameworks I've been tinkering with along the way. Credit goes to many late nights, slow iteration, and the steady help of Copilot in keeping ideas honest and structured :)
