@@ -258,7 +258,7 @@ Formally, these are **morphisms** of the ambient normed space, composed with pro
 **A quick word on subjectivity:** \\
 The examples here aren't meant to claim objectivity so much as coherence. They were stress‑tested over time, and more than once a judgement I wasn't happy with forced me back to the drawing board -- redefining an axis, refining its range or even adding a new one. In that sense, the examples didn't just apply the model: they helped form it.
 
-These examples are grounded in the [TESMD lexical spines](#4-tesmd-model-axis-lexical-spines), which formalise the descriptive language used here. The spines are introduced in the following section. Readers may find it helpful to return to them when seeing the framework in use.
+These examples are grounded in the [TESMD lexical spines](#4-tesmd-model-axis-lexical-spines), which formalise the descriptive language used here. The spines are introduced in the following section. You may find it helpful to return to them when seeing the framework in use.
 
 ---
 
