@@ -12,6 +12,8 @@ Same brain, new name. I'm still guided by my algebraic roots, inclined towards s
 
 **Harmonic theology** is an intentional bridge between music, mathematics, and theology -- drawing on the depth and power of all three. It brings together lyrical and musical analysis with the tools of algebra, geometry, analysis and statistics, all grounded in theology. The aim is attentiveness to the deeper patterns that shape worship and formation.
 
+---
+
 Over the 2025--2026 New Year, I was busy -- but a different sort of busy. Busy creating my new **TESMD (theological--emotional--spiritual--musical--dispositional) model**: a 5‑axis geometric model for mapping worship songs across dimensions, expressed on a $[-5, +5]$ integer scale. What follows includes:
 
 - full definitions
