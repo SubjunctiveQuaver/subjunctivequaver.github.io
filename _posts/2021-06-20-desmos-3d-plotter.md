@@ -6,21 +6,36 @@ tags: [geometry, linear-algebra, uni-maths, maths, essay] # TAG names should alw
 math: true
 ---
 
-Note: this article is currently a WIP.
+The below was submitted as my essay for the final assignment in the unit **MTH3110 -- Differential Geometry**, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces.
+
+---
+
+_**Note (2026 update):**_ Desmos now has a full 3D graphing mode, [officially released in September 2023](https://blog.desmos.com/articles/beta-3d-release/). It lets you switch between orthographic and perspective projection using a ['perspective' slider](https://help.desmos.com/hc/en-us/articles/20301369699981-3D-Graph-Settings).
+
+But back in 2021, when I wrote this assignment, Desmos had no 3D engine at all. Everything you see below -- rotating surfaces, changing viewpoints, and the wireframe rendering -- was built entirely inside the 2D calculator using linear algebra and differential geometry, to produce an orthographic projection of 3D surfaces on a 2D screen. This post explains how that construction worked.
+
+---
 
 ## Some examples of surface visualisations
 
 Here are a couple of versions of the Desmos save file with different cool pre-loaded plots:
 
 - The default: [a hemisphere (select the second plot for a full sphere)](https://www.desmos.com/calculator/u5ma8mrq4e)
-- [A mobius band](https://www.desmos.com/calculator/dqsysshxwj)
+- [A Möbius band](https://www.desmos.com/calculator/8fa9d501cc)
 - [A heliocoid](https://www.desmos.com/calculator/p3ztoufvpn)
 - [An immersed Klein bottle in $$\mathbb R^3$$](https://www.desmos.com/calculator/bdrerelimf) (thanks to cFOURbon for entering the formula)
 - [A heart-shaped surface](https://www.desmos.com/calculator/fguyjsvplw)
 - [A shell](https://www.desmos.com/calculator/8fth0oldky) (thanks to Kevin D. for the help and idea)
 - [Give me my chemistry degree immediately?](https://www.desmos.com/calculator/ng56wooahk)
 
-_Note: The below was submitted as my essay for the final assignment in the unit MTH3110 - differential geometry, at Monash University, in Semester 1, 2021. I've chosen to upload it here for those who may have seen my Desmos surface visualisation, and are interested in how I derived it! However, it assumes familiarity, especially near the end, with differential-geometric quantities such as maps of surfaces and their derivatives, and tangent spaces._
+Here is the Möbius band Desmos 3D-on-2D visualisation embedded:
+
+<iframe
+    src="https://www.desmos.com/calculator/8fa9d501cc?embed"
+    width="100%"
+    height="500"
+    style="border: 1px solid #ccc; display: block; margin: 0 auto;">
+</iframe>
 
 ## The explanation and geometry of the Desmos visualisation
 
@@ -28,17 +43,19 @@ Here is an [interactive visualisation of surfaces](https://www.desmos.com/calcul
 
 [^1]: To switch modes, click on the "plot" folder to hide it, and click on the "parametric plot" folder to show that.
 
+---
+
 ### Projecting down to a plane
 
 There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a way to choose a sensible, well-behaved projection is to choose a plane $$\Pi$$ through the origin (a linear subspace of $$\mathbb R^3$$), and perform an orthogonal projection $$\pi'$$. Such a plane can be uniquely determined by using _spherical coordinates_. Consider an "observer" at $$N \in S^2$$, the unit sphere, and a standard map $$\tau : \mathbb R^2 \to S^2$$ given by
 
 $$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u);$$
 
-here, $$(u,v)$$ respectively measure latitude and longitude.[^2] The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
-
-[^2]: See Example 2.17 from MTH3110 chapter 5 notes.
+here, $$(u,v)$$ respectively measure latitude and longitude. The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
 
 A fact from differential geometry is that $$T_N S^2 = \{v \in \mathbb R^3 : N \cdot v = 0\}$$. If $$v \in \Pi$$, then for any $$kN \in \operatorname{span}\{N\}$$ (where $$k \in \mathbb R$$), $$(kN) \cdot v = k(N \cdot v) = 0$$. In particular, $$N \cdot v = 0$$, so $$v \in T_NS^2$$. Conversely, a vector $$v \in T_NS^2$$ satisfies $$(kN) \cdot v = k(N \cdot v) = 0$$ for all $$k \in \mathbb R$$, so $$v \in \Pi$$. This means that $$\Pi = T_NS^2$$, and $$N$$ is normal to this tangent space.
+
+---
 
 Next, we consider the problem of projecting from $$\mathbb R^3$$ into $$\Pi$$ (and then into $$\mathbb R^2$$). Given an orthonormal basis $$b = \{b_1,b_2\}$$ for $$\Pi$$ that extends to a right-handed orthonormal basis $$b' = \{b_1,b_2,N\}$$ of $$\mathbb R^3$$, where $$N = b_1 \times b_2$$, consider the orthogonal projection $$\pi' : \mathbb R^3 \to \Pi$$. Since $$\ker\pi' = \Pi^\perp$$ and $$\pi\vert_\Pi$$ is the identity, it follows that $$\pi'(b_1) = b_1$$, $$\pi'(b_2) = b_2$$, and $$\pi'(N) = 0$$. The map $$\pi'$$ is linear, so its matrix with respect to the bases $$b',b$$ is
 
@@ -50,14 +67,22 @@ $$
 \end{pmatrix}.
 $$
 
-The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are _not foreshortened_, that is, no length distortion due to perspective (see Figure~\mathbb Ref{fig:cylinder_perspective}).\footnote{See explanation of perspective and [foreshortening in art](https://drawpaintacademy.com/foreshortening/).} Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
+The geometry of this map is as follows: take a point $$p \in \mathbb R^3$$. Then the coset $$p + \Pi^\perp = \{p + kN : k \in \mathbb R\}$$, a line parallel to $$N$$ (thus orthogonal to $$\Pi$$) passing through $$p$$, is collapsed onto a point $$\pi'(p) \in \Pi$$; distinct parallel lines are collapsed to distinct points. This is an orthographic projection, where the axes are _not foreshortened_, that is, no length distortion due to perspective (see Figure 1).[^2] Under this projection, we consider $$\mathbb R^3$$ as the quotient $$\mathbb R^3/\Pi^\perp$$, and cannot distinguish between points on the same line parallel to $$\Pi^\perp$$; the map has rank $$2$$ and nullity $$1$$.
 
-\begin{figure}[p!]
+[^2]: See explanation of perspective and [foreshortening in art](https://drawpaintacademy.com/foreshortening/).
+
+<!-- \begin{figure}[p!]
 \centering
 \includegraphics[width=0.75\textwidth]{cylinder*perspective.png}
 \caption{Plot of cylinder $$\sigma : (0,2\pi) \times (-4,4) \to S$$, $$\sigma(u,v) = (v,\cos u,\sin v)$$ with perspective $$(\theta,\phi) = (0.1,-0.1)$$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. \_foreshortening*) in the negative $$x$$-direction.}
 \label{fig:cylinder_perspective}
-\end{figure}
+\end{figure} -->
+
+![Cylinder visualisation showing no foreshortening](/assets/img/desmos_3d_cylinder_perspective.png){: style="width:50%; display:block; margin:auto;" }
+
+_**Figure 1:** Plot of cylinder $\sigma : (0,2\pi) \times (-4,4) \to S$, $\sigma(u,v) = (v,\cos u,\sin v)$ with perspective $(\theta,\phi) = (0.1,-0.1)$, using the Desmos visualisation. Observe that there is no distortion due to perspective (i.e. foreshortening) in the negative $x$-direction._
+
+---
 
 Next, we consider the map that transforms points on $$\Pi$$ into points in $$\mathbb R^2$$. Given our basis $$b$$ for $$\Pi$$, there is a natural sense in which $$b_1$$ can be thought of as pointing "right", and $$b_2$$ as pointing "up". This is described by $$T : \Pi \to \mathbb R^2$$, the linear isometry such that $$T(b_1) = e_1$$ and $$T(b_2) = e_2$$. Letting $$e' = \{e_1,e_2\} \subseteq \mathbb R^2$$, $$T$$ is simply the identity in coordinates $$b,e'$$: $$T_{b,e'} = I_2$$, the $$2 \times 2$$ identity matrix.
 
@@ -94,6 +119,8 @@ $$
     \text{---} & b_2 & \text{---}
 \end{pmatrix} =: M.
 $$
+
+---
 
 Now, recall that there is a pair $$(\theta,\phi)$$ corresponding to $$N = \tau(\theta,\phi)$$. For simplicity, we will assume that $$\theta \in (-\pi/2,\pi/2)$$, so that a suitable restriction of $$\tau$$ forms a regular chart for $$S^2$$. We aim to find an orthonormal basis for $$\Pi$$ by finding an orthonormal basis for $$T_NS^2$$. Note that $$\{\tau_u,\tau_v\}$$ forms a basis for $$T_NS^2$$, where
 
@@ -134,6 +161,8 @@ $$
 \end{equation*}
 $$
 
+---
+
 ### Visualising the surface in Desmos
 
 If we wish to plot $$S$$ as the graph of $$f$$, take $$\sigma(u,v) = (u,v,f(u,v))$$. Then it reduces to the problem of plotting the image of $$\sigma$$, or at least its projection under $$\pi$$. It would be useless (given limitations on Desmos) to present a filled-in outline---we would get a single splotch of colour (with jagged edges)! Instead, we use the idea that the domain $$U$$ is an open subset of $$\mathbb R^2,$$\footnote{Desmos does not like strict inequalities, so they are often closed subsets instead, but we can ignore the boundary of $$U$$.} and for fixed $$(u,v) \in U$$, we consider the curves $$x_u,y_v : I_u,J_v \to U$$ in $$U$$ (for suitable open intervals $$I_u,J_v$$), where $$x_u(t) = (u,t)$$ and $$y_v(t) = (t,v)$$, i.e. we fix the $$u$$ or $$v$$ coordinate, and let the other vary.
@@ -141,6 +170,8 @@ If we wish to plot $$S$$ as the graph of $$f$$, take $$\sigma(u,v) = (u,v,f(u,v)
 Consider a set of points $$\{(u_i,v_i)\}_i \subseteq U$$, and the families of curves $$\{x_{u_i}\}_i,\{y_{v_i}\}_i$$ so-defined. Then for each of the curves (generically called $$\alpha : I \to U$$), we plot the image of $$\gamma = \sigma \circ \alpha : I \to S$$, a curve in $$S$$, under the projection $$\pi$$, yielding two families $$\{\pi \circ \sigma \circ x_{u_i}\}_i$$ (fixing $$(x =)\, u = u_i$$, plotted in red) and $$\{\pi \circ \sigma \circ y_{v_i}\}_i$$ (fixing $$(y =)\, v = v_i$$, plotted in blue) of curves in $$\mathbb R^2$$, representing moving along $$S$$ using $$\sigma$$, with one input fixed. In the visualisation, we assume that $$U = (a_1,a_2) \times (b_1,b_2)$$ is a box,\footnote{Technically $$U = [a_1,a_2] \times [b_1,b_2]$$, so we have a surface with boundary... but we can ignore this, as mentioned earlier.} and take $$n_1,n_2$$ curves of constant separation in $$U$$ in each direction. This creates the desired projection of the "wire-frame" on $$S$$, and varying $$(\theta,\phi)$$ allows us to visualise the plot of $$S$$ from all angles, giving it a 3-dimensional effect.
 
 <!--- A nice fact about these curves is that each $$\alpha$$ is unit speed (in $$U$$). For $$x_{u_0} = (u,v)$$, $$\dot u = 0$$ and $$\dot v = 1$$, so $$\sigma \circ x_{u_0}$$ (in $$S$$) has speed $$\sqrt{E\dot u^2 + 2F\dot u\dot v + G\dot v^2} = \sqrt{G(u_0,t)}$$ at time $$t$$; similarly, $$\sigma \circ y_{v_0}$$ has speed $$\sqrt{E(t,v_0)}$$, where $$E,F,G$$ are the coefficients of the Riemannian metric of $$S$$;\footnote{See page 12 of MTH3110 chapter 8 notes.} hence, they are not necessarily unit speed in $$S$$. --->
+
+---
 
 ### Differential geometry of the projection: changing perspective
 
@@ -195,6 +226,8 @@ $$D_{(\theta,\phi)}\pi'(\lambda,\mu) = \lambda M_\theta(\theta,\phi)p + \mu M_\p
 
 this relates the directional derivatives of $$\pi'$$ to the partial derivatives of $$M$$.
 
+---
+
 Let us consider what happens to $$\pi(p)$$ when we fix longitude $$\phi$$ and vary latitude $$\theta$$. Taking $$\lambda = 1$$ and $$\mu = 0$$ reveals a directional derivative of
 
 $$M_\theta(\theta,\phi)p = (0,-x\cos\theta\cos\phi - y\cos\theta\sin\phi - z\sin\theta)$$
@@ -204,6 +237,8 @@ in the $$(1,0)$$ direction. In particular, the $$x$$-coordinate of $$\pi(p)$$ do
 The above observations agree with a direct calculation: the curve in $$\mathbb R^2$$ that $$\pi(p)$$ traces for fixed longitude $$\phi$$ is
 
 $$\beta_p : \mathbb R \to \mathbb R^2, \quad \beta_p(t) = (\underbrace{-x\sin\phi + y\cos\phi}_{\text{constant}},\underbrace{-x\sin t\cos\phi - y\sin t\sin\phi + z\cos t}_{\text{trigonometric with period}\ 2\pi}).$$
+
+---
 
 Now, let us consider what happens to $$\pi(p)$$ when we fix latitude $$\theta$$ and vary longitude $$\phi$$. Taking $$\lambda = 0$$ and $$\mu = 1$$ gives a directional derivative of
 
@@ -247,6 +282,8 @@ Also, from these quantities, which can be explicitly computed for different surf
 This concludes our analysis of the 2-dimensional visualisation of surfaces in $$\mathbb R^3$$ on Desmos. We saw some commentary on the derivation of the projection, using some linear algebra. Then we proceeded to analyse how curves are represented in the plot, as a "wire-frame", and finally, we analysed the effect of changing latitude and longitude on the positions of points in the plot, rounding off a treatment of the algebraic, analytic, and geometric properties of the visualisation.
 
 <!--- Finally, we considered the differential geometry of curves and the projection map itself, rounding off a treatment of the algebraic, analytic, and geometric properties of the visualisation. --->
+
+---
 
 ### Acknowledgements
 
