@@ -79,7 +79,7 @@ img_cdn: ''
 avatar: https://raw.githubusercontent.com/SubjunctiveQuaver/subjunctivequaver.github.io/main/SubjunctiveQuaver.png
 
 # Open Graph image for social sharing (Facebook, Messenger, etc.)
-og_image: /assets/img/SubjunctiveQuaver_Square_1024.png
+image: /assets/img/SubjunctiveQuaver_Square_1024.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
