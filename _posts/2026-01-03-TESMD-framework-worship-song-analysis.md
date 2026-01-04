@@ -156,10 +156,10 @@ It separates things people often conflate:
 
 ### **Development process**
 
-- Began with a single emotional axis ('heart vs mind'), which became **Emotional Posture (E)**
-- Introduced **Theological Altitude (T)** as an independent dimension
-- Split tonal affect from kinetic intensity, yielding **Spiritual Posture (S)** and **Musical Energy (M)**
-- Identified the need for a depth/accessibility dimension, formalised as **Dispositional Focus (D)**
+- Began with a single emotional axis ('heart vs mind'), which became **emotional posture (E)**
+- Introduced **theological altitude (T)** as an independent dimension
+- Split tonal affect from kinetic intensity, yielding **spiritual posture (S)** and **musical energy (M)**
+- Identified the need for a depth/accessibility dimension, formalised as **dispositional focus (D)**
 - Tested alternative candidate axes (e.g. acoustic/band, soaring/grounded) and demonstrated that they collapse into combinations of **S** and **M**
 - Verified conceptual orthogonality: each axis describes a different domain of experience
 - Normalised the framework to a 5‑axis hypercube
