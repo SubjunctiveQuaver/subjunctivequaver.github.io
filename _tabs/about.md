@@ -6,7 +6,7 @@ order: 4
 
 **Welcome to my blog, *Forms and Formation*!**
 
-I'm Lawrence, and I work as a data analyst in the Victorian public service, currently at the Department of Education. My academic background is in mathematics: in 2022, I completed first‑class honours in pure mathematics at Monash University, following an undergraduate double degree in pure maths and econometrics.
+Hi, I'm Lawrence from Melbourne, Australia. I work as a data analyst in the Victorian public service, currently at the Department of Education. My academic background is in mathematics: in 2022, I completed first‑class honours in pure mathematics at Monash University, following an undergraduate double degree in pure maths and econometrics.
 
 During my studies, I worked as a teaching associate at Monash University, teaching classes in algebra, calculus, and discrete mathematics. My honours research was in group theory, on [*Minimum bases for permutation groups*](/posts/honours-thesis/), supervised by A/Prof Heiko Dietrich and Dr Santiago Barrera Acevedo.
 
@@ -60,9 +60,7 @@ Focused explorations of specific, established mathematical ideas and phenomena -
 
 Meta‑mathematical pieces that use unexpected areas of mathematics to explain familiar results. I use this to highlight fields close to my heart and to change the lens to see familiar structures differently -- at times leaning into my flavour of absurdity: *using a sword to cut food*.
 
-### Just for Fun (JfF)
-
-<!-- ### [Just for Fun (JfF)](/categories/just-for-fun/) -->
+### [Just for Fun (JfF)](/categories/just-for-fun/)
 
 *Ni‑driven experiments.*
 
