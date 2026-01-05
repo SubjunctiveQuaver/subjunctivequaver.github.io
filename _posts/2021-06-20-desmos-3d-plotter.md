@@ -1,5 +1,5 @@
 ---
-title: An interactive visualisation of immersed surfaces on Desmos
+title: An 3D-on-2D interactive visualisation of immersed surfaces on Desmos
 date: 2021-06-20 00:40:00 +1000
 categories: [Epic Maths Time, Cool Stuff]
 tags: [geometry, linear-algebra, uni-maths, maths, essay, highlights] # TAG names should always be lowercase
@@ -51,7 +51,9 @@ There are many ways to project $$\mathbb R^3$$, onto $$\mathbb R^2$$. However, a
 
 $$\tau(u,v) = (\cos u\cos v,\cos u\sin v,\sin u);$$
 
-here, $$(u,v)$$ respectively measure latitude and longitude. The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
+here, $$(u,v)$$ respectively measure latitude and longitude.[^1a] The unit vectors in $$T_0\mathbb R^3$$ (denoting possible directions from the origin) are precisely points on $$S^2$$. Thus, we may take $$\Pi$$ as the orthogonal complement of the span of $$\{N\}$$.
+
+[^1a]: Think of $$N$$ as the (negated) camera direction, while $$\Pi$$ is the screen plane that the camera projects onto.
 
 A fact from differential geometry is that $$T_N S^2 = \{v \in \mathbb R^3 : N \cdot v = 0\}$$. If $$v \in \Pi$$, then for any $$kN \in \operatorname{span}\{N\}$$ (where $$k \in \mathbb R$$), $$(kN) \cdot v = k(N \cdot v) = 0$$. In particular, $$N \cdot v = 0$$, so $$v \in T_NS^2$$. Conversely, a vector $$v \in T_NS^2$$ satisfies $$(kN) \cdot v = k(N \cdot v) = 0$$ for all $$k \in \mathbb R$$, so $$v \in \Pi$$. This means that $$\Pi = T_NS^2$$, and $$N$$ is normal to this tangent space.
 
@@ -165,9 +167,13 @@ $$
 
 ### Visualising the surface in Desmos
 
-If we wish to plot $$S$$ as the graph of $$f$$, take $$\sigma(u,v) = (u,v,f(u,v))$$. Then it reduces to the problem of plotting the image of $$\sigma$$, or at least its projection under $$\pi$$. It would be useless (given limitations on Desmos) to present a filled-in outline---we would get a single splotch of colour (with jagged edges)! Instead, we use the idea that the domain $$U$$ is an open subset of $$\mathbb R^2,$$\footnote{Desmos does not like strict inequalities, so they are often closed subsets instead, but we can ignore the boundary of $$U$$.} and for fixed $$(u,v) \in U$$, we consider the curves $$x_u,y_v : I_u,J_v \to U$$ in $$U$$ (for suitable open intervals $$I_u,J_v$$), where $$x_u(t) = (u,t)$$ and $$y_v(t) = (t,v)$$, i.e. we fix the $$u$$ or $$v$$ coordinate, and let the other vary.
+If we wish to plot $$S$$ as the graph of $$f$$, take $$\sigma(u,v) = (u,v,f(u,v))$$. Then it reduces to the problem of plotting the image of $$\sigma$$, or at least its projection under $$\pi$$. It would be useless (given limitations on Desmos) to present a filled-in outline---we would get a single splotch of colour (with jagged edges)! Instead, we use the idea that the domain $$U$$ is an open subset of $$\mathbb R^2,$$[^3] and for fixed $$(u,v) \in U$$, we consider the curves $$x_u,y_v : I_u,J_v \to U$$ in $$U$$ (for suitable open intervals $$I_u,J_v$$), where $$x_u(t) = (u,t)$$ and $$y_v(t) = (t,v)$$, i.e. we fix the $$u$$ or $$v$$ coordinate, and let the other vary.
 
-Consider a set of points $$\{(u_i,v_i)\}_i \subseteq U$$, and the families of curves $$\{x_{u_i}\}_i,\{y_{v_i}\}_i$$ so-defined. Then for each of the curves (generically called $$\alpha : I \to U$$), we plot the image of $$\gamma = \sigma \circ \alpha : I \to S$$, a curve in $$S$$, under the projection $$\pi$$, yielding two families $$\{\pi \circ \sigma \circ x_{u_i}\}_i$$ (fixing $$(x =)\, u = u_i$$, plotted in red) and $$\{\pi \circ \sigma \circ y_{v_i}\}_i$$ (fixing $$(y =)\, v = v_i$$, plotted in blue) of curves in $$\mathbb R^2$$, representing moving along $$S$$ using $$\sigma$$, with one input fixed. In the visualisation, we assume that $$U = (a_1,a_2) \times (b_1,b_2)$$ is a box,\footnote{Technically $$U = [a_1,a_2] \times [b_1,b_2]$$, so we have a surface with boundary... but we can ignore this, as mentioned earlier.} and take $$n_1,n_2$$ curves of constant separation in $$U$$ in each direction. This creates the desired projection of the "wire-frame" on $$S$$, and varying $$(\theta,\phi)$$ allows us to visualise the plot of $$S$$ from all angles, giving it a 3-dimensional effect.
+[^3]: Desmos does not like strict inequalities, so they are often closed subsets instead, but we can ignore the boundary of $$U$$.
+
+Consider a set of points $$\{(u_i,v_i)\}_i \subseteq U$$, and the families of curves $$\{x_{u_i}\}_i,\{y_{v_i}\}_i$$ so-defined. Then for each of the curves (generically called $$\alpha : I \to U$$), we plot the image of $$\gamma = \sigma \circ \alpha : I \to S$$, a curve in $$S$$, under the projection $$\pi$$, yielding two families $$\{\pi \circ \sigma \circ x_{u_i}\}_i$$ (fixing $$(x =)\, u = u_i$$, plotted in red) and $$\{\pi \circ \sigma \circ y_{v_i}\}_i$$ (fixing $$(y =)\, v = v_i$$, plotted in blue) of curves in $$\mathbb R^2$$, representing moving along $$S$$ using $$\sigma$$, with one input fixed. In the visualisation, we assume that $$U = (a_1,a_2) \times (b_1,b_2)$$ is a box,[^4] and take $$n_1,n_2$$ curves of constant separation in $$U$$ in each direction. This creates the desired projection of the "wire-frame" on $$S$$, and varying $$(\theta,\phi)$$ allows us to visualise the plot of $$S$$ from all angles, giving it a 3-dimensional effect.
+
+[^4]: Technically $$U = [a_1,a_2] \times [b_1,b_2]$$, so we have a surface with boundary... but we can ignore this, as mentioned earlier.
 
 <!--- A nice fact about these curves is that each $$\alpha$$ is unit speed (in $$U$$). For $$x_{u_0} = (u,v)$$, $$\dot u = 0$$ and $$\dot v = 1$$, so $$\sigma \circ x_{u_0}$$ (in $$S$$) has speed $$\sqrt{E\dot u^2 + 2F\dot u\dot v + G\dot v^2} = \sqrt{G(u_0,t)}$$ at time $$t$$; similarly, $$\sigma \circ y_{v_0}$$ has speed $$\sqrt{E(t,v_0)}$$, where $$E,F,G$$ are the coefficients of the Riemannian metric of $$S$$;\footnote{See page 12 of MTH3110 chapter 8 notes.} hence, they are not necessarily unit speed in $$S$$. --->
 
