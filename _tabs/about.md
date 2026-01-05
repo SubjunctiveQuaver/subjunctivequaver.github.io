@@ -32,7 +32,6 @@ This is the centre of the blog: theological work that builds and tests framework
 
 <!-- ### [Theological Formation (TF)](/categories/theological-formation/) -->
 
-
 *Faithful practice.*
 
 This is for my frameworks and reflections on forming habits of thought and action -- Scripture, reflective AI use, faithful presence in secular systems -- where faith is lived out like in my Bible anchor verse, Romans 1:16:
