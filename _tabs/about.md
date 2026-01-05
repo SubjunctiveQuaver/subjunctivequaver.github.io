@@ -47,19 +47,19 @@ This is for my frameworks and reflections on forming habits of thought and actio
 
 *Free constructions.*
 
-My sandbox for abstract mathematical thinking -- playful, structural, unconstrained by application or interpretation. This is where ideas are generated, reframed and stress-tested.
+My sandbox for abstract mathematical thinking -- playful, structural, unconstrained by application or interpretation. This is where ideas are generated, reframed and stress-tested. Some other non-theological explorations may also appear here, especially where they intersect with mathematics.
 
 ### [Cool Stuff (CS)](/categories/cool-stuff/)
 
 *Concrete objects.*
 
-Focused explorations of specific mathematical ideas and phenomena -- across algebra, statistics and other fields of maths -- the things that I find interesting in themselves.
+Focused explorations of specific, established mathematical ideas and phenomena -- across algebra, statistics and other fields of maths -- the things that I find interesting in themselves.
 
 ### [New Perspectives (NP)](/categories/new-perspectives/)
 
 *Re‑presentations.*
 
-Meta‑mathematical pieces that use unexpected areas of mathematics to explain familiar results. I use this to highlight fields close to my heart and change the lens to see familiar structures differently, at times leaning into my flavour of absurdity.
+Meta‑mathematical pieces that use unexpected areas of mathematics to explain familiar results. I use this to highlight fields close to my heart and to change the lens to see familiar structures differently -- at times leaning into my flavour of absurdity: *using a sword to cut food*.
 
 ### Just for Fun (JfF)
 
