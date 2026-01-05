@@ -1,5 +1,5 @@
 ---
-title: An algebraist's field guide to constructing ℤ, ℚ, ℝ, ℂ, ℍ, 𝕆
+title: An algebraist’s field guide to constructing ℤ, ℚ, ℝ, ℂ, ℍ and 𝕆
 date: 2026-01-06 01:20:00 +1100
 categories: [Epic Maths Time, Just for Fun]
 tags: [maths, uni-maths, algebra, ring-theory, frameworks, ai] # TAG names should always be lowercase
@@ -445,4 +445,4 @@ At this point, having exhausted all structural justifications, we turn to vibes.
 
 This post captures the constructions of various number systems and the personalities they attract. The number systems form a ladder of increasing algebraic chaos, and each mathematical tribe has its own favourite rung.
 
-Thank you for reading this far. Whether you skimmed the constructions or lingered over them, I'm glad you were here. If you have a favourite construction, a different ranking, or a strong reaction to any of this, I'd love to hear it in a comment below :)
+Thank you for reading this far. Whether you skimmed the constructions or lingered over them, I'm glad you were here. If you have a favourite construction, a different ranking or a strong reaction to any of this, I'd love to hear it in a comment below :)
