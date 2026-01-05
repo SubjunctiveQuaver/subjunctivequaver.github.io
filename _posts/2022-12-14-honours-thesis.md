@@ -2,7 +2,7 @@
 title: My honours thesis — minimum bases for permutation groups
 date: 2022-12-14 23:50:00 +1100
 categories: [Epic Maths Time, Cool Stuff]
-tags: [algebra, group-theory, uni-maths, maths, essay] # TAG names should always be lowercase
+tags: [algebra, group-theory, uni-maths, maths, highlights] # TAG names should always be lowercase
 math: true
 ---
 
@@ -12,7 +12,7 @@ My research was in *minimum bases for permutation groups*. A permutation group i
 
 My goal was to talk about what is known about the smallest possible size of a base of a given permutation group, with use of the `GAP` computational language, and with original instructive examples interwoven throughout. I hope you find it interesting (or at least a pleasant read, which was definitely a focus and pride of mine) --- and if you're into group theory or maths in general, then I hope it may inspire you in your own work in some way. (You may want to watch the video below first, as it may clarify some basic content here in the thesis.)
 
-<object data="{{ site.url }}{{ site.baseurl }}/files/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected)_with_marks.pdf" width="600" height="600" type="application/pdf"></object>
+<object data="/files/Lawrence_Chen_-_Minimum_bases_for_permutation_groups_-_Final_report_2022-10-26_(corrected)_with_marks.pdf" width="600" height="600" type="application/pdf"></object>
 
 Below is a recording of my final honours presentation. I motivated my research using the Rubik's group (permutations of the Rubik's cube), which is one of the many applications of permutation groups, and one that is close to my heart (thanks Wes). I tried to make it fun and engaging with the Rubik's cube example, and a bit more understandable for a wider audience --- I hope you will find it as interesting as I did!
 

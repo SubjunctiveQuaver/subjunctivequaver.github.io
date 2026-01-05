@@ -2,7 +2,7 @@
 title: A generatingfunctionological proof of the geometric and arithmetic sequence formulas
 date: 2022-04-16 11:28:00 +1000
 categories: [Epic Maths Time, New Perspectives]
-tags: [combinatorics, algebra, uni-maths, maths] # TAG names should always be lowercase
+tags: [combinatorics, algebra, uni-maths, maths, highlights] # TAG names should always be lowercase
 math: true
 ---
 
@@ -19,6 +19,8 @@ for a generic term of the above geometric and arithmetic sequences, respectively
 **Exercise 1.** Verify that the above two formulas for geometric and arithmetic sequences hold, using a proof by induction or similar approach.
 
 In this post, I will introduce a totally overkill approach of deriving these two formulas; this approach will turn out to be a general approach to solving many recurrence relations. The key to this approach is to use *generating functions*.
+
+---
 
 ## A "naive" approach for geometric sequences
 
@@ -37,6 +39,8 @@ $$\frac{1}{x}(A(x) - a_0) = rA(x) \implies A(x) = \frac{a_0}{1 - rx} = a_0 \sum_
 But recall that $$A(x) = \sum_{n \geq 0} a_n x^n$$, so we must surely have $$a_n = a_0 r^n$$, which agrees with the known formula!
 
 So we solved the recurrence relation by using some sort of magical overkill power series approach. How exactly does it work, can we be more methodical, and is it even useful? I will attempt to answer that in the rest of this post.
+
+---
 
 ## Generating functions
 
@@ -86,6 +90,8 @@ Note that extracting coefficients from power series is somehow "linear", in the 
 
 ![Extracting coefficients from formal power series is linear: a useful tool that will help us later.](https://i.imgflip.com/31po1l.png)
 
+---
+
 ## Solving recurrences -- a generatingfunctionological approach
 
 Throughout this section, let $$(a_n) \overset{\text{ops}}{\leftrightarrow} A$$. A **generatingfunctionological** approach, as coined in [Wilf's book "generatingfunctionology"](https://www2.math.upenn.edu/~wilf/DownldGF.html), is an approach to working with sequences using their generating functions.
@@ -105,6 +111,8 @@ A recurrence is **linear** if $$a_{n + k} = f_0 a_n + f_1 a_{n + 1} + \dotsb + f
 **Theorem 1.** Let $$A \overset{\text{ops}}{\leftrightarrow} (a_n)$$. Then $$A$$ is a rational function $$p/q$$ (where $$p,q$$ have lowest possible degree) with $$\deg q = k$$ if and only if $$(a_n)$$ satisfies a linear recurrence with constant coefficients of order $$k$$.
 
 After reading this article, you will have the tools to prove this theorem yourself! (If you want to, of course!) One direction is by the technique for finding a generating function outlined below, and the other direction follows by considering an expansion of $$q A = p$$.
+
+---
 
 ### The algebra and calculus of generating functions
 
@@ -137,7 +145,7 @@ where
 
 $$\left\{k \atop n\right\} = \frac{1}{n!} \sum_{i = 0}^n (-1)^i \binom{n}{i} (n - i)^k$$
 
-are [Stirling numbers of the 2nd kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind), which count the number of ways to partition $$[n] = \{1,\dotsc,n\}$$ into $$k$$ (nonempty) parts. (Note that $$\left\{k \atop 0\right\} = 0$$ if $$k \geq 1$$, but $$\left\{0 \atop 0\right\} = 1$$, and $$(xD)^0 = 1 = \operatorname{Id}_{\mathbb{R}[[x]]}$$, so the pattern holds.) Prove/disprove this claim, and post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+are [Stirling numbers of the 2nd kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind), which count the number of ways to partition $$[n] = \{1,\dotsc,n\}$$ into $$k$$ (nonempty) parts. (Note that $$\left\{k \atop 0\right\} = 0$$ if $$k \geq 1$$, but $$\left\{0 \atop 0\right\} = 1$$, and $$(xD)^0 = 1 = \operatorname{Id}_{\mathbb{R}[[x]]}$$, so the pattern holds.) Prove/disprove this claim, and post your solutions in the comments or in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Using these, we can identify some rules for the generating functions of some transformations of sequences:
 
@@ -158,7 +166,9 @@ $$p(xD)A = (xD)^kA = xD(xD)^{k - 1}A = xD \sum_{n \geq 0} n^{k - 1}a_n x^n = x \
 
 the 3rd equality is by the inductive hypothesis (i.e. that $$(xD)^{k - 1}A = \sum_{n \geq 0} n^{k - 1}a_n x^n \overset{\text{ops}}{\leftrightarrow} (n^{k - 1}a_n)$$). Thus we are done!
 
-**Exercise 4.** Prove the unproven generating function rules 1,3,4,5,6 above. (Hint for rule 5: use rule 3 and Lemma 1.) Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+**Exercise 4.** Prove the unproven generating function rules 1,3,4,5,6 above. (Hint for rule 5: use rule 3 and Lemma 1.) Post your solutions in the comments or in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+
+---
 
 ### Finding formulas for the geometric and arithmetic sequences
 
@@ -196,7 +206,9 @@ in the following alternative ways:
 2. Use the fact that $$\frac{1}{(1 - x)^2} = D\frac{1}{1 - x}$$ again, but look at the comment in Definition 3 (i.e. that $$DA \overset{\text{ops}}{\leftrightarrow} ((n + 1)a_{n + 1}).$$ if $$A \overset{\text{ops}}{\leftrightarrow} (a_n)$$; choose $$(a_n)$$ carefully).
 3. Use fact 5 repeatedly, starting from $A = 1$. (What sequence is this the generating function of?)
 
-Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+Post your solutions in the comments or in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+
+---
 
 ### A few more applications (an outline only)
 
@@ -206,6 +218,6 @@ There are many nice applications of this generatingfunctionological technique. H
 - The **binomial theorem** $$(1 + x)^\alpha = \sum_{n \geq 0} \binom{\alpha}{n} x^n \overset{\text{ops}}{\leftrightarrow} \left(\binom{\alpha}{n}\right)_n$$ where $$\alpha \in \mathbb{R}$$. I talk about this in more detail in [the next post](https://subjunctivequaver.github.io/posts/generatingfunctionological-proof-binomial-theorem/)!
 - The **Catalan numbers** $$C_n = \frac{1}{n + 1} \binom{2n}{n}$$ have generating function $$C = \frac{1 - \sqrt{1 - 4x}}{2x}$$; using the binomial theorem with $$\alpha = 1/2$$, we can recover this formula for $$C_n$$. Moreover, they satisfy the recurrence $$C_{n + 1} = \sum_{i = 0}^n C_i C_{n - i}$$ with $$C_0 = 1$$; note that $$\left(\sum_{i = 0}^n C_i C_{n - i}\right) \overset{\text{ops}}{\leftrightarrow} C^2$$ by rule 3, so $$\frac{1}{x}(C - 1) = \frac{1}{x}(C - C_0) = C^2 \iff C - 1 = xC^2$$, which can be used to find $$C$$ as before (use the initial condition $$C_0 = 1$$ to pick the negative square root). Note that $$C_n$$ is, for instance, the number of ways to have a balanced string of parentheses of length $$2n$$, e.g. something like `(()(()))(())`, but not `())((())`.
 
-**Exercise 6.** (Adapted from discussion on the [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg) server.) Consider the **triangular numbers** $$T_n = \frac{n(n + 1)}{2}$$, and define a recurrence $$a_{n + 1} = a_n + T_n$$, with $$a_0 = 0$$. Find a linear recurrence with constant coefficients that $$(a_n)$$ satisfies (consider Theorem 1 above), and use a generatingfunctionological approach to find an explicit formula for $$a_n$$ (feel free to use a computer to find a series expansion). Post your solutions in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
+**Exercise 6.** (Adapted from discussion on the [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg) server.) Consider the **triangular numbers** $$T_n = \frac{n(n + 1)}{2}$$, and define a recurrence $$a_{n + 1} = a_n + T_n$$, with $$a_0 = 0$$. Find a linear recurrence with constant coefficients that $$(a_n)$$ satisfies (consider Theorem 1 above), and use a generatingfunctionological approach to find an explicit formula for $$a_n$$ (feel free to use a computer to find a series expansion). Post your solutions in the comments or in the unofficial [Maths @ Monash Discord](https://discord.gg/hx63ZwSXBg)!
 
 Happy generatingfunctionologing (and happy Easter too $xD$)!

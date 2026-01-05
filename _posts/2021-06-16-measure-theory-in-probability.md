@@ -2,7 +2,7 @@
 title: Why probability and statistics need measure theory, part 1
 date: 2021-06-16 21:57:00 +1000
 categories: [Epic Maths Time, New Perspectives]
-tags: [probability, measure-theory, statistics, topology, uni-maths, maths] # TAG names should always be lowercase
+tags: [probability, measure-theory, statistics, topology, uni-maths, maths, highlights] # TAG names should always be lowercase
 math: true
 ---
 
