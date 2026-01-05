@@ -2,7 +2,7 @@
 title: My honours thesis — minimum bases for permutation groups
 date: 2022-12-14 23:50:00 +1100
 categories: [Epic Maths Time, Cool Stuff]
-tags: [algebra, uni-maths, maths, essay] # TAG names should always be lowercase
+tags: [algebra, group-theory, uni-maths, maths, essay] # TAG names should always be lowercase
 math: true
 ---
 
