@@ -71,7 +71,7 @@ My intuition‑led explorations, speculative constructions and pattern‑first i
 
 ---
 
-## Other things
+## **Other things**
 
 Some of what I make lives outside this blog. This YouTube playlist gathers some of it -- original music, church performances, talks, creative projects, glimpses of life shared openly -- offered as part of the same work of formation.
 
