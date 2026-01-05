@@ -84,7 +84,7 @@ image: /assets/img/SubjunctiveQuaver_Square_1024.png
 # boolean type, the global switch for ToC in posts.
 toc: true
 
-comments:
+comments: # Force rebuild 2026-01-05 5:16 pm
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: disqus # [disqus | utterances | giscus]
   # The provider options are as follows:
