@@ -4,8 +4,6 @@ date: 2026-01-03 01:30:00 +1100
 categories: [Transformed by Grace, Harmonic Theology]
 tags: [worship, theology, maths, music, frameworks, geometry, ai, essay] # TAG names should always be lowercase
 math: true
-layout: post
-comments: true
 ---
 
 Dear reader... I'm excited that this blog is back after a 3-year pause. Formerly *Epic Maths Time*, it’s now called ***Forms and Formation***: a space for me to share some new reflections about faith, music and mathematics -- *formed by structure, shaped by grace*.
