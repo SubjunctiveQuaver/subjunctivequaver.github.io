@@ -4,6 +4,7 @@ date: 2026-01-03 01:30:00 +1100
 categories: [Transformed by Grace, Harmonic Theology]
 tags: [worship, theology, maths, music, frameworks, geometry, ai, essay] # TAG names should always be lowercase
 math: true
+layout: post
 comments: true
 ---
 
