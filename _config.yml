@@ -17,7 +17,7 @@ timezone: Australia/Melbourne
 # --------------------------
 title: Forms & Formation                          # the main title
 
-tagline: Formed by structure, transformed by grace   # it will display as the sub-title
+tagline: "Lawrence’s blog:<br>Formed by structure, transformed by grace"   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Lawrence’s blog on mathematical ideas, structure, and formation  exploring maths, music, worship, and the quiet work of transformation. Previously ‘Epic Maths Time’.
