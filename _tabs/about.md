@@ -8,7 +8,7 @@ order: 4
 
 I'm Lawrence, and I work as a data analyst in the Victorian public service, currently at the Department of Education. My academic background is in mathematics: in 2022, I completed first‑class honours in pure mathematics at Monash University, following an undergraduate double degree in pure maths and econometrics.
 
-During my studies, I worked as a teaching associate at Monash University, teaching classes in algebra, calculus, and discrete mathematics. My honours research was in group theory, on [*Minimum bases for permutation groups*]({{ site.url }}{{ site.baseurl }}/posts/honours-thesis/), supervised by A/Prof Heiko Dietrich and Dr Santiago Barrera Acevedo.
+During my studies, I worked as a teaching associate at Monash University, teaching classes in algebra, calculus, and discrete mathematics. My honours research was in group theory, on [*Minimum bases for permutation groups*](/posts/honours-thesis/), supervised by A/Prof Heiko Dietrich and Dr Santiago Barrera Acevedo.
 
 Although my day‑to‑day work is no longer directly academic, I remain deeply shaped by mathematical thinking -- especially ideas of structure, equivalence, and transformation. That way of thinking continues to shape this blog. It began as *Epic Maths Time*, a place to share mathematical curiosities, but is shifting into a space for reflecting on how structure and formation unfolds across different domains.
 
@@ -16,19 +16,19 @@ This is how the blog is organised in my mind:
 
 ---
 
-## **Transformed by Grace (TfG)**
+## [**Transformed by Grace (TfG)**](/categories/transformed-by-grace/)
 
 *Lawrence's theological work.*
 
 This is the centre of the blog: theological work that builds and tests frameworks for understanding and living the Christian faith. It draws on structure, pattern and disciplined analysis -- to bring doctrine, practice and formation into coherence.
 
-### Harmonic Theology (HT)
+### [Harmonic Theology (HT)](/categories/harmonic-theology/)
 
 *Structured resonance.*
 
 **Harmonic theology** is my intentional bridge between music, mathematics and theology, drawing on the depth and power of all 3 fields. It brings together Scriptural and musical analysis, using mathematical tools from algebra, geometry, analysis and statistics, all grounded in theology. Those tools help me attend to how doctrines relate, how patterns recur, and how deeper structures shape worship and formation.
 
-### Theological Formation (TF)
+### [Theological Formation (TF)](/categories/theological-formation/)
 
 *Faithful practice.*
 
@@ -40,25 +40,25 @@ This is for my frameworks and reflections on forming habits of thought and actio
 
 ---
 
-## **Epic Maths Time (EMT)**
+## [**Epic Maths Time (EMT)**](/categories/epic-maths-time/)
 
 *Free constructions.*
 
 My sandbox for abstract mathematical thinking -- playful, structural, unconstrained by application or interpretation. This is where ideas are generated, reframed and stress-tested.
 
-### Cool Stuff (CS)
+### [Cool Stuff (CS)](/categories/cool-stuff/)
 
 *Concrete objects.*
 
 Focused explorations of specific mathematical ideas and phenomena -- across algebra, statistics and other fields of maths -- the things that I find interesting in themselves.
 
-### New Perspectives (NP)
+### [New Perspectives (NP)](/categories/new-perspectives/)
 
 *Re‑presentations.*
 
 Meta‑mathematical pieces that use unexpected areas of mathematics to explain familiar results. I use this to highlight fields close to my heart and change the lens to see familiar structures differently, at times leaning into my flavour of absurdity.
 
-### Just for Fun (JfF)
+### [Just for Fun (JfF)](/categories/just-for-fun/)
 
 *Ni‑driven experiments.*
 

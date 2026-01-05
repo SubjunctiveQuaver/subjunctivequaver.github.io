@@ -30,7 +30,7 @@ That's the picture: the storms (the elements of $G$) still exist, but they no lo
 
 ## 🤓 TL;DR 2 -- full permutation group theory version
 
-See my [honours thesis *Minimum bases for permutation groups*]({{ site.url }}{{ site.baseurl }}/posts/honours-thesis/) for the original motivation (*warning: it's dense!*). Let:
+See my [honours thesis *Minimum bases for permutation groups*](/posts/honours-thesis/) for the original motivation (*warning: it's dense!*). Let:
 
 - $\Omega$ = the set of internal states Lawrence can occupy
 - $G$ = the full complexity acting on him in 2022 (fears, patterns, uncertainties), viewed as a permutation group acting on $\Omega$
