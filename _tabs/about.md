@@ -10,9 +10,9 @@ I'm Lawrence, and I work as a data analyst in the Victorian public service, curr
 
 During my studies, I worked as a teaching associate at Monash University, teaching classes in algebra, calculus, and discrete mathematics. My honours research was in group theory, on [*Minimum bases for permutation groups*](/posts/honours-thesis/), supervised by A/Prof Heiko Dietrich and Dr Santiago Barrera Acevedo.
 
-Although my day‑to‑day work is no longer directly academic, I remain deeply shaped by mathematical thinking -- especially ideas of structure, equivalence, and transformation. That way of thinking continues to shape this blog. It began as *Epic Maths Time*, a place to share mathematical curiosities, but is shifting into a space for reflecting on how structure and formation unfolds across different domains.
+Although my day‑to‑day work is no longer directly academic, I'm still deeply shaped by mathematical thinking -- especially ideas of structure, equivalence, and transformation. That way of thinking continues to shape this blog. It began as *Epic Maths Time*, a place to share mathematical curiosities, but is becoming a space for reflecting on how structure and formation shows up across different domains.
 
-This is how the blog is organised in my mind:
+Think of this blog as a playground -- a place for me to think out loud. Some things here are finished, some aren't. If something's useful or interesting, I'd love for you to stick around. This is how the blog is organised in my mind:
 
 ---
 
