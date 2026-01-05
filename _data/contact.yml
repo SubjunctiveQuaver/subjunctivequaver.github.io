@@ -27,6 +27,10 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/lawrencechen11/'                  # Fill with your Linkedin homepage
 -
+  type: sporcle
+  icon: 'fas fa-map-pin'
+  url:  'https://www.sporcle.com/user/LeviosaErised/quizzes/'
+-
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab

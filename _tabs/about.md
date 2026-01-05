@@ -79,7 +79,9 @@ This YouTube playlist gathers some of the work I share publicly -- original musi
   allowfullscreen>
 </iframe>
 
-I'm grateful for the opportunity I had to spend my university life immersed in a subject I love, and for the ways that season continues to shape me. One verse that stayed with me during that season was Ecclesiastes 3:1 --
+Some other public work, particularly around transport and original creations, lives on [Reddit](https://www.reddit.com/user/SubjunctiveQuaver/) and [Sporcle](https://www.sporcle.com/user/LeviosaErised/quizzes/), and may spill into this blog from time to time.
+
+I'm always grateful for the opportunity I had to spend my university life immersed in a subject I love, for the ways that season continues to shape me, and how it seeded something beautiful. One verse that stayed with me during that season was Ecclesiastes 3:1 --
 
 > 'There is a time for everything,\\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and a season for every activity under the heavens'
