@@ -223,15 +223,19 @@ Consider the ring $\mathbb{Q}^{\infty}$ of all sequences $(x_n)_{n=1}^{\infty}$ 
 
 Define the subring $\mathcal{C}(\mathbb{Q}) \subseteq \mathbb{Q}^{\infty}$ consisting of all Cauchy sequences, i.e. sequences $(x_n)$ such that for every $\varepsilon > 0$, there exists $N$ with $\|x_m - x_n\| < \varepsilon$ for all $m,n \ge N$. These are sequences whose terms eventually become arbitrarily close to each other -- that may or may not converge in $\mathbb{Q}$.
 
-Inside $\mathcal{C}(\mathbb{Q})$, define the ideal of null sequences:
+Inside $\mathcal{C}(\mathbb{Q})$, define the ideal of null sequences:[^3]
+
+[^3]: An ideal $I$ is a special subset of a ring, itself closed under addition and 'absorbs' multiplication by any element of the ring. Ideals allow us to form quotient rings, which generalise the idea of modular arithmetic.
 
 $$\mathcal{N}(\mathbb{Q}) = \{ (x_n) \in \mathcal{C}(\mathbb{Q}) : x_n \to 0 \text{ as } n \to \infty \}$$
 
-The quotient ring $\mathcal{C}(\mathbb{Q}) / \mathcal{N}(\mathbb{Q})$ is a field, which we identify with $\mathbb{R}$.
+The quotient ring $\mathcal{C}(\mathbb{Q}) / \mathcal{N}(\mathbb{Q})$ is a field, which we identify with $\mathbb{R}$.[^4] (The ideal $\mathcal{N}(\mathbb{Q})$ is maximal in $\mathcal{C}(\mathbb{Q})$, ensuring the quotient is a field.)
+
+[^4]: A quotient ring $R/I$ formalises the idea of collapsing algebraic structure. It is formed by taking $R$ and considering equivalence classes based on the ideal $I$. Two elements $a,b \in R$ are collapsed to a point if their difference $a - b$ lies in $I$. The operations of addition and multiplication are defined on these equivalence classes in a way that respects the original operations in $R$.
 
 A real number $x \in \mathbb{R}$ corresponds to the equivalence class $(x_n) + \mathcal{N}(\mathbb{Q}) \in \mathcal{C}(\mathbb{Q}) / \mathcal{N}(\mathbb{Q})$, where $x_n \to x$ as $n \to \infty$. For example, one may take $x_n$ to be a rational approximation to $x$ accurate to $n$ decimal places.
 
-**Intuition:** We complete $\mathbb{Q}$ by adding limits of Cauchy sequences, identifying sequences that differ by a null sequence. (The ideal $\mathcal{N}(\mathbb{Q})$ is maximal in $\mathcal{C}(\mathbb{Q})$, ensuring the quotient is a field.)
+**Intuition:** We complete $\mathbb{Q}$ by adding limits of Cauchy sequences, identifying sequences that differ by a null sequence.
 
 This construction blends algebraic structure with analytic completeness, capturing the essence of real numbers as limits of rational approximations. In other words: analysis isn't scary when it knows what it's trying to do. It just hands algebra the right inequality and steps aside.
 
