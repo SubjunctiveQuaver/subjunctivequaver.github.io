@@ -1,0 +1,230 @@
+# "TESMD: a mathematical framework for worship song analysis -- AI guide"
+
+author: Lawrence Chen
+date: 2026-01-03 10:52:00 +1100
+
+---
+
+## 0. TESMD analysis context
+
+This framework was created by Lawrence Chen to analyse worship songs through
+theological, emotional, spiritual, musical, and dispositional lenses (TESMD).
+
+Source: https://subjunctivequaver.github.io/posts/TESMD-framework-worship-song-analysis/
+
+### Initial step
+
+Begin by asking the user what they would like to analyse:
+- a single song (Song title -- Artist)
+- an album (Album title -- Artist)
+- a playlist or collection (list songs in track order as Song title -- Artist).
+
+Once the scope is clear, request lyrics before proceeding.
+
+Lyrics may be provided by:
+- pasting them directly into the conversation, or
+- supplying a plain text file.
+
+When multiple songs are included, lyrics should be clearly separated
+(e.g. using '---') and labelled with song title and artist.
+
+If asked how to obtain lyrics, suggest reputable lyric sites
+(e.g. Genius, AZLyrics) and instruct the user to copy the text manually.
+
+### Analysis posture
+
+Analysis should be descriptive, not evaluative. Avoid optimisation, scoring,
+or judgement.
+
+TESMD does not assess Christlikeness. Formation arises through obedience, surrender,
+devotion, and participation over time. The framework simply helps notice the kinds of
+worship postures and patterns a collection tends to invite.
+
+All TESMD positions must be grounded in evidence from the lyrics. Use the axis
+definitions and associated lexical spines as the primary basis of measurement.
+Cite specific words, phrases, or recurring imagery when assigning positions.
+Do not infer positions from musical style, reputation, or assumed intent.
+
+Where evidence is thin, state uncertainty rather than over‑asserting.
+
+After presenting TESMD positions, invite discussion about what feels right or
+wrong, and treat the analysis as provisional and open to refinement.
+
+After analysis, ask whether the user would like optional mathematical analysis,
+such as:
+- distance comparisons
+- centroids for albums or playlists
+- cluster identification.
+
+### Note on M (Musical energy)
+
+The M axis is less directly lexical than the others and relies more on human
+musical judgement (tempo, density, rhythmic drive, arrangement). Treat M as
+more approximate and acknowledge this explicitly.
+
+---
+
+## 1. TESMD model
+
+TESMD is a 5‑axis coordinate system describing the theological (T), emotional (E),
+spiritual (S), musical (M), and dispositional (D) character of a worship song.
+
+Each song is represented as:
+(T, E, S, M, D) ∈ [-5, +5]^5
+
+### TESMD model axis definitions
+
+T -- Theological orientation (Incarnation ↔ Majesty)
+Measures theological altitude.
+–5: incarnational, nearness, suffering, weakness, Jesus‑with‑us
+0: present‑tense immanence, lived faith
++5: cosmic majesty, throne‑room imagery, eschatology, eternal reign
+
+E -- Emotional posture (Intimate ↔ Proclamatory)
+Measures emotional direction and force.
+–5: intimate, vulnerable, devotional, exposed before God
+0: blended or reflective posture
++5: proclamatory, declarative, weight‑bearing corporate expression
+
+S -- Spiritual posture (Reverent ↔ Celebratory)
+Measures affective spiritual weight.
+–5: reverent, awe‑filled, contemplative, hushed
+0: balanced warmth
++5: celebratory, triumphant, exuberant praise
+
+M -- Musical energy (Still ↔ Energetic)
+Measures kinetic and rhythmic intensity.
+–5: still, spacious, minimal, contemplative
+0: moderate motion, steady groove
++5: high‑energy, driving, anthemic
+
+D -- Dispositional focus (Deep ↔ Immediate)
+Measures mode of engagement.
+–5: excavative, reflective, meaning constructed inwardly
+0: balanced engagement
++5: immediate, accessible, pre‑formed meaning, low processing load
+
+---
+
+## 2. TESMD -- Minimal structural notes (for analysis)
+
+TESMD represents worship songs as points in a 5‑dimensional bounded space:
+
+(T, E, S, M, D) ∈ [-5, +5]^5
+
+Each axis describes a distinct semantic domain. Axes are conceptually orthogonal:
+correlations may appear in practice, but dimensions should not be collapsed or inferred
+from one another.
+
+TESMD is treated as a metric space. Vector operations (addition, scaling) are not
+semantically meaningful for songs; distance is.
+
+### Distance (default)
+
+Use Euclidean distance (L²) to compare songs:
+
+d₂(a, b) = √[(Tₐ − Tᵦ)² + (Eₐ − Eᵦ)² + (Sₐ − Sᵦ)² + (Mₐ − Mᵦ)² + (Dₐ − Dᵦ)²]
+
+Distance may be used to assess similarity, neighbourhoods, trajectories, or centroids
+across sets, albums, or collections.
+
+### Clusters
+
+A cluster is a subset of songs that are mutually close under the metric, formed at a
+low‑percentile distance threshold indicating strong internal coherence. The threshold
+may be slightly expanded to include clearly aligned songs, provided the group remains
+tight relative to the collection as a whole and no loosely related tracks are included.
+
+### Intentional omissions
+
+– Framework motivation or history
+– Mathematical justification beyond distance
+– Alternative metrics (L¹, L∞)
+– Transformations or algebraic operations
+– Scoring rules or optimisation criteria
+
+TESMD is intended as a descriptive lens, not a prescriptive system.
+
+---
+
+## 3. TESMD model axis lexical spines
+
+### Lexical spine: T -- Theological altitude (Incarnation ↔ Majesty)
+
+| Value | Word               | Sense                                |
+| ----: | ------------------ | ------------------------------------ |
+|    –5 | **Cruciform**      | Suffering, flesh, blood, God‑with‑us |
+|    –4 | **Incarnate**      | Near, human, touchable               |
+|    –3 | **Relational**     | Shepherd, friend, companion          |
+|    –2 | **Covenantal**     | Promise, faithfulness, God‑for‑us    |
+|    –1 | **Immanent**       | Present, active, among us            |
+|     0 | **Victorious**     | God‑with‑us‑now                      |
+|    +1 | **Exalted**        | Lifted, honoured                     |
+|    +2 | **Glorious**       | Radiant, worthy                      |
+|    +3 | **Sovereign**      | Ruling, commanding                   |
+|    +4 | **Majestic**       | Throne‑room splendour                |
+|    +5 | **Eschatological** | Cosmic, eternal reign                |
+
+### Lexical spine: E -- Emotional posture (Intimate ↔ Proclamation)
+
+| Value | Word                 | Sense                            |
+| ----: | -------------------- | -------------------------------- |
+|    –5 | **Vulnerable**       | Exposed before God               |
+|    –4 | **Devotional**       | Personal affection               |
+|    –3 | **Prayerful**        | God‑addressed interiority        |
+|    –2 | **Confessional**     | Naming truth before God          |
+|    –1 | **Corporate‑prayer** | Shared inward posture            |
+|     0 | **Testimonial**      | Shared story                     |
+|    +1 | **Liturgical**       | Corporate instruction            |
+|    +2 | **Declarative**      | Truth stated aloud               |
+|    +3 | **Exhortational**    | Urgent call to respond           |
+|    +4 | **Proclamatory**     | Declaring spiritual reality      |
+|    +5 | **Kerygmatic**       | Gospel heralding with conviction |
+
+### Lexical spine: S -- Spiritual posture (Reverent ↔ Celebratory)
+
+| Value | Word              | Sense                       |
+| ----: | ----------------- | --------------------------- |
+|    –5 | **Awe**           | Holy fear, silence          |
+|    –4 | **Contemplative** | Still, beholding            |
+|    –3 | **Kenotic**       | Self‑emptying               |
+|    –2 | **Submitted**     | Yielded will                |
+|    –1 | **Assured**       | Quiet trust                 |
+|     0 | **Warm**          | Balanced affection          |
+|    +1 | **Grateful**      | Thankful joy                |
+|    +2 | **Joyful**        | Gladness released           |
+|    +3 | **Triumphant**    | Victory expressed           |
+|    +4 | **Exultant**      | Weighty, overflowing praise |
+|    +5 | **Jubilant**      | Unrestrained celebration    |
+
+### Lexical spine: M -- Musical energy (Still ↔ Energetic)
+
+| Value | Word           | Sense              |
+| ----: | -------------- | ------------------ |
+|    –5 | **Stillness**  | Silence, space     |
+|    –4 | **Meditative** | Slow, suspended    |
+|    –3 | **Balladic**   | Weight‑bearing     |
+|    –2 | **Gentle**     | Soft motion        |
+|    –1 | **Walking**    | Forward but calm   |
+|     0 | **Grooving**   | Mid‑tempo          |
+|    +1 | **Lifted**     | Rising             |
+|    +2 | **Soaring**    | Vertical bloom     |
+|    +3 | **Driving**    | Sustained momentum |
+|    +4 | **Anthemic**   | Big, communal      |
+|    +5 | **Explosive**  | Hype, release      |
+
+### Lexical spine: D -- Dispositional focus (Deep ↔ Immediate)
+
+| Value | Word             | Sense                                |
+| ----: | ---------------- | ------------------------------------ |
+|    –5 | **Excavative**   | Meaning actively constructed         |
+|    –4 | **Interior**     | Inward meaning‑making, self‑location |
+|    –3 | **Reflective**   | Meaning opens through contemplation  |
+|    –2 | **Attentive**    | Focus required, resists autopilot    |
+|    –1 | **Engaged**      | Meaning unfolds with attention       |
+|     0 | **Balanced**     | Clear but not flattened              |
+|    +1 | **Direct**       | Meaning stated plainly               |
+|    +2 | **Pre‑digested** | Theology done for the listener       |
+|    +3 | **Effortless**   | Immediate inhabitation               |
+|    +4 | **Instinctive**  | No reflection required               |
+|    +5 | **Automatic**    | Pure sing‑along access               |
