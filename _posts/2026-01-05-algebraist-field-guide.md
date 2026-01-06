@@ -15,7 +15,7 @@ Mathematicians have constructed a small but diverse ecosystem of number systems,
 - Why don't more people talk about the [beautiful polynomial quotient construction of complex numbers](#4a-polynomial-quotient-my-favourite)? (Genuine question!)
 - Isn't everything just quotienting and universal properties at the end of the day? (Stopping before I have to start learning category theory.)
 
-With that in mind, we'll walk through some standard ways of building the main number systems in this *field* guide -- from the ring $\mathbb{Z}$, through *fields* (haha) $\mathbb{Q}$, $\mathbb{R}$ and $\mathbb{C}$, to the division algebras $\mathbb{H}$ and $\mathbb{O}$ -- with a distinctive algebraic flavour, noting what each construction buys you and what it costs. Read this post at your level. The constructions are there if you want them -- the mathematician feelings are there if you don't. One attribution: this post benefited from conversations with an AI assistant who is very patient with algebraists.
+With that in mind, we'll walk through some standard ways of building the main number systems in this *field* guide -- from the ring $\mathbb{Z}$, through *fields* (haha) $\mathbb{Q}$, $\mathbb{R}$ and $\mathbb{C}$, to the division algebras $\mathbb{H}$ and $\mathbb{O}$ -- with a distinctive algebraic flavour, noting what each construction buys you and what it costs. Read this post at your level. The constructions are there if you want them -- the mathematician opinions are there if you don't. One attribution: this post benefited from conversations with an AI assistant who is very patient with algebraists.
 
 Along the way, we'll pause to notice how different mathematicians tend to react as constructions are made and familiar rules begin to slip. Algebraists, analysts, geometers and category theorists value different kinds of structure, and tolerate different kinds of failure. We'll keep a playful eye on these reactions as we go -- with category theorists, as ever, remaining slightly off to one side. Let's first meet the main characters.
 
@@ -123,7 +123,7 @@ Octonions push the pattern one step further. You lose associativity, intuition, 
 
 ---
 
-Now, let's dive into the constructions, one number system at a time. Read the following sections (numbered 1 to 6) at your level. The constructions are there if you want them -- the mathematician feelings are there if you don't.
+Now, let's dive into the constructions, one number system at a time. Read the following sections (numbered 1 to 6) at your level. The constructions are there if you want them -- the mathematician opinions are there if you don't.
 
 ## 1. The integers (ℤ)
 
