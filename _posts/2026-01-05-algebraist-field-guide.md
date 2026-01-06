@@ -205,7 +205,7 @@ This failure is not specific to $\sqrt{2}$, nor even to algebraic numbers -- roo
 
 [^1]: The field $\mathbb{Q}(\sqrt{2}) = \\{a + b\sqrt{2} : a,b \in \mathbb{Q}\\}$ does contain $\sqrt{2}$, but it is still not complete. In fact, adding every real algebraic number to $\mathbb{Q}$ still results in a field that is not complete. Completeness is about closing the field under limits: every Cauchy sequence must converge.
 
-**In real life:** This situation arises when we measure distances 'as the crow flies'. If you walked 1 km east and then 1 km north, the straight-line distance back to your starting point is $\sqrt{2}$ km -- not a rational number.
+**In real life:** This situation arises when we measure distances 'as the crow flies'. If you walked 1&nbsp;km east and then 1&nbsp;km north, the straight-line distance back to your starting point is $\sqrt{2}$&nbsp;km -- not a rational number.
 
 ### ℝ: Construction
 
@@ -213,7 +213,7 @@ There are 2 classic constructions:
 
 #### (3A) Dedekind cuts
 
-Downward-closed subsets of $\mathbb{Q}$ with no greatest element.
+Downward-closed subsets of $\mathbb{Q}$ with no greatest element, encoding a real number by everything less than it.
 
 Analysts love this because it smells like order completeness.
 
