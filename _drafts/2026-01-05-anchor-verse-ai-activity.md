@@ -9,7 +9,7 @@ math: true
 *A spiritually aware, agency-preserving way to model using AI for deep reflection and formation.* \\
 This exercise teaches reflective, Spirit-aware AI use through the lens of your Bible anchor verse.
 
-## ✅ Activity overview
+## Activity overview
 
 A simple session that models wise AI use for spiritual topics and reflection -- moving from 'Coles AI' automation to 'Bunnings AI' augmentation.
 
@@ -19,7 +19,7 @@ Afterwards, discussion questions help you process how the experience actually fe
 
 ---
 
-## ✅ Teaching: Coles AI → Bunnings AI (3--4 minutes)
+## Teaching: Coles AI → Bunnings AI (3--4 minutes)
 
 Facilitator explains:
 
@@ -68,7 +68,7 @@ This is the kind of AI use that forms people rather than feeds them.
 
 ---
 
-## 🕊️ Using AI spiritually: balancing technology and the Holy Spirit
+## Using AI spiritually: balancing technology and the Holy Spirit
 
 AI can aid biblical research and interpretation by gathering insights and organising ideas quickly. But it is a tool to support, not replace, the Holy Spirit's work of illumination and transformation.
 
@@ -76,7 +76,7 @@ The Spirit guides us beyond facts -- bringing wisdom, conviction and personal ap
 
 Used with humility and discernment, AI frees mental space and offers fresh perspectives, while the Spirit shapes our hearts and character. This keeps our agency intact, ensuring AI serves the Spirit's work, not substitutes it.
 
-## ✅ Guardrails (non-negotiable)
+## Guardrails (non-negotiable)
 
 **AI is a mirror, not a master.**
 
@@ -102,7 +102,7 @@ Used with humility and discernment, AI frees mental space and offers fresh persp
 
 ---
 
-## ✅ Movement 1 -- PRIME + DISCOVER (2--3 minutes)
+## Movement 1 -- PRIME + DISCOVER (2--3 minutes)
 
 **Goal:** Set the AI into a gentle, reflective mode and explore your anchor verse -- either by identifying it or working with the one you already know.
 
@@ -148,7 +148,7 @@ Let participants engage with AI.
 
 ---
 
-## ✅ Movement 2 -- DIAGNOSE (10--12 minutes)
+## Movement 2 -- DIAGNOSE (10--12 minutes)
 
 This is the centrepiece.
 
@@ -172,8 +172,8 @@ Based on my anchor verse, what heart posture does this reveal? Am I relating to 
 
 **Participants prompt AI:**
 
-> Create a clear 7-stage continuum for my anchor verse from aspirational -> integrated, grounded in its context.\\
-> The stages are: aspirational -> aware -> stirred -> resonating -> practising -> embodying -> integrated.\\
+> Create a clear 7-stage continuum for my anchor verse from aspirational → integrated, grounded in its context.\\
+> The stages are: aspirational → aware → stirred → resonating → practising → embodying → integrated.\\
 > Briefly describe the posture each stage reflects in relation to my anchor verse.\\
 > Present it in a way that preserves my agency to reflect and discern my own stage, with a pastoral tone throughout.
 
@@ -219,7 +219,7 @@ I think I'm at Stage X. I relate to this stage because [explain why]. Please con
 
 ---
 
-## ✅ Movement 3 -- DISCERN NEXT STEP (3--5 minutes)
+## Movement 3 -- DISCERN NEXT STEP (3--5 minutes)
 
 **Goal:** Identify one gentle, realistic next step.
 
@@ -235,9 +235,9 @@ Based on the stage I'm at, what is one gentle, realistic next step I can achieve
 
 ---
 
-## ✅ Group debrief (3--5 minutes)
+## Group debrief (3--5 minutes)
 
-A. About the process
+### A. About the process
 
 - What stood out most about using AI reflectively or in a faith context?
 - What felt natural or unfamiliar?
@@ -257,13 +257,13 @@ These reinforce the learning goal: helping people use AI reflectively, spiritual
 
 ---
 
-## ✅ Total time: 15--20 minutes
+## Total time: 15--20 minutes
 
 This practice is not about getting the 'right' answer -- it is about learning to use AI with wisdom, agency and spiritual discernment.
 
 Participants may revisit any movement later.
 
-## 📌 Note on reuse
+## Note on reuse
 
 This activity is not limited to anchor verses. You can also use it to explore any passage you're wrestling with or curious about. Share your current interpretation and keep the guardrails in place. The heart posture reflection, 7-stage continuum and next steps prompts offer a safe way to engage the passage with clarity, nuance and agency.
 
