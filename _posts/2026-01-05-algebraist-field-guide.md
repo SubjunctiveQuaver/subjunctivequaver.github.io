@@ -339,7 +339,9 @@ We're getting to a point where it's getting harder to justify the existence of n
 
 Later in 1877, Ferdinand Georg Frobenius showed that the quaternions are one of only 3 associative division algebras over the reals (the others being $\mathbb{R}$ and $\mathbb{C}$). This result was extended by Adolf Hurwitz, who classified normed division algebras, showing that the only normed division algebras over the reals are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$.
 
-**In real life:** Quaternions are used in 3D computer graphics and robotics to represent rotations, avoiding issues like gimbal lock that can occur with other representations like Euler angles. A 3D rotation by a unit quaternion $q$ acts on a vector $v \in \operatorname{Im}(\mathbb{H}) \cong \mathbb{R}^3$ via the map $v \mapsto qvq^{-1}$. (I might write a separate post on this later.)
+**In real life:** Quaternions are used in 3D computer graphics and robotics to represent rotations. A unit quaternion acts on 3‑dimensional space by conjugation, avoiding issues like gimbal lock that can occur with Euler angles.[^2]
+
+[^2]: A 3D rotation by a unit quaternion $q \in S^3$ acts on a vector $v \in \operatorname{Im}(\mathbb{H}) \cong \mathbb{R}^3$ via the map $v \mapsto qvq^{-1}$. (I might write a separate post on this later.)
 
 ### ℍ: Construction
 
