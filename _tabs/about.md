@@ -83,7 +83,7 @@ Some of what I make lives outside this blog. This YouTube playlist gathers some 
   allowfullscreen>
 </iframe>
 
-Some other original creations, particularly around transport, lives on [Reddit](https://www.reddit.com/user/SubjunctiveQuaver/) and [Sporcle](https://www.sporcle.com/user/LeviosaErised/quizzes/), and may spill into this blog from time to time.
+Some other original creations, particularly around transport, lives on [Reddit](https://www.reddit.com/user/SubjunctiveQuaver/), [Sporcle](https://www.sporcle.com/user/LeviosaErised/quizzes/) and [Geoguessr](https://www.geoguessr.com/user/5c56b6c998004e3174c2f91e), and may spill into this blog from time to time.
 
 I'm always grateful for the opportunity I had to spend my university life immersed in a subject I love, for the ways that season continues to shape me, and how it seeded something beautiful. One verse that stayed with me during that season was Ecclesiastes 3:1 --
 
