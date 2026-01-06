@@ -396,6 +396,8 @@ The Cayley--Dickson construction produces a normed division algebra, doubling di
 
 Yeah, I'm not even going to try to justify the octonions. They exist because they do. Discovered in 1843 by John T Graves, a friend of Hamilton, they fit into the beautiful pattern of normed division algebras over the reals classified by Hurwitz. But the buck stops here: there are no further normed division algebras beyond $\mathbb{O}$.
 
+**In real life:** The octonions only exist because the algebraic pattern demands them. There is no compelling real‑life application.
+
 ### 𝕆: Construction
 
 Cayley--Dickson doubling applied to $\mathbb{H}$. An 8-dimensional normed division algebra.
