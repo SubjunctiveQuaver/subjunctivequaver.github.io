@@ -57,7 +57,7 @@ Nodding politely at your construction, then asking whether it's complete.
 
 ### Geometer
 
-*INFP / ENFP ·'Can I draw it?'*
+*INFP / ENFP · 'Can I draw it?'*
 
 **Fields of study:**\\
 Differential geometry, topology, algebraic geometry, geometric group theory.
