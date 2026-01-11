@@ -8,7 +8,7 @@ math: true
 
 Welcome to **theological formation**, the second stream of *Transformed by Grace*, the new theological core of my blog. I'm thrilled for you to be here and come along for the ride.
 
-This space documents my journey on thinking with a Christian perspective -- about Scripture, the world we inhabit and the tools shaping our lives. And right now in 2026, one of the most influential tools in that landscape is **artificial intelligence** (AI).
+This space documents my journey on thinking with a Christian perspective -- about Scripture, the world we inhabit and the tools shaping our lives. And right now in 2026, one of the most influential tools in that landscape is **artificial intelligence (AI)**.
 
 ---
 
@@ -23,6 +23,8 @@ AI entrepreneur Mustafa Suleyman, in *The Coming Wave*, describes how technologi
 In his book *2084*, mathematician and theologian John Lennox traces how technology has always extended human ability. The industrial revolution introduced machines that took on *physical labour*. Today's AI systems extend that pattern into *both physical and mental work*. AI sits within a long story of human innovation -- another chapter in our ongoing effort to build tools that amplify what we can do.
 
 Lennox also emphasises that if AI is becoming part of everyday life, then Christian engagement must be grounded in the same ethical commitments that have shaped believers for centuries: truthfulness, respect for others, responsibility, discernment and love. These are not optional extras. They are the posture that allows Christians to walk wisely in a world where our tools are powerful and our choices matter.
+
+It's tempting to think of AI as something we use only for practical, secular tasks. But the way we use technology in one part of life always forms us in others. If AI is becoming part of our daily rhythms, then we should bring the same discernment and truthfulness into those interactions that we bring into our walk with God. These virtues will bear fruit across all our interactions with AI, whether the task is secular or spiritual.
 
 Taken together, these perspectives help us approach AI delicately. It's a powerful tool, and it's here to stay. The critical question for Christians becomes:
 
@@ -43,8 +45,8 @@ My aim for *theological formation* posts is to invite us into 'Bunnings mode': a
 
 And when it comes to AI, the same posture matters. We can use these tools in:
 
-- 'Coles mode' -- outsourcing our thinking and grabbing ready‑made answers
-- 'Bunnings mode' -- where AI becomes a tool on the workbench that supports our discernment rather than replacing it.
+- **'Coles mode'** -- outsourcing our thinking and grabbing ready‑made answers
+- **'Bunnings mode'** -- where AI becomes a tool on the workbench that supports our discernment rather than replacing it.
 
 Here's how the analogy plays out when we bring AI into the picture.
 
@@ -70,7 +72,7 @@ If you'd like to [jump straight to the activity](#bible-anchor-verse-activity), 
 
 ## A spiritually wise posture for engaging AI
 
-As AI becomes part of everyday life, Christians need a way of engaging with it that is spiritually grounded, theologically safe and attentive to the Spirit. This section offers one such posture.
+As AI becomes part of everyday life, Christians need a way of engaging with it that is spiritually grounded, theologically safe and attentive to the Holy Spirit -- in both ordinary tasks and moments of spiritual reflection. This section offers one such posture.
 
 Before we begin, it's worth naming a few things clearly.
 
@@ -79,6 +81,8 @@ Before we begin, it's worth naming a few things clearly.
 - **Different AI systems carry different moral and religious assumptions** -- shaped by their training and design, so your discernment matters more than an AI's polish or confidence.
 - **AI is not a shortcut to spiritual insight** -- we use it to support slower reflection, not instant answers or spiritual certainty.
 - **AI should never displace prayer or presence** -- it sits downstream of prayerful attention, not in place of it.
+
+---
 
 ### Balancing technology and the Holy Spirit
 
@@ -247,7 +251,7 @@ Help me identify my anchor verse. Ask me 3--4 gentle questions to help me discov
 
 ---
 
-### Movement 2: Diagnose
+### Movement 2: Notice and name
 
 This is the centrepiece of the activity.
 
@@ -328,7 +332,7 @@ Please consider my self-assessment critically and help me reflect on it.
 
 ---
 
-### Movement 3: Discern next step (3--5 minutes)
+### Movement 3: Discern next step
 
 **Goal:** Identify one gentle, realistic next step that helps you grow into your anchor verse more fully.
 
