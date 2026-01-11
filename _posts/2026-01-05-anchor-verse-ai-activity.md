@@ -186,9 +186,11 @@ If you notice drift, simply recalibrate -- the guardrails are there to help you 
 
 ## Bible anchor verse activity
 
+Here is the activity I developed in conjunction with Microsoft Copilot, intentionally designed to model wise, agency‑preserving AI use.
+
 ### Activity overview
 
-A simple session that models wise, agency‑preserving AI use for spiritual reflection -- moving from 'Coles AI' automation to 'Bunnings AI' augmentation.
+A simple activity that models wise, agency‑preserving AI use for spiritual reflection -- moving from 'Coles AI' automation to 'Bunnings AI' augmentation.
 
 You'll work with your Bible anchor verse, using AI to help you explore why it resonates, name your heart posture and notice what's happening in your current season. A gentle 7-stage continuum then gives language to these postures, helping you discern the movement you sense and consider how you might grow in living out your verse.
 

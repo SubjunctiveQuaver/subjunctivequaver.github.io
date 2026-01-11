@@ -28,9 +28,7 @@ This is the centre of the blog: theological work that builds and tests framework
 
 **Harmonic theology** is my intentional bridge between music, mathematics and theology, drawing on the depth and power of all 3 fields. It brings together Scriptural and musical analysis, using mathematical tools from algebra, geometry, analysis and statistics, all grounded in theology. Those tools help me attend to how doctrines relate, how patterns recur, and how deeper structures shape worship and formation.
 
-### Theological Formation (TF)
-
-<!-- ### [Theological Formation (TF)](/categories/theological-formation/) -->
+### [Theological Formation (TF)](/categories/theological-formation/)
 
 *Faithful practice.*
 
