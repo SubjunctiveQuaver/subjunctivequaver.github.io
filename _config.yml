@@ -82,6 +82,11 @@ avatar: https://raw.githubusercontent.com/SubjunctiveQuaver/subjunctivequaver.gi
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: /assets/img/SubjunctiveQuaver_Square_1024.png
 
+favicon:
+  small: /assets/img/favicons/favicon.png
+  medium: /assets/img/favicons/icon-192.png
+  large: /assets/img/favicons/icon-512.png
+
 # boolean type, the global switch for ToC in posts.
 toc: true
 
