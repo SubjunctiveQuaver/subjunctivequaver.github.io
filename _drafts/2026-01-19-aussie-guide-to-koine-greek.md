@@ -85,7 +85,7 @@ It's now time to meet the full family, in order. I'm using [Macquarie University
 | rhō     | Ρ     | ρ       | *r*             | tapped 'r', like the 't' in _bu**tt**er_ (said quickly)         |
 | sigma   | Σ     | σ/ς[^2] | *s*             | 's' as in _**s**o_                                              |
 | tau     | Τ     | τ       | *t*             | 't' as in _s**t**op_ (unaspirated)                              |
-| upsilon | Υ     | υ       | *y*             | rounded 'ee' as in French _l**u**ne_                            |
+| upsilon | Υ     | υ       | *y*             | 'ee' as in _ver**y**_ (merged with iōta)                        |
 | phi     | Φ     | φ       | *ph*            | 'f' as in _**f**an_                                             |
 | chi     | Χ     | χ       | *ch*            | 'ch' in the German pronunciation of _Ba**ch**_                  |
 | psi     | Ψ     | ψ       | *ps*            | 'ps' as in _li**ps**_                                           |
@@ -127,30 +127,34 @@ Linguists generally agree that Greek vowels are 'pure' and have stable, consiste
 | upsilon | Υυ    | *y*             | /y/  | high front rounded (short/long) | rounded 'ee' as in French _l**u**ne_               |
 | ōmega   | Ωω    | *ō*             | /oː/ | mid back (long)                 | 'o' as in _s**aw**_ (long)                         |
 
-Greek also has a number of *digraphs*, which are single vowels represented by 2 letters. (These are not *diphthongs*, which are combinations of 2 vowel sounds. Classical Greek had diphthongs, but they became pure by the time of Koine Greek.)
+Greek also has a number of vowel *digraphs*, which are combinations of 2 vowel letters. (These are not *diphthongs*, which are combinations of 2 vowel sounds. Classical Greek had diphthongs, but they became pure by the time of Koine Greek.)
 
-All Greek vowel digraphs end with a semivowel (ι or υ). When υ follows α or ε, it doesn’t act like a vowel but like a consonant: it sounds like English 'v' before voiced letters, and like 'f' before voiceless ones.
+All Greek vowel digraphs end with a semivowel (ι/iōta or υ/upsilon). When υ/upsilon follows α/alpha or ε/epsilon, it doesn't act like a vowel but like a consonant: it sounds like English 'v' before voiced letters, and like 'f' before voiceless ones.
 
 | Greek | Transliteration | IPA          | Vowel type                | Australian English cue                                |
 | ----- | --------------- | ------------ | ------------------------- | ----------------------------------------------------- |
-| αι    | *ai*            | /e/          | mid front                 | like 'e' in _h**ea**d_ (merged with epsilon in Koine) |
-| ει    | *ei*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (same as ι)                      |
-| οι    | *oi*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with upsilon in Koine)   |
-| υι    | *yi*            | /i/ or /yi/  | high front (long)         | 'ee' with a slight rounded start                      |
-| αυ    | *au*            | /av/ or /af/ | vowel + consonant cluster | 'uhv' as in _c**ov**er_ / 'af' as in _l**af**t_       |
+| αι    | *ai*            | /e/          | mid front (short)         | like 'e' in _h**ea**d_ (merged with epsilon in Koine) |
+| ει    | *ei*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| οι    | *oi*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| υι    | *yi*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| αυ    | *au*            | /av/ or /af/ | vowel + consonant cluster | 'uhv' as in _c**ov**er_ / 'uhf' as in _en**ough**_    |
 | ευ    | *eu*            | /ev/ or /ef/ | vowel + consonant cluster | 'ev' as in _n**ev**er_ / 'ef' as in _l**ef**t_        |
-| ου    | *ou*            | /uː/         | high back (long)          | 'oo' as in _f**oo**d_ (always “oo”)                   |
+| ου    | *ou*            | /uː/         | high back (long)          | 'oo' as in _f**oo**d_                                 |
 
 ### Consonants: a deeper dive
 
+To be continued
+
 ## The polytonic system
 
+To be continued
+
 ## It's no longer Greek to us
+
+To be continued
 
 charis -> charisma -> chara -> charizomai
 
 apokalypsis
 
 Kyrios Iesous Christos
-
-
