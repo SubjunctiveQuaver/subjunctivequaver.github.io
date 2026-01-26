@@ -81,6 +81,18 @@ Some of what I make lives outside this blog. This YouTube playlist gathers some 
   allowfullscreen>
 </iframe>
 
+I'm also posting some content on my second Instagram account [@learnedlawrence](https://www.instagram.com/learnedlawrence/). Here I'm sharing the things I'm currently learning, slowly and honestly. It's an alliterative name I came up in Grade 3 in 2008, and I thought it captures the direction I'm headed -- now with added humility.
+
+<!-- Alternative widget: https://dash.elfsight.com/apps/instagram-feed -->
+
+<behold-widget feed-id="EtlTssU0nT5Yz0UX0jsF"></behold-widget>
+<script>
+  (() => {
+    const d=document,s=d.createElement("script");s.type="module";
+    s.src="https://w.behold.so/widget.js";d.head.append(s);
+  })();
+</script><br>
+
 Some other original creations, particularly around transport, lives on [Reddit](https://www.reddit.com/user/SubjunctiveQuaver/), [Sporcle](https://www.sporcle.com/user/LeviosaErised/quizzes/) and [Geoguessr](https://www.geoguessr.com/user/5c56b6c998004e3174c2f91e), and may spill into this blog from time to time.
 
 I'm always grateful for the opportunity I had to spend my university life immersed in a subject I love, for the ways that season continues to shape me, and how it seeded something beautiful. One verse that stayed with me during that season was Ecclesiastes 3:1 --
