@@ -7,14 +7,14 @@ math: true
 ---
 
 > Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.\\
-> *En archē ēn ho logos, kai ho logos ēn pros ton theon, kai theos ēn ho logos.*\\
+> _En archē ēn ho logos, kai ho logos ēn pros ton theon, kai theos ēn ho logos._\\
 > **In the beginning was the Word, and the Word was with God, and God was the Word.**
 
 -- <cite>John 1:1 (SBL Greek New Testament)</cite>
 
-Hi everyone. I wanted to share a bit of a new journey in 2026 here -- one where I'm starting to learn a bit of **Biblical Greek**, also called **Koine Greek** (ἡ κοινὴ διάλεκτος, *hē koinē dialektos*).
+Hi everyone. I wanted to share a bit of a new journey in 2026 here -- one where I'm starting to learn a bit of **Biblical Greek**, also called **Koine Greek** (ἡ κοινὴ διάλεκτος, _hē koinē dialektos_).
 
-I got a new Surface Pro over new years, because I want to be more intentional this year with my Bible study and content creation (including my new Instagram account, [@learnedlawrence](https://www.instagram.com/learnedlawrence/)). I've been using [Logos Bible Study Platform](https://www.logos.com/) to do my Bible study this year, which has been amazing and fruitful --  and that led me on a journey of starting to learn Biblical Greek.
+I got a new Surface Pro over new years, because I want to be more intentional this year with my Bible study and content creation (including my new Instagram account, [@learnedlawrence](https://www.instagram.com/learnedlawrence/)). I've been using [Logos Bible Study Platform](https://www.logos.com/) to do my Bible study this year, which has been amazing and fruitful -- and that led me on a journey of starting to learn Biblical Greek.
 
 Thanks to my mathematical training at university (and my general curiosity), I've known the letters of the Greek alphabet for a while, but I'm only now just learning their proper pronunciation and experiencing the fullness of this knowledge.
 
@@ -37,7 +37,7 @@ In this post, I aim to create an easy-to-follow guide to reading Biblical Greek,
 
 ## The Greek alphabet
 
-In the following sections, I'll be primarily referencing *An introduction to Biblical Greek: a grammar with exercises* by Schwandt, 2020.
+In the following sections, I'll be primarily referencing _An introduction to Biblical Greek: a grammar with exercises_ by Schwandt, 2020.
 
 You might have heard the saying:
 
@@ -66,30 +66,30 @@ It's now time to meet the full family, in order. I'm using [Macquarie University
 
 | Name    | Upper | Lower   | Transliteration | Australian English cue                                          |
 | ------- | ----- | ------- | --------------- | --------------------------------------------------------------- |
-| alpha   | Α     | α       | *a*             | close to 'uh' as in _c**u**p_                                   |
-| bēta    | Β     | β       | *b*             | 'v' as in _**v**an_                                             |
-| gamma   | Γ     | γ       | *g*             | 'g' as in _**g**o_ (or 'y' as in _**y**es_ before front vowels) |
-| delta   | Δ     | δ       | *d*             | 'th' as in _**th**ese_ (voiced)                                 |
-| epsilon | Ε     | ε       | *e*             | 'e' as in _h**ea**d_                                            |
-| zēta    | Ζ     | ζ       | *z*             | 'z' as in _**z**oo_                                             |
-| ēta     | Η     | η       | *ē*             | 'air' as in _h**air**_ (long)                                   |
-| thēta   | Θ     | θ       | *th*            | 'th' as in _**th**ink_ (unvoiced)                               |
-| iōta    | Ι     | ι       | *i*             | 'ee' as in _ver**y**_ (but short, clean)                        |
-| kappa   | Κ     | κ       | *k*             | 'k' as in _**c**ap_                                             |
-| lambda  | Λ     | λ       | *l*             | 'l' as in _**l**eaf_                                            |
-| mu      | Μ     | μ       | *m*             | 'm' as in _**m**y_                                              |
-| nu      | Ν     | ν       | *n*             | 'n' as in _**n**o_                                              |
-| xi      | Ξ     | ξ       | *x*             | 'ks' as in _bo**x**_                                            |
-| omicron | Ο     | ο       | *o*             | 'o' as in _p**o**d_ (but a bit higher and rounder)              |
-| pi      | Π     | π       | *p*             | 'p' as in _s**p**in_ (unaspirated)                              |
-| rhō     | Ρ     | ρ       | *r*             | tapped 'r', like the 't' in _bu**tt**er_ (said quickly)         |
-| sigma   | Σ     | σ/ς[^2] | *s*             | 's' as in _**s**o_                                              |
-| tau     | Τ     | τ       | *t*             | 't' as in _s**t**op_ (unaspirated)                              |
-| upsilon | Υ     | υ       | *y*             | 'ee' as in _ver**y**_ (merged with iōta)                        |
-| phi     | Φ     | φ       | *ph*            | 'f' as in _**f**an_                                             |
-| chi     | Χ     | χ       | *ch*            | 'ch' in the German pronunciation of _Ba**ch**_                  |
-| psi     | Ψ     | ψ       | *ps*            | 'ps' as in _li**ps**_                                           |
-| ōmega   | Ω     | ω       | *ō*             | 'o' as in _s**aw**_ (long)                                      |
+| alpha   | Α     | α       | _a_             | close to 'uh' as in _c**u**p_                                   |
+| bēta    | Β     | β       | _b_             | 'v' as in _**v**an_                                             |
+| gamma   | Γ     | γ       | _g_             | 'g' as in _**g**o_ (or 'y' as in _**y**es_ before front vowels) |
+| delta   | Δ     | δ       | _d_             | 'th' as in _**th**ese_ (voiced)                                 |
+| epsilon | Ε     | ε       | _e_             | 'e' as in _h**ea**d_                                            |
+| zēta    | Ζ     | ζ       | _z_             | 'z' as in _**z**oo_                                             |
+| ēta     | Η     | η       | _ē_             | 'air' as in _h**air**_ (long)                                   |
+| thēta   | Θ     | θ       | _th_            | 'th' as in _**th**ink_ (unvoiced)                               |
+| iōta    | Ι     | ι       | _i_             | 'ee' as in _ver**y**_ (but short, clean)                        |
+| kappa   | Κ     | κ       | _k_             | 'k' as in _**c**ap_                                             |
+| lambda  | Λ     | λ       | _l_             | 'l' as in _**l**eaf_                                            |
+| mu      | Μ     | μ       | _m_             | 'm' as in _**m**y_                                              |
+| nu      | Ν     | ν       | _n_             | 'n' as in _**n**o_                                              |
+| xi      | Ξ     | ξ       | _x_             | 'ks' as in _bo**x**_                                            |
+| omicron | Ο     | ο       | _o_             | 'o' as in _p**o**d_ (but a bit higher and rounder)              |
+| pi      | Π     | π       | _p_             | 'p' as in _s**p**in_ (unaspirated)                              |
+| rhō     | Ρ     | ρ       | _r_             | tapped 'r', like the 't' in _bu**tt**er_ (said quickly)         |
+| sigma   | Σ     | σ/ς[^2] | _s_             | 's' as in _**s**o_                                              |
+| tau     | Τ     | τ       | _t_             | 't' as in _s**t**op_ (unaspirated)                              |
+| upsilon | Υ     | υ       | _y_             | 'ee' as in _ver**y**_ (merged with iōta)                        |
+| phi     | Φ     | φ       | _ph_            | 'f' as in _**f**an_                                             |
+| chi     | Χ     | χ       | _ch_            | 'ch' in the German pronunciation of _Ba**ch**_                  |
+| psi     | Ψ     | ψ       | _ps_            | 'ps' as in _li**ps**_                                           |
+| ōmega   | Ω     | ω       | _ō_             | 'o' as in _s**aw**_ (long)                                      |
 
 [^2]: For the Greek letter sigma, σ is used at the beginning or in the middle of a word, whereas ς is used when it is the final letter.
 
@@ -99,7 +99,7 @@ A note on pronuciation: there are 3 main systems for Greek pronunciation. Today,
 2. anglicised academic models (Erasmian system)
 3. the Modern Greek sound (Byzantine system).
 
-This article tends to use the Koine system, with Erasmian notes where needed or where it aids distinction.
+This article tends to use the Koine system, aiming to be faithful to the Early Koine pronunciation used when the New Testament was written in the first century AD.
 
 ### Vowels: a deeper dive
 
@@ -117,31 +117,63 @@ In English, vowels can be deceivingly difficult for learners (even though they m
 
 Linguists generally agree that Greek vowels are 'pure' and have stable, consistent pronunciations, unlike English vowels which vary widely. Here are the 7 single-letter vowels:
 
-| Name    | Greek | Transliteration | IPA  | Vowel type                      | Australian English cue                             |
-| ------- | ----- | --------------- | ---- | ------------------------------- | -------------------------------------------------- |
-| alpha   | Αα    | *a*             | /a/  | low front (short)               | close to 'uh' as in _c**u**p_                      |
-| epsilon | Εε    | *e*             | /e/  | mid front (short)               | 'e' as in _h**ea**d_                               |
-| ēta     | Ηη    | *ē*             | /eː/ | mid front (long)                | 'air' as in _h**air**_ (long)                      |
-| iōta    | Ιι    | *i*             | /i/  | high front (short/long)         | 'ee' as in _ver**y**_ (but short, clean)           |
-| omicron | Οο    | *o*             | /o/  | mid back (short)                | 'o' as in _p**o**d_ (but a bit higher and rounder) |
-| upsilon | Υυ    | *y*             | /y/  | high front rounded (short/long) | rounded 'ee' as in French _l**u**ne_               |
-| ōmega   | Ωω    | *ō*             | /oː/ | mid back (long)                 | 'o' as in _s**aw**_ (long)                         |
+| Name    | Greek | Transliteration | IPA  | Vowel type                    | Australian English cue                             |
+| ------- | ----- | --------------- | ---- | ----------------------------- | -------------------------------------------------- |
+| alpha   | Αα    | _a_             | /a/  | open front unrounded (short)  | close to 'uh' as in _c**u**p_                      |
+| epsilon | Εε    | _e_             | /e/  | mid front unrounded (short)   | 'e' as in _h**ea**d_                               |
+| ēta     | Ηη    | _ē_             | /eː/ | mid front unrounded (long)    | 'air' as in _h**air**_ (long)                      |
+| iōta    | Ιι    | _i_             | /i/  | close front unrounded (short) | 'ee' as in _ver**y**_ (but short, clean)           |
+| omicron | Οο    | _o_             | /o/  | mid back rounded (short)      | 'o' as in _p**o**d_ (but a bit higher and rounder) |
+| upsilon | Υυ    | _y_             | /y/  | close front rounded (short)   | rounded 'ee' as in French _l**u**ne_               |
+| ōmega   | Ωω    | _ō_             | /oː/ | mid back rounded (long)       | 'o' as in _s**aw**_ (long)                         |
 
-Greek also has a number of vowel *digraphs*, which are combinations of 2 vowel letters. (These are not *diphthongs*, which are combinations of 2 vowel sounds. Classical Greek had diphthongs, but they became pure by the time of Koine Greek.)
+Greek also has a number of vowel _digraphs_, which are combinations of 2 vowel letters. (These are not _diphthongs_, which are combinations of 2 vowel sounds. Classical Greek had diphthongs, but they became pure by the time of Koine Greek.)
 
 All Greek vowel digraphs end with a semivowel (ι/iōta or υ/upsilon). When υ/upsilon follows α/alpha or ε/epsilon, it doesn't act like a vowel but like a consonant: it sounds like English 'v' before voiced letters, and like 'f' before voiceless ones.
 
-| Greek | Transliteration | IPA          | Vowel type                | Australian English cue                                |
-| ----- | --------------- | ------------ | ------------------------- | ----------------------------------------------------- |
-| αι    | *ai*            | /e/          | mid front (short)         | like 'e' in _h**ea**d_ (merged with epsilon in Koine) |
-| ει    | *ei*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
-| οι    | *oi*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
-| υι    | *yi*            | /i/          | high front (long)         | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
-| αυ    | *au*            | /av/ or /af/ | vowel + consonant cluster | 'uhv' as in _c**ov**er_ / 'uhf' as in _en**ough**_    |
-| ευ    | *eu*            | /ev/ or /ef/ | vowel + consonant cluster | 'ev' as in _n**ev**er_ / 'ef' as in _l**ef**t_        |
-| ου    | *ou*            | /uː/         | high back (long)          | 'oo' as in _f**oo**d_                                 |
+| Greek | Transliteration | IPA          | Vowel type                    | Australian English cue                                |
+| ----- | --------------- | ------------ | ----------------------------- | ----------------------------------------------------- |
+| αι    | _ai_            | /e/          | mid front unrounded (short)   | like 'e' in _h**ea**d_ (merged with epsilon in Koine) |
+| ει    | _ei_            | /i/          | close front unrounded (short) | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| οι    | _oi_            | /i/          | close front unrounded (short) | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| υι    | _yi_            | /i/          | close front unrounded (short) | 'ee' as in _s**ee**_ (merged with iota in Koine)      |
+| αυ    | _au_            | /av/ or /af/ | vowel + consonant cluster     | 'uhv' as in _c**ov**er_ / 'uhf' as in _en**ough**_    |
+| ευ    | _eu_            | /ev/ or /ef/ | vowel + consonant cluster     | 'ev' as in _n**ev**er_ / 'ef' as in _l**ef**t_        |
+| ου    | _ou_            | /uː/         | high back rounded (long)      | 'oo' as in _h**oo**d_                                 |
 
 ### Consonants: a deeper dive
+
+| Name   | Greek | Transliteration | IPA  | Consonant type                  | Australian English cue                                          |
+| ------ | ----- | --------------- | ---- | ------------------------------- | --------------------------------------------------------------- |
+| bēta   | Ββ    | _b_             | /v/  | voiced labiodental fricative    | 'v' as in _**v**an_                                             |
+| gamma  | Γγ    | _g_             | /g/  | voiced velar plosive            | 'g' as in _**g**o_ (or 'y' as in _**y**es_ before front vowels) |
+| delta  | Δδ    | _d_             | /ð/  | voiced dental fricative         | 'th' as in _**th**ese_ (voiced)                                 |
+| zēta   | Ζζ    | _z_             | /z/  | voiced alveolar fricative       | 'z' as in _**z**oo_                                             |
+| thēta  | Θθ    | _th_            | /θ/  | voiceless dental fricative      | 'th' as in _**th**ink_ (unvoiced)                               |
+| kappa  | Κκ    | _k_             | /k/  | voiceless velar plosive         | 'k' as in _**c**ap_                                             |
+| lambda | Λλ    | _l_             | /l/  | alveolar lateral approximant    | 'l' as in _**l**eaf_                                            |
+| mu     | Μμ    | _m_             | /m/  | bilabial nasal                  | 'm' as in _**m**y_                                              |
+| nu     | Νν    | _n_             | /n/  | alveolar nasal                  | 'n' as in _**n**o_                                              |
+| xi     | Ξξ    | _x_             | /ks/ | voiceless consonant cluster     | 'ks' as in _bo**x**_                                            |
+| pi     | Ππ    | _p_             | /p/  | voiceless bilabial plosive      | 'p' as in _s**p**in_ (unaspirated)                              |
+| rhō    | Ρρ    | _r_             | /ɾ/  | alveolar tap                    | tapped 'r', like the 't' in _bu**tt**er_ (said quickly)         |
+| sigma  | Σσ/ς  | _s_             | /s/  | voiceless alveolar fricative    | 's' as in _**s**o_                                              |
+| tau    | Ττ    | _t_             | /t/  | voiceless alveolar plosive      | 't' as in _s**t**op_ (unaspirated)                              |
+| phi    | Φφ    | _ph_            | /f/  | voiceless labiodental fricative | 'f' as in _**f**an_                                             |
+| chi    | Χχ    | _ch_            | /x/  | voiceless velar fricative       | 'ch' in the German pronunciation of _Ba**ch**_                  |
+| psi    | Ψψ    | _ps_            | /ps/ | voiceless consonant cluster     | 'ps' as in _li**ps**_                                           |
+
+| Greek | Transliteration | IPA   | Consonant type                  | Australian English cue                           |
+| ----- | --------------- | ----- | ------------------------------- | ------------------------------------------------ |
+| γγ    | _ng_            | /ŋg/  | velar nasal + plosive           | 'ng' as in _fi**ng**er_                          |
+| γκ    | _ng_            | /ŋg/  | velar nasal + plosive           | 'ng' as in _a**ng**er_                           |
+| γχ    | _nkh_           | /ŋx/  | velar nasal + fricative         | 'nk' + the 'ch' in German _Ba**ch**_             |
+| γξ    | _nks_           | /ŋks/ | velar nasal + consonant cluster | 'nks' as in _tha**nks**_                         |
+| ψ     | _ps_            | /ps/  | voiceless consonant cluster     | 'ps' as in _li**ps**_                            |
+| ξ     | _x_             | /ks/  | voiceless consonant cluster     | 'ks' as in _bo**x**_                             |
+| μπ    | _b_ / _mb_      | /b/   | voiced bilabial plosive         | 'b' as in _**b**at_ (light nasal onset possible) |
+| ντ    | _d_ / _nd_      | /d/   | voiced dental/alveolar plosive  | 'd' as in _**d**ay_ (or 'nd' in _la**nd**_)      |
+| νκ    | _g_ / _ng_      | /g/   | voiced velar plosive            | 'g' as in _**g**o_ (or 'ng' in _ba**ng**_)       |
 
 To be continued
 
