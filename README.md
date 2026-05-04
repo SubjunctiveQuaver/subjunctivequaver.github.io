@@ -1,3 +1,17 @@
+# LC tips -- for building site
+
+To build and preview site:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+To speed up rebuilds (regenerate only changed pages) and show drafts:
+
+```bash
+bundle exec jekyll serve --livereload --incremental --drafts
+```
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy)
